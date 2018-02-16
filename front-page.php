@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The is for displaying the home page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -17,6 +17,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+			<?php if ( is_front_page() && is_home() ) : ?>
+			<?php else : ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -28,6 +30,7 @@ get_header(); ?>
 				endif;
 
 			endwhile; // End of the loop.
+			endif;
 			?>
 
 		</main><!-- #main -->

@@ -24,6 +24,9 @@
 #page {
 	> footer {
 		position: absolute;
+		padding: 25px;
+		color: #fff;
+		background: linear-gradient(-214deg, #343333 0%, #636262 100%);
 		top: 100%;
 		width: 100%;
 	}

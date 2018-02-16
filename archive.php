@@ -11,6 +11,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -43,6 +46,9 @@ get_header(); ?>
 
 		endif; ?>
 
+	</div> <!-- .col -->
+</div> <!-- .row -->
+</div> <!-- .container-fluid -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

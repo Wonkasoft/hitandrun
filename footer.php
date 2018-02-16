@@ -11,9 +11,8 @@
 
 ?>
 
-	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer">
+		<div class="container-fluid">
 		<div class="row">
 		<div class="col site-info">
 			<span><?php printf( esc_html__( '%1$s %2$s, All Rights Reserved.', 'hitandrun' ), '&copy; 2018', 'Hit & Run LLC' ); ?></span>
@@ -24,6 +23,7 @@
 			?>
 		</div><!-- .site-info -->
 	</div><!-- .row -->
+</div><!-- .container-fluid -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
