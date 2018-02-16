@@ -14,17 +14,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hitandrun' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'hitandrun' ), 'WordPress' );
-			?></a>
+		<div class="row">
+		<div class="col site-info">
+			<span><?php printf( esc_html__( '%1$s %2$s, All Rights Reserved.', 'hitandrun' ), '&copy; 2018', 'Hit & Run LLC' ); ?></span>
 			<span class="sep"> | </span>
 			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'hitandrun' ), 'hitandrun', '<a href="https://wonkasoft.com">Wonkasoft</a>' );
+				/* translators: 1: Theme author. */
+				printf( esc_html__( 'Website designed and created by %1$s.', 'hitandrun' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
 			?>
 		</div><!-- .site-info -->
+	</div><!-- .row -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

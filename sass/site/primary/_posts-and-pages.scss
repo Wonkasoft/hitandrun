@@ -20,3 +20,11 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+#page {
+	> footer {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+	}
+}
