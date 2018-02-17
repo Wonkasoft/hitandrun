@@ -1,15 +1,28 @@
+.row-w-nav {
+	position: relative;
+	margin-top: 3px;
+	.menu-bar {
+		margin-left: -15px;
+		background: linear-gradient(128deg, #FCFC0D 0%, #B2B20F 100%);
+		@include prefix(transform, skew(-25deg), webkit moz o );
+		#site-navigation {
+			padding-left: 25px;
+			@include prefix(transform, skew(25deg), webkit moz o );
+		}
+	}
+}
+
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 100%;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
-
+		padding: 5px;
+		text-align: justify;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -36,10 +49,12 @@
 
 			:hover > a,
 			.focus > a {
+				text-decoration: underline;
 			}
 
 			a:hover,
 			a.focus {
+				text-decoration: underline;
 			}
 		}
 
@@ -55,18 +70,28 @@
 
 		&:hover > a,
 		&.focus > a {
+			text-decoration: underline;
 		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
+		color: #000;
+		font-family: $font__main;
+		font-weight: 800;
+		font-style: italic;
+		font-size: 24px;
+		text-transform: uppercase;
+		padding: 0 24%;
+		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		text-decoration: underline;
 	}
 }
 
@@ -81,7 +106,8 @@
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		text-align: justify;
+		display: inline-block;
 	}
 }
 

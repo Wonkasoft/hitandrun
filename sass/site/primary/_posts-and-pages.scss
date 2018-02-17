@@ -3,58 +3,90 @@
 }
 
 .row-w-logo {
+	position: relative;
+	margin-top: 25px;
+	z-index: 100;
 	.blk-bar {
 		position: relative;
-		height: 90px;
-		margin-top: 25px;
+		height: 100px;
 		margin-left: -25px;
 		background: #000;
 		@include prefix(transform, skew(-25deg), webkit moz o );
 		.site-branding {
 			position: absolute;
+			display: inline-block;
+			height: 100px;
 			margin-left: 45px;
-			top: -30px;
+			align-self: center;
+			top: 0;
 			width: 100%;
 			color: #fff;
 			@include prefix(transform, skew(25deg), webkit moz o );
-			.site-title {
+			.row-of-brand {
 				position: relative;
-				display: inline-block;
-				@include prefix(transform, translateY(30%), webkit moz o );
-			}
-			a {
-				color: #fff;
-				font-family: $font__main;
-				text-transform: uppercase;
-				font-weight: 800;
-				font-style: italic;
-				font-size: 45px;
-				line-height: .6;
-				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
-				&:hover , &:focus, &:active {
-					color: #ee2d27;
-					text-decoration: none;
+				top: -10px;
+				.logo-div {
+					position: relative;
+					.custom-logo-link {
+						position: relative;
+					}
 				}
-			}
-			.score-board, .bottom-first {
-				position: relative;
-				display: inline-block;
-				vertical-align: middle;
-				color: #fff;
-				font-family: $font__Swis721BlkExt;
-				text-transform: uppercase;
-				font-weight: 800;
-				font-style: italic;
-				font-size: 60px;
-				line-height: .6;
-				@include prefix(transform, translate(30%, 35%), webkit moz o );
+				.site-title {
+					position: relative;
+					align-self: center;
+					a {
+						color: #fff;
+						font-family: $font__main;
+						text-transform: uppercase;
+						font-weight: 800;
+						font-style: italic;
+						font-size: 45px;
+						line-height: 0.6;
+						@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+						&:hover , &:focus, &:active {
+							color: #ee2d27;
+							text-decoration: none;
+						}
+					}
+				}
+				.score-board, .bottom-first {
+					position: relative;
+					align-self: center;
+					text-align: center;
+					color: #fff;
+					font-family: $font__Swis721Blk;
+					text-transform: uppercase;
+					font-weight: 800;
+					font-style: italic;
+					font-size: 70px;
+					line-height: 1.5;
+					overflow: hidden;
+					&:before {
+						content: "";
+						position: absolute;
+						align-self: center;
+						top: 0;
+						left: 20px;
+						height: 100%;
+						width: 3px;
+						background: #fff;
+						@include prefix(transform, skew(-25deg), webkit moz o );
+					}
+					.bottom-inning {
+						color: #FCFC0D;
+						padding-left: 15px;
+						font-size: 45px;
+					}
+				}
 			}
 		}
 	}
-}
-
-.row-w-nav {
-
+	.hour-number {
+		text-align: right;
+		font-size: 32px;
+		font-weight: 800;
+		font-style: italic;
+	}
 }
 
 .hentry {

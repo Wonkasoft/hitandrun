@@ -29,43 +29,45 @@
 			<div class="row row-w-logo">
 				<div class="col-8 blk-bar">
 		<div class="site-branding">
-			<div class="row">
-			<div class="col-6 logo-div">
+			<div class="row row-of-brand">
+			<div class="col-2 logo-div">
 			<?php the_custom_logo(); ?>
+			</div> <!-- .logo-div -->
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></span>
+				<div class="col-4 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
 			<?php
 			endif; ?>
-			</div>
 			<div class="col-3 score-board">
 				<span class="score score-left">0</span>
 				<span class="score score-sep"> - </span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
-			<div class="col-3 bottom-first">
-				<span class="inning">1</span>
+			<div class="col-2 bottom-first">
+				<span class="inning">1<i class="fa fa-caret-down bottom-inning"></i></span>
 			</div> <!-- .bottom-first -->
 		</div> <!-- .row -->
 		</div><!-- .site-branding -->
 
 	</div> <!-- .col-8 -->
-	<div class="col-4">
-		<div class="row">
+	<div class="col-4 hour-number">
+		<div class="row row-hours">
 			<div class="col">
+				<i class="fa fa-clock"></i><span class="hr-hours">Hours</span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
-		<div class="row">
+		<div class="row row-number">
 			<div class="col">
+				<span class="hr-number">909-390-1300</span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
 	</div> <!-- .col-4 -->
 </div> <!-- .row-w-logo -->
 
 		<div class="row row-w-nav">
-			<div class="col-10">
+			<div class="col-9 menu-bar">
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hitandrun' ); ?></button>
 			<?php
