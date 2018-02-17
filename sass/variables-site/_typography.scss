@@ -1,4 +1,36 @@
-$font__main: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+
+@font-face {
+	font-family: 'Swis721 Blk';
+	src: url('/assets/fonts/swissk.ttf');
+}
+@font-face {
+	font-family: 'Swis721 Blki';
+	src: url('/assets/fonts/swisski.ttf');
+}
+@font-face {
+	font-family: 'Swis721 BlkCon';
+	src: url('/assets/fonts/swissck.ttf');
+}
+@font-face {
+	font-family: 'Swis721 BlkConi';
+	src: url('/assets/fonts/swisscki.ttf');
+}
+@font-face {
+	font-family: 'Swis721 BlkExt';
+	src: url('/assets/fonts/swissek.ttf');
+}
+
+$font__main: 'Open Sans', sans-serif;
+$font__maincon: 'Open Sans Condensed', sans-serif;
+$font__Arvo: 'Arvo', sans-serif;
+$font__Swis721Blk: 'Swis721 Blk', sans-serif;
+$font__Swis721Blki: 'Swis721 Blki', sans-serif;
+$font__Swis721BlkCon: 'Swis721 BlkCon', sans-serif;
+$font__Swis721BlkConi: 'Swis721 BlkConi', sans-serif;
+$font__Swis721BlkExt: 'Swis721 BlkExt', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

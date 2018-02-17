@@ -2,6 +2,61 @@
 	display: block;
 }
 
+.row-w-logo {
+	.blk-bar {
+		position: relative;
+		height: 90px;
+		margin-top: 25px;
+		margin-left: -25px;
+		background: #000;
+		@include prefix(transform, skew(-25deg), webkit moz o );
+		.site-branding {
+			position: absolute;
+			margin-left: 45px;
+			top: -30px;
+			width: 100%;
+			color: #fff;
+			@include prefix(transform, skew(25deg), webkit moz o );
+			.site-title {
+				position: relative;
+				display: inline-block;
+				@include prefix(transform, translateY(30%), webkit moz o );
+			}
+			a {
+				color: #fff;
+				font-family: $font__main;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-style: italic;
+				font-size: 45px;
+				line-height: .6;
+				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+				&:hover , &:focus, &:active {
+					color: #ee2d27;
+					text-decoration: none;
+				}
+			}
+			.score-board, .bottom-first {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				color: #fff;
+				font-family: $font__Swis721BlkExt;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-style: italic;
+				font-size: 60px;
+				line-height: .6;
+				@include prefix(transform, translate(30%, 35%), webkit moz o );
+			}
+		}
+	}
+}
+
+.row-w-nav {
+
+}
+
 .hentry {
 	margin: 0 0 1.5em;
 }

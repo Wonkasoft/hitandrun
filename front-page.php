@@ -18,7 +18,9 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<?php if ( is_front_page() && is_home() ) : ?>
+
 			<?php else : ?>
+
 			<?php
 			while ( have_posts() ) : the_post();
 

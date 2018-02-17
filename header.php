@@ -27,24 +27,30 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row row-w-logo">
-				<div class="col-8">
+				<div class="col-8 blk-bar">
 		<div class="site-branding">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hitandrun' ); ?></button>
+			<div class="row">
+			<div class="col-6 logo-div">
+			<?php the_custom_logo(); ?>
 			<?php
-			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></span>
 			<?php
 			endif; ?>
+			</div>
+			<div class="col-3 score-board">
+				<span class="score score-left">0</span>
+				<span class="score score-sep"> - </span>
+				<span class="score score-right">0</span>
+			</div> <!-- .score-board -->
+			<div class="col-3 bottom-first">
+				<span class="inning">1</span>
+			</div> <!-- .bottom-first -->
+		</div> <!-- .row -->
 		</div><!-- .site-branding -->
+
 	</div> <!-- .col-8 -->
 	<div class="col-4">
 		<div class="row">
@@ -61,7 +67,7 @@
 		<div class="row row-w-nav">
 			<div class="col-10">
 		<nav id="site-navigation" class="main-navigation">
-			
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hitandrun' ); ?></button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
