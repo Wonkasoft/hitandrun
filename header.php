@@ -55,12 +55,12 @@
 	<div class="col-4 hour-number">
 		<div class="row row-hours">
 			<div class="col">
-				<i class="fa fa-clock"></i><span class="hr-hours">Hours</span>
+				<i class="fa fa-clock-o"></i> <span class="hr-hours">Hours</span> <span class="hrs hrs-weekdays">M-F: 3pm - 10pm</span><br/><span class="hrs hrs-weekends">Sat &amp; Sun: 9am - 4pm</span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
 		<div class="row row-number">
 			<div class="col">
-				<span class="hr-number">909-390-1300</span>
+				<i class="fa fa-volume-control-phone"></i> <i class="fa fa-commenting-o"></i> <span class="hr-number">909-390-1300</span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
 	</div> <!-- .col-4 -->

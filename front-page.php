@@ -15,8 +15,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
+		<main id="main" class="container-fluid site-main">
+			<div class="row row-for-main">
+				<div class="col above-fold-image">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<?php
 			while ( have_posts() ) : the_post();
@@ -46,7 +47,8 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			endif;
 			?>
-
+		</div> <!-- .above-fold-image -->
+		</div> <!-- .row-for-main -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
