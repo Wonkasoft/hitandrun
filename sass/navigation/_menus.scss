@@ -1,12 +1,11 @@
 .row-w-nav {
 	position: relative;
-	margin-top: 3px;
+	margin-top: 4px;
 	.menu-bar {
 		margin-left: -15px;
-		background: linear-gradient(128deg, #FCFC0D 0%, #B2B20F 100%);
+		background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
 		@include prefix(transform, skew(-25deg), webkit moz o );
 		#site-navigation {
-			padding-left: 25px;
 			@include prefix(transform, skew(25deg), webkit moz o );
 		}
 	}
@@ -21,7 +20,7 @@
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding: 5px;
+		padding: 0;
 		text-align: justify;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -49,12 +48,30 @@
 
 			:hover > a,
 			.focus > a {
-				text-decoration: underline;
+				text-decoration: none;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 5px;
+					width: 100%;
+					background: #000;
+				}
 			}
 
 			a:hover,
 			a.focus {
-				text-decoration: underline;
+				text-decoration: none;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 5px;
+					width: 100%;
+					background: #000;
+				}
 			}
 		}
 
@@ -65,17 +82,27 @@
 	}
 
 	li {
-		float: left;
 		position: relative;
-
+		text-align: center;
+		bottom: 0;
 		&:hover > a,
 		&.focus > a {
-			text-decoration: underline;
+			text-decoration: none;
+			&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 5px;
+			width: 100%;
+			background: #000;
+		}
 		}
 	}
 
 	a {
-		display: block;
+		position: relative;
+		display: inline-block;
 		text-decoration: none;
 		color: #000;
 		font-family: $font__main;
@@ -83,15 +110,35 @@
 		font-style: italic;
 		font-size: 24px;
 		text-transform: uppercase;
-		padding: 0 24%;
+		text-decoration: none;
+		top: 0;
+		box-sizing: border-box;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0;
+			width: 100%;
+			background: #000;
+			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
-		text-decoration: underline;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 5px;
+			width: 100%;
+			background: #000;
+		}
 	}
 }
 
@@ -107,7 +154,12 @@
 	}
 	.main-navigation ul {
 		text-align: justify;
-		display: inline-block;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		li {
+			display: inline-block;
+		}
 	}
 }
 

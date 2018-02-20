@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
 
 @font-face {
 	font-family: 'Swis721 Blk';
-	src: url('/assets/fonts/swissk.ttf');
+	src: url('./assets/fonts/Swiss721BT-Black.woff');
 }
 @font-face {
 	font-family: 'Swis721 Blki';
-	src: url('/assets/fonts/swisski.ttf');
+	src: url('./assets/fonts/Swiss721BT-BlackItalic.woff');
 }
 @font-face {
 	font-family: 'Swis721 BlkCon';
-	src: url('/assets/fonts/swissck.ttf');
+	src: url('./assets/fonts/Swiss721BT-BlackCondensed.woff');
 }
 @font-face {
 	font-family: 'Swis721 BlkConi';
-	src: url('/assets/fonts/swisscki.ttf');
+	src: url('./assets/fonts/Swiss721BT-BlackCondensedItalic.woff');
 }
 @font-face {
 	font-family: 'Swis721 BlkExt';
-	src: url('/assets/fonts/swissek.ttf');
+	src: url('./assets/fonts/Swiss721BT-BlackExtended.woff');
 }
 
 $font__main: 'Open Sans', sans-serif;

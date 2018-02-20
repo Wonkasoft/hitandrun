@@ -1,3 +1,31 @@
+$duration: 30s;
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
 .sticky {
 	display: block;
 }
@@ -36,7 +64,7 @@
 			@include prefix(transform, skew(25deg), webkit moz o );
 			.row-of-brand {
 				position: relative;
-				top: -10px;
+				top: -12px;
 				.logo-div {
 					position: relative;
 					.custom-logo-link {
@@ -46,14 +74,20 @@
 				.site-title {
 					position: relative;
 					align-self: center;
+					white-space: nowrap;
+					height: 100px;
 					a {
+						display: inline-block;
+						height: 100%;
+						padding-top: 5px;
 						color: #fff;
-						font-family: $font__main;
+						font-family: $font__Swis721BlkConi;
 						text-transform: uppercase;
-						font-weight: 800;
+						font-weight: 200;
 						font-style: italic;
-						font-size: 45px;
-						line-height: 0.6;
+						font-size: 52px;
+						letter-spacing: 1px;
+						line-height: 0.85;
 						@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
 						&:hover , &:focus, &:active {
 							color: #ee2d27;
@@ -65,8 +99,10 @@
 					position: relative;
 					align-self: center;
 					text-align: center;
+					top: 0;
+					height: 100px;
 					color: #fff;
-					font-family: $font__Swis721Blk;
+					font-family: $font__Swis721BlkConi;
 					text-transform: uppercase;
 					font-weight: 800;
 					font-style: italic;
@@ -78,7 +114,7 @@
 						position: absolute;
 						align-self: center;
 						top: 0;
-						left: 20px;
+						left: 25px;
 						height: 100%;
 						width: 3px;
 						background: #fff;
@@ -97,14 +133,17 @@
 		color: #fff;
 		text-align: right;
 		font-size: 32px;
-		font-weight: 800;
+		font-weight: 700;
 		line-height: .5;
+		i:before {
+			font-weight: 100;
+		}
 		.hrs {
 			font-size: 20px;
 			font-weight: 400;
 			line-height: 1;
 		}
-		.fa-volume-control-phone {
+		i.fa-volume-control-phone {
 			@include prefix(transform, rotate(-45deg), webkit moz o );
 		}
 	}
@@ -128,10 +167,100 @@
 	position: relative;
 	#main {
 		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			height: 5px;
+			left: 0;
+			right: 0;
+			background: linear-gradient(128deg, #FCFC0D 0%, #B2B20F 100%);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+			z-index: 2;
+		}
 		.above-fold-image {
-			height: 950px;
+			min-height: 950px;
 			background: url('./assets/img/Batting Cages-5.jpg');
 			background-size: cover;
+			.row-for-content {
+				color: #fff;
+				min-height: 100%;
+				.content-area {
+					display: none;
+				}
+				.content-area-1 {
+					display: block;
+					padding: 30px;
+					background: rgba(#000, 0.7);
+					h3 {
+						font-family: $font__main;
+						font-weight: 600;
+						font-style: italic;
+					}
+					p {
+						font-size: 20px;
+						font-weight: 300;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.row-for-ticker {
+				position: absolute;
+				height: 40px;
+				width: 100%;
+				bottom: 125px;
+				background: #000;
+				border-top: 1px solid rgba(#fff, 0.4);
+				border-bottom: 1px solid rgba(#fff, 0.4);
+				.what-happening {
+					position: absolute;
+					top: -3px;
+					height: 44px;
+					color: #fff;
+					padding: 0 20px;
+					border-radius: 4px;
+					background: linear-gradient(180deg, #EE2D27 0%, #771714 100%);
+					z-index: 10;
+					.what-happening-text {
+						font-family: $font__Swis721BlkConi;
+						letter-spacing: 1px;
+						font-size: 30px;
+						font-weight: 800;
+						line-height: 1.4;
+						text-transform: uppercase;
+					}
+				}
+				.ticker-info {
+					position: absolute;
+					width: 100%;
+					height: 40px;
+					color: #fff;
+					text-align: center;
+					overflow: hidden;
+					.ticker-list {
+						overflow: hidden;
+						position: absolute;
+						padding-left: 100%;
+						white-space: nowrap;
+						line-height: 1.5;
+						@include prefix( animation-iteration-count, infinite, webkit );
+						@include prefix( animation-timing-function, linear, webkit );
+						@include prefix( animation-name, ticker, webkit );
+						@include prefix( animation-duration, $duration, webkit );
+						li {
+							white-space: nowrap;
+							font-size: 24px;
+							padding: 0 8px;
+							display: inline-block;
+							.numbered {
+								color: #FCFC0D;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -145,9 +274,53 @@
 	> footer {
 		position: absolute;
 		padding: 25px;
-		color: #fff;
-		background: linear-gradient(-214deg, #343333 0%, #636262 100%);
+		color: #A5A2A2;
+		background: #343333;
 		top: 100%;
 		width: 100%;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			bottom: 92%;
+			height: 100px;
+			width: 80%;
+			z-index: 5;
+		}
+		&:before {
+			left: 0;
+			border-top: 75px solid transparent;
+			border-right: 430px solid transparent;
+			border-left: 1000px solid #343333;
+			border-bottom: 25px solid #343333;
+		}
+		.site-info {
+			a {
+				color: #FCFC0D;
+				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+				&:hover, &:active, &:focus {
+					color: #B2B20F;
+					text-decoration: none;
+				}
+			}
+		}
+		.footer-socials {
+			.social-links {
+				color: #A5A2A2;
+				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+				&:hover,
+				&:active,
+				&:focus {
+					color: rgba(#000, 0.59);
+
+				}
+			}
+			i {
+				font-size: 22px;
+				padding: 0 15px;
+			}
+			.keep-posted {
+				font-style: italic;
+			}
+		}
 	}
 }

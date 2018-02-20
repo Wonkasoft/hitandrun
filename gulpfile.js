@@ -138,11 +138,11 @@ gulp.task('watch', function() {
 
 	gulp.watch('**/*.php').on('change', browserSync.reload);
 
-	gulp.watch('./sass/*/*.scss', ['sass', 'sass2', 'imgPress']).on('change', browserSync.reload);
+	gulp.watch('./sass/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
-	gulp.watch('./sass/*/*/*.scss', ['sass', 'sass2', 'imgPress']).on('change', browserSync.reload);
+	gulp.watch('./sass/*/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
-	gulp.watch('./js/*.*', ['js', 'imgPress']).on('change', browserSync.reload);
+	gulp.watch('./js/*.*', ['js']).on('change', browserSync.reload);
 
 	gulp.watch('./images/*.{png,jpg,gif,jpeg,PNG,JPG,GIF,JPEG}', ['imgPress']).on('change', browserSync.reload);
 

@@ -22,6 +22,13 @@
 				printf( esc_html__( 'Website designed and created by %1$s.', 'hitandrun' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
 			?>
 		</div><!-- .site-info -->
+		<div class="col footer-socials">
+			<a href="#" class="social-links"><i class="fa fa-instagram pull-right"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-yelp pull-right"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-twitter pull-right"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-facebook pull-right"></i></a>
+			<span class="keep-posted pull-right">We'll keep you posted:</span>
+		</div><!-- .site-info -->
 	</div><!-- .row -->
 </div><!-- .container-fluid -->
 	</footer><!-- #colophon -->
