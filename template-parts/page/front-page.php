@@ -8,8 +8,11 @@
  */
 
 ?>
-<div class="row row-for-content align-items-center">
-	<div class="col-8 offset-2 content-area content-area-1">
+<div class="row row-for-head-space">
+</div>
+<div class="row row-for-content">
+	<div class="col-sm-8 offset-md-2 content-area content-area-1 active">
+		<div class="content-module">
 		<h3 class="mission-title">Our Mission</h3>
 		<p>
 Hit &amp; Run Batting Cages encourages athletes development by providing opportunities for personal
@@ -23,7 +26,8 @@ Seven Cages, with 2 Iron Mike Automatic Baseball machines. Speeds from 35-80+ Mi
 self feeding baseball machine, 20-60 MPH. 5 Jug Softball Machines, 20-60 MHP and 1 super Jug Machine
 that pitches up to 70MPH. We also have a Tee Station cage, with 2 soft toss areas as well as a Bullpen
 for 60.6 feet and less.</p>
-	</div> <!-- .col-offset-1 -->
+	</div> <!-- .content-module -->
+	</div> <!-- .col-offset-md-2 -->
 	<div class="col-8 offset-2 content-area content-area-2">
 		<a href="#" class="hit-trax-info">
 			<img src="" />
@@ -72,6 +76,17 @@ during peak hours 5-8pm.Be alet that hours may vary on seasons with</p>
 	<a href="#" class="train-winners-link"><span class="learn-more">Learn More>></span></a>
 	</div> <!-- .col-offset-1 -->
 </div> <!-- .row-for-content -->
+
+<div class="row row-for-indicators text-center">
+	<div class="col">
+		<ol class="indicator-list">
+			<li class="indicator indicator-1"><span class="indicator-dot active"></span></li>
+			<li class="indicator indicator-2"><span class="indicator-dot"></span></li>
+			<li class="indicator indicator-3"><span class="indicator-dot"></span></li>
+			<li class="indicator indicator-4"><span class="indicator-dot"></span></li>
+		</ol> <!-- .indicator-list -->
+	</div> <!-- .col -->
+</div> <!-- .row-for-indicators -->
 
 <div class="row row-for-ticker">
 	<div class="what-happening">

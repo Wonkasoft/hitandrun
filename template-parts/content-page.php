@@ -8,18 +8,21 @@
  */
 
 ?>
-
+<div class="row row-for-head-space">
+</div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title screen-reader-text">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php hitandrun_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	<div class="row entry-content">
+		<div class="col-sm-8 offset-md-2 content-area">
+		<div class="content-module">
 		<?php
-			the_content();
-
+			the_content(); ?>
+			</div> <!-- .content-module -->
+			</div> <!-- .col-offset-md-2 -->
+			<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hitandrun' ),
 				'after'  => '</div>',

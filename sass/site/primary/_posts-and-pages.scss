@@ -36,10 +36,13 @@ $duration: 30s;
 }
 
 #masthead {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	top: 0;
 	z-index: 200;
+	@media screen and ( min-width: 37.5em ) {
+		position: absolute;
+	}
 }
 
 .row-w-logo {
@@ -48,15 +51,14 @@ $duration: 30s;
 	z-index: 100;
 	.blk-bar {
 		position: relative;
-		height: 100px;
-		margin-left: -25px;
+		height: 6.2rem;
+		margin-left: -1.5rem;
 		background: #000;
 		@include prefix(transform, skew(-25deg), webkit moz o );
 		.site-branding {
 			position: absolute;
 			display: inline-block;
-			height: 100px;
-			margin-left: 45px;
+			height: 6.2rem;
 			align-self: center;
 			top: 0;
 			width: 100%;
@@ -65,29 +67,35 @@ $duration: 30s;
 			.row-of-brand {
 				position: relative;
 				top: -12px;
+				height: 7.7rem;
+				justify-content: space-between;
 				.logo-div {
 					position: relative;
+					padding-left: 8.2rem;
 					.custom-logo-link {
 						position: relative;
 					}
 				}
 				.site-title {
 					position: relative;
+					display: flex;
 					align-self: center;
 					white-space: nowrap;
-					height: 100px;
+					text-align: left;
+					left: -0.5rem;
+					height: 6.2rem;
 					a {
 						display: inline-block;
-						height: 100%;
-						padding-top: 5px;
+						align-self: center;
+						height: 93%;
 						color: #fff;
 						font-family: $font__Swis721BlkConi;
 						text-transform: uppercase;
 						font-weight: 200;
 						font-style: italic;
-						font-size: 52px;
-						letter-spacing: 1px;
-						line-height: 0.85;
+						font-size: 3rem;
+						letter-spacing: 0.1rem;
+						line-height: 1;
 						@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
 						&:hover , &:focus, &:active {
 							color: #ee2d27;
@@ -99,8 +107,9 @@ $duration: 30s;
 					position: relative;
 					align-self: center;
 					text-align: center;
+					padding-left: 5rem;
 					top: 0;
-					height: 100px;
+					height: 6.2rem;
 					color: #fff;
 					font-family: $font__Swis721BlkConi;
 					text-transform: uppercase;
@@ -114,17 +123,20 @@ $duration: 30s;
 						position: absolute;
 						align-self: center;
 						top: 0;
-						left: 25px;
+						left: 1.4rem;
 						height: 100%;
-						width: 3px;
+						width: 0.2rem;
 						background: #fff;
 						@include prefix(transform, skew(-25deg), webkit moz o );
 					}
 					.bottom-inning {
+						padding-right: 4.5rem;
 						color: #FCFC0D;
 						padding-left: 15px;
 						font-size: 45px;
 					}
+				}
+				.bottom-first {
 				}
 			}
 		}
@@ -135,6 +147,7 @@ $duration: 30s;
 		font-size: 32px;
 		font-weight: 700;
 		line-height: .5;
+		@include prefix( text-shadow, 1px 1px 2px rgba(#000, 0.8), webkit moz o );
 		i:before {
 			font-weight: 100;
 		}
@@ -160,38 +173,38 @@ $duration: 30s;
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 3em 0 0;
 }
 
 #primary {
 	position: relative;
 	#main {
 		position: relative;
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			height: 5px;
-			left: 0;
-			right: 0;
-			background: linear-gradient(128deg, #FCFC0D 0%, #B2B20F 100%);
-			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
-			z-index: 2;
-		}
 		.above-fold-image {
-			min-height: 950px;
+			position: relative;
+			top: 0;
+			bottom: 0;
 			background: url('./assets/img/Batting Cages-5.jpg');
 			background-size: cover;
+			.row-for-head-space {
+				display: block;
+				height: 12.3rem;
+			}
 			.row-for-content {
 				color: #fff;
-				min-height: 100%;
+				margin: 25px 0;
+				align-items: flex-end;
 				.content-area {
 					display: none;
+					&.active {
+						display: block;
+					}
 				}
 				.content-area-1 {
-					display: block;
-					padding: 30px;
-					background: rgba(#000, 0.7);
+					.content-module {
+						padding: 30px;
+						background: rgba(#000, 0.7);
+					}
 					h3 {
 						font-family: $font__main;
 						font-weight: 600;
@@ -206,11 +219,62 @@ $duration: 30s;
 					}
 				}
 			}
+			.row-for-indicators {
+				padding: 2rem 0;
+				.indicator-list {
+					display: flex;
+					justify-content: space-between;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					width: 5rem;
+					margin: auto;
+					.indicator {
+						.indicator-dot {
+							position: relative;
+							display: inline-block;
+							height: 14px;
+							width: 14px;
+							border-radius: 50%;
+							background: #000;
+							@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+							&:before {
+								content: "";
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								display: inline-block;
+								height: 0;
+								width: 0;
+								border-radius: 50%;
+								background: #FCFC0D;
+								@include prefix( transform, translate(-50%, -50%), webkit moz o);
+								@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+							}
+							&.active {
+								&:before {
+									content: "";
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									display: inline-block;
+									height: 10px;
+									width: 10px;
+									border-radius: 50%;
+									background: #FCFC0D;
+									@include prefix( transform, translate(-50%, -50%), webkit moz o);
+									@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+								}
+							}
+						}
+					}
+				}
+			}
 			.row-for-ticker {
 				position: absolute;
 				height: 40px;
 				width: 100%;
-				bottom: 125px;
+				bottom: 10%;
 				background: #000;
 				border-top: 1px solid rgba(#fff, 0.4);
 				border-bottom: 1px solid rgba(#fff, 0.4);
@@ -222,6 +286,7 @@ $duration: 30s;
 					padding: 0 20px;
 					border-radius: 4px;
 					background: linear-gradient(180deg, #EE2D27 0%, #771714 100%);
+					@include prefix( box-shadow, 15px 0 8px 0 rgba(#000, 0.8), webkit moz o );
 					z-index: 10;
 					.what-happening-text {
 						font-family: $font__Swis721BlkConi;
@@ -245,10 +310,10 @@ $duration: 30s;
 						padding-left: 100%;
 						white-space: nowrap;
 						line-height: 1.5;
-						@include prefix( animation-iteration-count, infinite, webkit );
-						@include prefix( animation-timing-function, linear, webkit );
-						@include prefix( animation-name, ticker, webkit );
-						@include prefix( animation-duration, $duration, webkit );
+						@include prefix( animation-iteration-count, infinite, webkit moz o );
+						@include prefix( animation-timing-function, linear, webkit moz o );
+						@include prefix( animation-name, ticker, webkit moz o );
+						@include prefix( animation-duration, $duration, webkit moz o );
 						li {
 							white-space: nowrap;
 							font-size: 24px;
@@ -259,8 +324,25 @@ $duration: 30s;
 							}
 						}
 					}
+					&:hover .ticker-list {
+						@include prefix( animation-play-state, paused, webkit moz o );
+					}
 				}
 			}
+			@media screen and ( min-width: 37.5em ) {
+				position: fixed;
+			}
+		}
+	}
+}
+
+.entry-content {
+	.content-area {
+		display: flex;
+		.content-module {
+			color: #fff;
+			padding: 30px;
+			background: rgba(#000, 0.7);
 		}
 	}
 }
@@ -278,21 +360,8 @@ $duration: 30s;
 		background: #343333;
 		top: 100%;
 		width: 100%;
-		&:before, &:after {
-			content: "";
-			position: absolute;
-			bottom: 92%;
-			height: 100px;
-			width: 80%;
-			z-index: 5;
-		}
-		&:before {
-			left: 0;
-			border-top: 75px solid transparent;
-			border-right: 430px solid transparent;
-			border-left: 1000px solid #343333;
-			border-bottom: 25px solid #343333;
-		}
+		border: 1px solid rgba( #fff, 0.3 );
+		borde-bottom: transparent;
 		.site-info {
 			a {
 				color: #FCFC0D;

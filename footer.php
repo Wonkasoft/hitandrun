@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container-fluid">
 		<div class="row">
-		<div class="col site-info">
+		<div class="col-sm site-info">
 			<span><?php printf( esc_html__( '%1$s %2$s, All Rights Reserved.', 'hitandrun' ), '&copy; 2018', 'Hit & Run LLC' ); ?></span>
 			<span class="sep"> | </span>
 			<?php
@@ -22,7 +22,7 @@
 				printf( esc_html__( 'Website designed and created by %1$s.', 'hitandrun' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
 			?>
 		</div><!-- .site-info -->
-		<div class="col footer-socials">
+		<div class="col-sm footer-socials">
 			<a href="#" class="social-links"><i class="fa fa-instagram pull-right"></i></a>
 			<a href="#" class="social-links"><i class="fa fa-yelp pull-right"></i></a>
 			<a href="#" class="social-links"><i class="fa fa-twitter pull-right"></i></a>

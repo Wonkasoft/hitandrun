@@ -27,25 +27,25 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row row-w-logo">
-				<div class="col-8 blk-bar">
+				<div class="col-sm-8 blk-bar">
 		<div class="site-branding">
 			<div class="row row-of-brand">
-			<div class="col-2 logo-div">
+			<div class="logo-div">
 			<?php the_custom_logo(); ?>
 			</div> <!-- .logo-div -->
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<div class="col-4 site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
+				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
 			<?php
 			endif; ?>
-			<div class="col-3 score-board">
+			<div class="score-board">
 				<span class="score score-left">0</span>
 				<span class="score score-sep"> - </span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
-			<div class="col-2 bottom-first">
+			<div class="bottom-first">
 				<span class="inning">1<i class="fa fa-caret-down bottom-inning"></i></span>
 			</div> <!-- .bottom-first -->
 		</div> <!-- .row -->
@@ -77,6 +77,9 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
-	</div> <!-- .col-10 -->
+	</div> <!-- .col-9 -->
+	<div class="col-3 search-col">
+		<?php get_search_form(); ?>
+	</div> <!-- .search-col -->
 	</div> <!-- .row-w-nav -->
 	</header><!-- #masthead -->
