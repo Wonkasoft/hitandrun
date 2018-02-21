@@ -187,8 +187,11 @@ $duration: 30s;
 			background: url('./assets/img/Batting Cages-5.jpg');
 			background-size: cover;
 			.row-for-head-space {
-				display: block;
+				display: none;
 				height: 12.3rem;
+				@include media-breakpoint-up(md) {
+					display: block;
+				}
 			}
 			.row-for-content {
 				color: #fff;
@@ -211,7 +214,7 @@ $duration: 30s;
 						font-style: italic;
 					}
 					p {
-						font-size: 20px;
+						font-size: 1rem;
 						font-weight: 300;
 						&:last-of-type {
 							margin-bottom: 0;
@@ -271,28 +274,28 @@ $duration: 30s;
 				}
 			}
 			.row-for-ticker {
-				position: absolute;
-				height: 40px;
-				width: 100%;
-				bottom: 10%;
+				position: relative;
+				margin: 25px -15px;
+				height: 1.4rem;
+				bottom: 1.5rem;
 				background: #000;
 				border-top: 1px solid rgba(#fff, 0.4);
 				border-bottom: 1px solid rgba(#fff, 0.4);
 				.what-happening {
 					position: absolute;
 					top: -3px;
-					height: 44px;
+					height: 1.5rem;
+					white-space: nowrap;
 					color: #fff;
-					padding: 0 20px;
+					padding: 0 .5rem;
 					border-radius: 4px;
 					background: linear-gradient(180deg, #EE2D27 0%, #771714 100%);
 					@include prefix( box-shadow, 15px 0 8px 0 rgba(#000, 0.8), webkit moz o );
 					z-index: 10;
 					.what-happening-text {
 						font-family: $font__Swis721BlkConi;
-						letter-spacing: 1px;
-						font-size: 30px;
-						font-weight: 800;
+						font-size: 1.2rem;
+						font-weight: 200;
 						line-height: 1.4;
 						text-transform: uppercase;
 					}
@@ -300,7 +303,7 @@ $duration: 30s;
 				.ticker-info {
 					position: absolute;
 					width: 100%;
-					height: 40px;
+					height: 1.5rem;
 					color: #fff;
 					text-align: center;
 					overflow: hidden;
@@ -309,14 +312,14 @@ $duration: 30s;
 						position: absolute;
 						padding-left: 100%;
 						white-space: nowrap;
-						line-height: 1.5;
+						line-height: 1.2;
 						@include prefix( animation-iteration-count, infinite, webkit moz o );
 						@include prefix( animation-timing-function, linear, webkit moz o );
 						@include prefix( animation-name, ticker, webkit moz o );
 						@include prefix( animation-duration, $duration, webkit moz o );
 						li {
 							white-space: nowrap;
-							font-size: 24px;
+							font-size: 1rem;
 							padding: 0 8px;
 							display: inline-block;
 							.numbered {
@@ -355,14 +358,16 @@ $duration: 30s;
 #page {
 	> footer {
 		position: absolute;
-		padding: 25px;
+		padding: 1rem 0;
 		color: #A5A2A2;
 		background: #343333;
 		top: 100%;
 		width: 100%;
+		font-size: .8rem;
 		border: 1px solid rgba( #fff, 0.3 );
 		borde-bottom: transparent;
 		.site-info {
+			padding-bottom: 15px;
 			a {
 				color: #FCFC0D;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
@@ -373,6 +378,7 @@ $duration: 30s;
 			}
 		}
 		.footer-socials {
+			text-align: right;
 			.social-links {
 				color: #A5A2A2;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
@@ -384,11 +390,18 @@ $duration: 30s;
 				}
 			}
 			i {
-				font-size: 22px;
-				padding: 0 15px;
+				font-size: 1rem;
+				padding: 0 .8rem;
 			}
 			.keep-posted {
+				position: relative;
+				padding: 0 .8rem;
 				font-style: italic;
+			}
+		}
+		@media screen and ( min-width: 37.5em ) {
+			.site-info {
+				padding-bottom: 0;
 			}
 		}
 	}

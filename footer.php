@@ -23,11 +23,11 @@
 			?>
 		</div><!-- .site-info -->
 		<div class="col-sm footer-socials">
+			<span class="keep-posted">We'll keep you posted:</span> 
 			<a href="#" class="social-links"><i class="fa fa-instagram pull-right"></i></a>
 			<a href="#" class="social-links"><i class="fa fa-yelp pull-right"></i></a>
 			<a href="#" class="social-links"><i class="fa fa-twitter pull-right"></i></a>
 			<a href="#" class="social-links"><i class="fa fa-facebook pull-right"></i></a>
-			<span class="keep-posted pull-right">We'll keep you posted:</span>
 		</div><!-- .site-info -->
 	</div><!-- .row -->
 </div><!-- .container-fluid -->

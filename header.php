@@ -30,6 +30,11 @@
 				<div class="col-sm-8 blk-bar">
 		<div class="site-branding">
 			<div class="row row-of-brand">
+				<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#primary-menu">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button>
 			<div class="logo-div">
 			<?php the_custom_logo(); ?>
 			</div> <!-- .logo-div -->
@@ -69,7 +74,6 @@
 		<div class="row row-w-nav">
 			<div class="col-9 menu-bar">
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hitandrun' ); ?></button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
