@@ -14,7 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -27,14 +27,8 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row row-w-logo">
-				<div class="col-sm-8 blk-bar">
+				<div class="col-10 col-md-8 blk-bar">
 		<div class="site-branding">
-			<div class="row row-of-brand">
-				<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#primary-menu">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-        </button>
 			<div class="logo-div">
 			<?php the_custom_logo(); ?>
 			</div> <!-- .logo-div -->
@@ -45,19 +39,18 @@
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
 			<?php
 			endif; ?>
-			<div class="score-board">
+			<div class="score-board d-none d-md-block">
 				<span class="score score-left">0</span>
 				<span class="score score-sep"> - </span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
-			<div class="bottom-first">
+			<div class="bottom-first d-none d-md-block">
 				<span class="inning">1<i class="fa fa-caret-down bottom-inning"></i></span>
 			</div> <!-- .bottom-first -->
-		</div> <!-- .row -->
 		</div><!-- .site-branding -->
 
 	</div> <!-- .col-8 -->
-	<div class="col-4 hour-number">
+	<div class="col-sm-4 hour-number d-none d-md-block">
 		<div class="row row-hours">
 			<div class="col">
 				<i class="fa fa-clock-o"></i> <span class="hr-hours">Hours</span> <span class="hrs hrs-weekdays">M-F: 3pm - 10pm</span><br/><span class="hrs hrs-weekends">Sat &amp; Sun: 9am - 4pm</span>
@@ -72,8 +65,13 @@
 </div> <!-- .row-w-logo -->
 
 		<div class="row row-w-nav">
-			<div class="col-9 menu-bar">
+			<div class="col-sm-9 menu-bar">
 		<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="hang-a-bur hang-a-bur-top"></span>
+					<span class="hang-a-bur hang-a-bur-mid"></span>
+					<span class="hang-a-bur hang-a-bur-bottom"></span>
+				</button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -82,7 +80,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</div> <!-- .col-9 -->
-	<div class="col-3 search-col">
+	<div class="col-sm-3 search-col">
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	</div> <!-- .row-w-nav -->

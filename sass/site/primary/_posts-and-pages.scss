@@ -48,113 +48,107 @@ $duration: 30s;
 .row-w-logo {
 	position: relative;
 	margin-top: 25px;
-	z-index: 100;
 	.blk-bar {
 		position: relative;
-		height: 6.2rem;
+		height: 4.2rem;
 		margin-left: -1.5rem;
 		background: #000;
 		@include prefix(transform, skew(-25deg), webkit moz o );
 		.site-branding {
 			position: absolute;
-			display: inline-block;
-			height: 6.2rem;
-			align-self: center;
-			top: 0;
+			display: flex;
+			height: 4.2rem;
 			width: 100%;
+			align-items: center;
 			color: #fff;
+			margin-left: 1.5rem;
+			justify-content: space-around;
 			@include prefix(transform, skew(25deg), webkit moz o );
-			.row-of-brand {
+			z-index: 100;
+			.logo-div {
 				position: relative;
-				top: -12px;
-				height: 7.7rem;
-				justify-content: space-between;
-				.logo-div {
+				width: 25%;
+				.custom-logo-link {
 					position: relative;
-					padding-left: 8.2rem;
-					.custom-logo-link {
-						position: relative;
-					}
 				}
-				.site-title {
-					position: relative;
-					display: flex;
+			}
+			.site-title {
+				position: relative;
+				display: flex;
+				align-self: center;
+				white-space: nowrap;
+				text-align: left;
+				left: -0.5rem;
+				height: 5.1rem;
+				a {
+					display: inline-block;
 					align-self: center;
-					white-space: nowrap;
-					text-align: left;
-					left: -0.5rem;
-					height: 6.2rem;
-					a {
-						display: inline-block;
-						align-self: center;
-						height: 93%;
-						color: #fff;
-						font-family: $font__Swis721BlkConi;
-						text-transform: uppercase;
-						font-weight: 200;
-						font-style: italic;
-						font-size: 3rem;
-						letter-spacing: 0.1rem;
-						line-height: 1;
-						@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
-						&:hover , &:focus, &:active {
-							color: #ee2d27;
-							text-decoration: none;
-						}
-					}
-				}
-				.score-board, .bottom-first {
-					position: relative;
-					align-self: center;
-					text-align: center;
-					padding-left: 5rem;
-					top: 0;
-					height: 6.2rem;
 					color: #fff;
 					font-family: $font__Swis721BlkConi;
 					text-transform: uppercase;
-					font-weight: 800;
+					font-weight: 200;
 					font-style: italic;
-					font-size: 70px;
-					line-height: 1.5;
-					overflow: hidden;
-					&:before {
-						content: "";
-						position: absolute;
-						align-self: center;
-						top: 0;
-						left: 1.4rem;
-						height: 100%;
-						width: 0.2rem;
-						background: #fff;
-						@include prefix(transform, skew(-25deg), webkit moz o );
-					}
-					.bottom-inning {
-						padding-right: 4.5rem;
-						color: #FCFC0D;
-						padding-left: 15px;
-						font-size: 45px;
+					letter-spacing: 0.1rem;
+					line-height: 1;
+					@include font-size(1);
+					@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+					&:hover , &:focus, &:active {
+						color: #ee2d27;
+						text-decoration: none;
 					}
 				}
-				.bottom-first {
+			}
+			.score-board, .bottom-first {
+				position: relative;
+				align-self: center;
+				text-align: center;
+				padding-left: 5rem;
+				top: 0;
+				height: 4.2rem;
+				color: #fff;
+				font-family: $font__Swis721BlkConi;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-style: italic;
+				@include font-size(1);
+				line-height: 1.5;
+				overflow: hidden;
+				&:before {
+					content: "";
+					position: absolute;
+					align-self: center;
+					top: 0;
+					left: 1.4rem;
+					height: 100%;
+					width: 0.2rem;
+					background: #fff;
+					@include prefix(transform, skew(-25deg), webkit moz o );
 				}
+				.bottom-inning {
+					padding-right: 4.5rem;
+					color: #FCFC0D;
+					padding-left: 15px;
+					font-size: 45px;
+				}
+			}
+			.bottom-first {
 			}
 		}
 	}
 	.hour-number {
 		color: #fff;
 		text-align: right;
-		font-size: 32px;
 		font-weight: 700;
 		line-height: .5;
+		@include font-size(1);
 		@include prefix( text-shadow, 1px 1px 2px rgba(#000, 0.8), webkit moz o );
 		i:before {
 			font-weight: 100;
 		}
 		.hrs {
-			font-size: 20px;
 			font-weight: 400;
 			line-height: 1;
+			@include font-size(1);
 		}
 		i.fa-volume-control-phone {
 			@include prefix(transform, rotate(-45deg), webkit moz o );
