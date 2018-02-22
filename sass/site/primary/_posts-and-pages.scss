@@ -36,11 +36,11 @@ $duration: 30s;
 }
 
 #masthead {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	top: 0;
 	z-index: 200;
-	@media screen and ( min-width: 37.5em ) {
+	@include media-breakpoint-up( md ) {
 		position: absolute;
 	}
 }
@@ -67,7 +67,7 @@ $duration: 30s;
 			z-index: 100;
 			.logo-div {
 				position: relative;
-				width: 25%;
+				width: 28%;
 				.custom-logo-link {
 					position: relative;
 				}
@@ -78,7 +78,7 @@ $duration: 30s;
 				align-self: center;
 				white-space: nowrap;
 				text-align: left;
-				left: -0.5rem;
+				left: -2rem;
 				height: 5.1rem;
 				a {
 					display: inline-block;
@@ -181,8 +181,8 @@ $duration: 30s;
 			background: url('./assets/img/Batting Cages-5.jpg');
 			background-size: cover;
 			.row-for-head-space {
-				display: none;
-				height: 12.3rem;
+				display: block;
+				height: 9rem;
 				@include media-breakpoint-up(md) {
 					display: block;
 				}
