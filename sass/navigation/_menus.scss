@@ -8,6 +8,7 @@
 	}
 	@include media-breakpoint-up(md) {
 		margin-top: 3px;
+		height: 2rem;
 		.menu-bar {
 			display: flex;
 			margin-left: -15px;
@@ -211,9 +212,9 @@
 		}
 		ul {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			width: 100%;
-			height: initial;
+			height: inherit;
 			background: none;
 		}
 
@@ -269,7 +270,7 @@
 
 .search-col {
 	position: absolute;
-	height: 2.2rem;
+	height: 2rem;
 	display: flex;
 	justify-content: flex-end;
 	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
@@ -286,7 +287,7 @@
 			.search-field {
 				width: 100%;
 				padding: 0 10px;
-				height: 36px;
+				height: 2rem;
 				background: rgba( #fff, 0.6);
 				border-radius: 0;
 				border: 1px solid rgba(#000, 0.3);
@@ -307,9 +308,9 @@
 				top: -3.3rem;
 				float: right;
 				color: #fff;
-				font-size: 22px;
+				@include font-size(1.5);
 				font-weight: 200;
-				line-height: 1.5;
+				line-height: 1;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 				@include prefix( text-shadow, 1px 1px 2px rgba( #000, 0.9 ), webkit moz o );
 			}
@@ -326,29 +327,6 @@
 		}
 	}
 	@include media-breakpoint-up( md ) {
-		position: relative;
-		.search-form {
-			width: 100%;
-			label {
-				width: 100%;
-				i {
-					top: .15rem;
-					right: 2.5rem;
-				}
-			}
-		}
-	}
-	@include media-breakpoint-up( smr ) {
-		.search-form {
-			width: 80%;
-			label {
-				i {
-					top: -3.5rem;
-				}
-			}
-		}
-	}
-	@include media-breakpoint-up( mdr ) {
 		position: relative;
 		.search-form {
 			width: 100%;

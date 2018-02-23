@@ -39,18 +39,18 @@
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
 			<?php
 			endif; ?>
-			<div class="score-board d-none d-md-flex">
+			<div class="score-board d-none d-lg-flex">
 				<span class="score score-left">0</span>
 				<span class="score score-sep"> - </span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
-			<div class="bottom-first d-none d-md-flex">
+			<div class="bottom-first d-none d-lg-flex">
 				<span class="inning">1<i class="fa fa-caret-down bottom-inning"></i></span>
 			</div> <!-- .bottom-first -->
 		</div><!-- .site-branding -->
 
 	</div> <!-- .col-8 -->
-	<div class="col-sm-4 hour-number d-none d-md-flex">
+	<div class="col hour-number d-none d-md-block">
 		<div class="row row-hours">
 			<div class="col">
 				<i class="fa fa-clock-o"></i> <span class="hr-hours">Hours</span> <span class="hrs hrs-weekdays">M-F: 3pm - 10pm</span><br/><span class="hrs hrs-weekends">Sat &amp; Sun: 9am - 4pm</span>
