@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row row-w-logo">
-				<div class="col blk-bar">
+				<div class="col-12 col-md-8 blk-bar">
 		<div class="site-branding">
 			<div class="logo-div">
 			<?php the_custom_logo(); ?>
@@ -39,18 +39,18 @@
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
 			<?php
 			endif; ?>
-			<div class="score-board d-none d-md-block">
+			<div class="score-board d-none d-md-flex">
 				<span class="score score-left">0</span>
 				<span class="score score-sep"> - </span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
-			<div class="bottom-first d-none d-md-block">
+			<div class="bottom-first d-none d-md-flex">
 				<span class="inning">1<i class="fa fa-caret-down bottom-inning"></i></span>
 			</div> <!-- .bottom-first -->
 		</div><!-- .site-branding -->
 
 	</div> <!-- .col-8 -->
-	<div class="col-sm-4 hour-number d-none d-md-block">
+	<div class="col-sm-4 hour-number d-none d-md-flex">
 		<div class="row row-hours">
 			<div class="col">
 				<i class="fa fa-clock-o"></i> <span class="hr-hours">Hours</span> <span class="hrs hrs-weekdays">M-F: 3pm - 10pm</span><br/><span class="hrs hrs-weekends">Sat &amp; Sun: 9am - 4pm</span>
@@ -65,7 +65,7 @@
 </div> <!-- .row-w-logo -->
 
 		<div class="row row-w-nav">
-			<div class="col-sm menu-bar">
+			<div class="col-sm-9 menu-bar">
 		<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="hang-a-bur hang-a-bur-top"></span>

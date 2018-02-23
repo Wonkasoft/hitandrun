@@ -7,12 +7,15 @@
 		}
 	}
 	@include media-breakpoint-up(md) {
+		margin-top: 3px;
 		.menu-bar {
+			display: flex;
 			margin-left: -15px;
+			align-items: center;
+			justify-content: center;
 			background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
 			@include prefix(transform, skew(-25deg), webkit moz o );
 			#site-navigation {
-				margin-left: 15px;
 				@include prefix(transform, skew(25deg), webkit moz o );
 			}
 		}
@@ -167,7 +170,6 @@
 		@include font-size(1);
 		text-transform: uppercase;
 		text-decoration: none;
-		top: 0;
 		margin-left: 15px;
 		box-sizing: border-box;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
@@ -202,6 +204,34 @@
 	    top: -2.2rem;
 		}
 	}
+	@include media-breakpoint-up( md ) {
+		width: 100%;
+		button {
+	    top: -2.2rem;
+		}
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			height: initial;
+			background: none;
+		}
+
+		li {
+			&:nth-child(2n) {
+				background: transparent;
+			}
+			&:hover > a,
+			&.focus > a {
+			}
+		}
+
+		a {
+			font-family: $font__main;
+			@include font-size(.9);
+			padding: .3rem 0;
+		}
+	}
 }
 
 /* Small menu. */
@@ -213,11 +243,6 @@
 @include media-breakpoint-up( md ) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
 	}
 }
 
@@ -252,6 +277,7 @@
 		display: flex;
 		width: 60%;
 		justify-content: flex-end;
+		@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 		label {
 			margin: 0 10px;
 			padding: 0;
@@ -295,6 +321,42 @@
 			label {
 				i {
 					top: -3.5rem;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( md ) {
+		position: relative;
+		.search-form {
+			width: 100%;
+			label {
+				width: 100%;
+				i {
+					top: .15rem;
+					right: 2.5rem;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( smr ) {
+		.search-form {
+			width: 80%;
+			label {
+				i {
+					top: -3.5rem;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( mdr ) {
+		position: relative;
+		.search-form {
+			width: 100%;
+			label {
+				width: 100%;
+				i {
+					top: .15rem;
+					right: 2.5rem;
 				}
 			}
 		}
