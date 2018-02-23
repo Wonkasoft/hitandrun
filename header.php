@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row row-w-logo">
-				<div class="col-10 col-md-8 blk-bar">
+				<div class="col blk-bar">
 		<div class="site-branding">
 			<div class="logo-div">
 			<?php the_custom_logo(); ?>
@@ -65,7 +65,7 @@
 </div> <!-- .row-w-logo -->
 
 		<div class="row row-w-nav">
-			<div class="col-sm-9 menu-bar">
+			<div class="col-sm menu-bar">
 		<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="hang-a-bur hang-a-bur-top"></span>
@@ -80,7 +80,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</div> <!-- .col-9 -->
-	<div class="col-sm-3 search-col">
+	<div class="col-sm search-col">
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	</div> <!-- .row-w-nav -->

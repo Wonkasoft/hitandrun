@@ -13,21 +13,32 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container-fluid">
+		<div class="row row-hours d-flex d-md-none">
+			<div class="col text-center">
+				<i class="fa fa-clock-o"></i> <span class="hr-hours">Hours</span> <span class="hrs hrs-weekdays">M-F: 3pm - 10pm</span> <span class="hrs hrs-weekends">Sat &amp; Sun: 9am - 4pm</span>
+			</div> <!-- .col -->
+		</div> <!-- .row -->
+		<div class="row row-number d-flex d-md-none">
+			<div class="col text-center">
+				<i class="fa fa-volume-control-phone"></i> <i class="fa fa-commenting-o"></i> <span class="hr-number">909-390-1300</span>
+			</div> <!-- .col -->
+		</div> <!-- .row -->
 		<div class="row">
-		<div class="col-sm site-info">
+		<div class="col-md-6 order-md-2 footer-socials">
+			<span class="keep-posted">We'll keep you posted:</span>
+			<a href="#" class="social-links"><i class="fa fa-snapchat-square"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-twitter-square"></i></a>
+			<a href="#" class="social-links"><i class="fa fa-yelp-square"></i></a>
+		</div><!-- .site-info -->
+		<div class="col-md-6 order-md-1 site-info">
 			<span><?php printf( esc_html__( '%1$s %2$s, All Rights Reserved.', 'hitandrun' ), '&copy; 2018', 'Hit & Run LLC' ); ?></span>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme author. */
 				printf( esc_html__( 'Website designed and created by %1$s.', 'hitandrun' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
 			?>
-		</div><!-- .site-info -->
-		<div class="col-sm footer-socials">
-			<span class="keep-posted">We'll keep you posted:</span> 
-			<a href="#" class="social-links"><i class="fa fa-instagram pull-right"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-yelp pull-right"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-twitter pull-right"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-facebook pull-right"></i></a>
 		</div><!-- .site-info -->
 	</div><!-- .row -->
 </div><!-- .container-fluid -->

@@ -11,7 +11,7 @@
 <div class="row row-for-head-space">
 </div>
 <div class="row row-for-content">
-	<div class="col-sm-8 offset-md-2 content-area content-area-1 active">
+	<div class="col-sm col-md content-area content-area-1 active">
 		<div class="content-module">
 		<h3 class="mission-title">Our Mission</h3>
 		<p>

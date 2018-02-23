@@ -32,7 +32,7 @@ gulp.task('default', function(){
 
 });
 
-gulp.task('default', ['sass', 'sass2', 'js', 'imgPress', 'watch', 'browser-sync']);
+gulp.task('default', ['sass', 'sass2', 'js', 'watch', 'browser-sync']);
 
 gulp.task('init', function() {
 

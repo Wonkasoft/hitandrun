@@ -1,11 +1,9 @@
 .row-w-nav {
 	position: relative;
-	margin-top: 4px;
+	margin-top: 0;
 	.menu-bar {
 		margin-left: -15px;
 		#site-navigation {
-			height: 0;
-			background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
 		}
 	}
 	@include media-breakpoint-up(md) {
@@ -14,6 +12,7 @@
 			background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
 			@include prefix(transform, skew(-25deg), webkit moz o );
 			#site-navigation {
+				margin-left: 15px;
 				@include prefix(transform, skew(25deg), webkit moz o );
 			}
 		}
@@ -24,12 +23,12 @@
 .main-navigation {
 	clear: both;
 	display: inline-block;
-	width: 100%;
+	width: 50%;
 	button {
-		position: relative;
-		top: -45px;
-    margin-top: -13px;
-		height: 0;
+		position: absolute;
+		top: -1.2rem;
+    margin-top: -2.2rem;
+		height: 2.2rem;
 		background: transparent;
 		border: none;
 		z-index: 100;
@@ -67,11 +66,14 @@
 		}
 	}
 	ul {
-		display: none;
+		display: block;
 		list-style: none;
-		margin: 0;
+		margin-left: 15px;
 		padding: 0;
-		background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
+		height: 0;
+		top: 0;
+		overflow: hidden;
+		background: #f8f856;
 		@include clear-webkits(0, margin-start margin-end margin-before margin-after padding-start);
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		ul {
@@ -106,7 +108,7 @@
 					position: absolute;
 					left: 0;
 					bottom: 0;
-					height: 5px;
+					height: 3px;
 					width: 100%;
 					background: #000;
 				}
@@ -120,7 +122,7 @@
 					position: absolute;
 					left: 0;
 					bottom: 0;
-					height: 5px;
+					height: 3px;
 					width: 100%;
 					background: #000;
 				}
@@ -135,21 +137,23 @@
 
 	li {
 		position: relative;
-		text-align: center;
 		bottom: 0;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+		&:nth-child(2n) {
+			background: #f6f60d;
+		}
 		&:hover > a,
 		&.focus > a {
 			text-decoration: none;
 			&:after {
-			content: "";
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			height: 5px;
-			width: 100%;
-			background: #000;
-		}
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 3px;
+				width: 100%;
+				background: #000;
+			}
 		}
 	}
 
@@ -158,13 +162,13 @@
 		display: inline-block;
 		text-decoration: none;
 		color: #000;
-		font-family: $font__main;
+		font-family: $font__Arvo;
 		font-weight: 800;
-		font-style: italic;
-		font-size: 24px;
+		@include font-size(1);
 		text-transform: uppercase;
 		text-decoration: none;
 		top: 0;
+		margin-left: 15px;
 		box-sizing: border-box;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		&:after {
@@ -188,9 +192,14 @@
 			position: absolute;
 			left: 0;
 			bottom: 0;
-			height: 5px;
+			height: 3px;
 			width: 100%;
 			background: #000;
+		}
+	}
+	@include media-breakpoint-up( sm ) {
+		button {
+	    top: -2.2rem;
 		}
 	}
 }
@@ -198,10 +207,10 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	height: 156px;
 }
 
-@media screen and (min-width: 37.5em) {
+@include media-breakpoint-up( md ) {
 	.menu-toggle {
 		display: none;
 	}
@@ -209,12 +218,6 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		li {
-			display: inline-block;
-			&:first-child {
-				padding-left: 45px;
-			}
-		}
 	}
 }
 
@@ -241,10 +244,14 @@
 
 .search-col {
 	position: absolute;
-	height: 36px;
+	height: 2.2rem;
+	display: flex;
+	justify-content: flex-end;
+	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 	.search-form {
-		display: inline-block;
-		width: 100%;
+		display: flex;
+		width: 60%;
+		justify-content: flex-end;
 		label {
 			margin: 0 10px;
 			padding: 0;
@@ -270,8 +277,8 @@
 			}
 			i {
 				position: absolute;
-				right: 2.5rem;
-				top: -53px;
+				right: 1rem;
+				top: -3.3rem;
 				float: right;
 				color: #fff;
 				font-size: 22px;
@@ -279,6 +286,16 @@
 				line-height: 1.5;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 				@include prefix( text-shadow, 1px 1px 2px rgba( #000, 0.9 ), webkit moz o );
+			}
+		}
+	}
+	@include media-breakpoint-up( sm ) {
+		.search-form {
+			width: 80%;
+			label {
+				i {
+					top: -3.5rem;
+				}
 			}
 		}
 	}

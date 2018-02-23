@@ -39,8 +39,16 @@
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
+			button.addEventListener( 'blur', menu_close );
 		}
 	};
+
+	function menu_close() {
+		container.className = container.className.replace( ' toggled', '' );
+		button.setAttribute( 'aria-expanded', 'false' );
+		menu.setAttribute( 'aria-expanded', 'false' );
+	}
+
 
 	// Get all the link elements within the menu.
 	links    = menu.getElementsByTagName( 'a' );
