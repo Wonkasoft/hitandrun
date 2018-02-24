@@ -8,10 +8,8 @@
  */
 
 ?>
-<div class="row row-for-head-space">
-</div>
 <div class="row row-for-content">
-	<div class="col-sm col-md col-lg-8 col-xl-7 content-area content-area-1 active">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1 active">
 		<div class="content-module">
 		<h3 class="mission-title">Our Mission</h3>
 		<p>
@@ -28,12 +26,12 @@ that pitches up to 70MPH. We also have a Tee Station cage, with 2 soft toss area
 for 60.6 feet and less.</p>
 	</div> <!-- .content-module -->
 	</div> <!-- .col-offset-md-2 -->
-	<div class="col-sm col-md col-lg-8 col-xl-7 content-area content-area-2">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-2">
 		<a href="#" class="hit-trax-info">
 			<img src="" />
 		</a>
 	</div> <!-- .col-offset-1 -->
-	<div class="col-sm col-md col-lg-8 col-xl-7 content-area content-area-3">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-3">
 		<div class="row row-1">
 			<div class="col">
 				<span>Sign up for 4</span>
@@ -65,7 +63,7 @@ for 60.6 feet and less.</p>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 	</div> <!-- .col-offset-1 -->
-	<div class="col-sm col-md col-lg-8 col-xl-7 content-area content-area-4">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
 		<h2 class="train-title">We Train Winners.</h2>
 		<p>Speed, Agility and Strength Training- Train with qualified trainers with
 Baseball/Softball backgrounds- We use ladders, hurdles, medicine balls,

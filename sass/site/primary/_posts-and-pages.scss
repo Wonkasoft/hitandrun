@@ -292,23 +292,17 @@ $duration: 30s;
 
 #primary {
 	position: relative;
-	padding-bottom: 149px;
 	#main {
 		position: relative;
 		.above-fold-image {
 			position: relative;
 			top: 0;
 			bottom: 0;
+			padding-top: 149px;
+			padding-bottom: 149px;
 			background: url('./assets/img/Batting Cages-5.jpg');
 			background-position: center;
 			background-size: cover;
-			.row-for-head-space {
-				display: block;
-				height: 9rem;
-				@include media-breakpoint-up(md) {
-					display: block;
-				}
-			}
 			.row-for-content {
 				color: #fff;
 				margin: 25px 0;
@@ -340,7 +334,7 @@ $duration: 30s;
 				}
 			}
 			.row-for-indicators {
-				padding: 2rem 0;
+				padding: 0 0 .5rem 0;
 				.indicator-list {
 					display: flex;
 					justify-content: space-between;
@@ -455,14 +449,29 @@ $duration: 30s;
 		}
 	}
 	@include media-breakpoint-up( md ) {
-		padding-bottom: 82px;
+		#main {
+			.above-fold-image {
+				padding-top: 144px;
+				padding-bottom: 82px;
+				.row-for-content {
+					.content-area {
+						&.active {
+						}
+					}
+					.content-area-1 {
+						p {
+							@include font-size(1.3);
+						}
+					}
+				}
+			}
+		}
 	}
 	@include media-breakpoint-up( lg ) {
 		#main {
 			.above-fold-image {
-				.row-for-head-space {
-					height: 10.3rem;
-				}
+				padding-top: 162px;
+				padding-bottom: 82px;
 				.row-for-content {
 					.content-area {
 						&.active {
@@ -475,7 +484,6 @@ $duration: 30s;
 					}
 				}
 				.row-for-indicators {
-					padding: 2rem 0;
 					.indicator-list {
 						width: 5rem;
 						.indicator {
@@ -517,11 +525,11 @@ $duration: 30s;
 		}
 	}
 	@include media-breakpoint-up( xl ) {
-		padding-bottom: 63px;
 		#main {
 			.above-fold-image {
+				padding-top: 14.5rem;
+				padding-bottom: 63px;
 				.row-for-head-space {
-					height: 12.5rem;
 				}
 				.row-for-content {
 					.content-area {
@@ -529,8 +537,11 @@ $duration: 30s;
 						}
 					}
 					.content-area-1 {
+						h3 {
+							@include font-size(2);
+						}
 						p {
-							@include font-size(1.3);
+							@include font-size(1.6);
 						}
 					}
 				}
