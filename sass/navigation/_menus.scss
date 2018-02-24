@@ -21,6 +21,9 @@
 			}
 		}
 	}
+	@include media-breakpoint-up(lg) {
+		height: 2.2rem;
+	}
 }
 
 
@@ -229,8 +232,25 @@
 
 		a {
 			font-family: $font__main;
+			@include font-size(.9);
+			padding: .3rem 0;
+		}
+	}
+	@include media-breakpoint-up( lg ) {
+		width: 100%;
+		button {
+	    top: -2.2rem;
+		}
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+			height: inherit;
+			background: none;
+		}
+		a {
 			@include font-size(1.2);
-			padding: .15rem 0;
+			padding: .24rem 0;
 		}
 	}
 }
@@ -332,6 +352,32 @@
 			width: 100%;
 			label {
 				width: 100%;
+				i {
+					top: .15rem;
+					right: 2.5rem;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( lg ) {
+		height: 2.2rem;
+		.search-form {
+			label {
+				.search-field {
+					height: 2.2rem;
+				}
+				i {
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( xl ) {
+		height: 2.2rem;
+		.search-form {
+			label {
+				.search-field {
+					height: 2.2rem;
+				}
 				i {
 					top: .15rem;
 					right: 2.5rem;

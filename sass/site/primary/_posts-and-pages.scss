@@ -197,12 +197,44 @@ $duration: 30s;
 	@include media-breakpoint-up( lg ) {
 		.blk-bar {
 			justify-content: space-evenly;
+			height: 6.2rem;
+			.site-branding {
+				margin-left: 1.5rem;
+				justify-content: space-evenly;
+				height: 6.2rem;
+				.logo-div {
+					max-width: 7.5rem;
+				}
+				.site-title {
+					left: 0;
+					a {
+						line-height: .9;
+						@include font-size(2.5);
+					}
+				}
+				.score-board, .bottom-first {
+					height: 6.2rem;
+					width: 8rem;
+					padding:  0 1rem 0 3rem;
+					@include font-size(2.5);
+					.bottom-inning {
+						padding-left: .3rem;
+						color: #FCFC0D;
+					}
+				}
+				.bottom-first {
+					left: -2rem;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( xl ) {
+		.blk-bar {
+			justify-content: space-evenly;
 			.site-branding {
 				margin-left: 1.5rem;
 				justify-content: space-around;
 				.logo-div {
-					width:21%;
-					max-width: 6.6rem;
 				}
 				.site-title {
 					left: 0;
@@ -211,6 +243,27 @@ $duration: 30s;
 						@include font-size(2.3);
 					}
 				}
+				.score-board, .bottom-first {
+					height: 5.2rem;
+					width: 8rem;
+					padding:  0 1rem 0 3rem;
+					@include font-size(2.5);
+					.bottom-inning {
+						padding-left: .3rem;
+						color: #FCFC0D;
+					}
+				}
+				.bottom-first {
+					left: -2rem;
+				}
+			}
+		}
+		.hour-number {
+			font-weight: 700;
+			line-height: .5;
+			@include font-size(1.8);
+			.hrs {
+				@include font-size(1.8);
 			}
 		}
 	}
@@ -392,6 +445,74 @@ $duration: 30s;
 	}
 	@include media-breakpoint-up( md ) {
 		padding-bottom: 82px;
+	}
+	@include media-breakpoint-up( lg ) {
+		padding-bottom: 82px;
+		#main {
+			.above-fold-image {
+				.row-for-head-space {
+					height: 10.3rem;
+				}
+				.row-for-content {
+					.content-area {
+						&.active {
+						}
+					}
+					.content-area-1 {
+						.content-module {
+						}
+						h3 {
+						}
+						p {
+							font-size: 1rem;
+						}
+					}
+				}
+				.row-for-indicators {
+					padding: 2rem 0;
+					.indicator-list {
+						width: 5rem;
+						.indicator {
+							.indicator-dot {
+								height: 14px;
+								width: 14px;
+								&:before {
+								}
+								&.active {
+									&:before {
+									}
+								}
+							}
+						}
+					}
+				}
+				.row-for-ticker {
+					margin: 25px -15px;
+					height: 1.4rem;
+					bottom: 1.5rem;
+					.what-happening {
+						top: -3px;
+						height: 1.5rem;
+						padding: 0 .5rem;
+						.what-happening-text {
+							font-size: 1.2rem;
+						}
+					}
+					.ticker-info {
+						width: 100%;
+						height: 1.5rem;
+						.ticker-list {
+							li {
+								font-size: 1rem;
+								padding: 0 8px;
+							}
+						}
+						&:hover .ticker-list {
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
