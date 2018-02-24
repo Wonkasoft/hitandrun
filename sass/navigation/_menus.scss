@@ -300,12 +300,14 @@
 		justify-content: flex-end;
 		@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 		label {
+			display: flex;
+			justify-content: flex-end;
 			margin: 0 10px;
 			padding: 0;
 			float: right;
-			width: 80%;
+			width: 100%;
 			.search-field {
-				width: 100%;
+				width: 0%;
 				padding: 0 10px;
 				height: 2rem;
 				background: rgba( #fff, 0.6);
@@ -316,6 +318,7 @@
 				&:focus {
 					opacity: 1;
 					outline: 0;
+					width: 100%;
 				}
 				&:focus + i {
 					color: #000;
@@ -351,7 +354,6 @@
 		.search-form {
 			width: 100%;
 			label {
-				width: 100%;
 				i {
 					top: .15rem;
 					right: 2.5rem;
@@ -365,8 +367,6 @@
 			label {
 				.search-field {
 					height: 2.2rem;
-				}
-				i {
 				}
 			}
 		}

@@ -140,7 +140,7 @@ $duration: 30s;
 		align-self: center;
 		font-weight: 700;
 		line-height: .5;
-		@include font-size(1.5);
+		@include font-size(1.7);
 		@include prefix( text-shadow, 1px 1px 2px rgba(#000, 0.8), webkit moz o );
 		i:before {
 			font-weight: 100;
@@ -148,7 +148,7 @@ $duration: 30s;
 		.hrs {
 			font-weight: 200;
 			line-height: 1;
-			@include font-size(1);
+			@include font-size(1.2);
 		}
 		i.fa-volume-control-phone {
 			@include prefix(transform, rotate(-45deg), webkit moz o );
@@ -240,30 +240,18 @@ $duration: 30s;
 					left: 0;
 					a {
 						line-height: .9;
-						@include font-size(2.3);
+						@include font-size(3);
 					}
 				}
 				.score-board, .bottom-first {
-					height: 5.2rem;
-					width: 8rem;
-					padding:  0 1rem 0 3rem;
-					@include font-size(2.5);
-					.bottom-inning {
-						padding-left: .3rem;
-						color: #FCFC0D;
-					}
-				}
-				.bottom-first {
-					left: -2rem;
+					@include font-size(3.3);
 				}
 			}
 		}
 		.hour-number {
-			font-weight: 700;
-			line-height: .5;
 			@include font-size(1.8);
 			.hrs {
-				@include font-size(1.8);
+				@include font-size(1.3);
 			}
 		}
 	}
@@ -323,7 +311,7 @@ $duration: 30s;
 						font-style: italic;
 					}
 					p {
-						font-size: 1rem;
+						@include font-size(1);
 						font-weight: 300;
 						&:last-of-type {
 							margin-bottom: 0;
@@ -384,6 +372,8 @@ $duration: 30s;
 			}
 			.row-for-ticker {
 				position: relative;
+				display: flex;
+				align-items: center;
 				margin: 25px -15px;
 				height: 1.4rem;
 				bottom: 1.5rem;
@@ -392,18 +382,17 @@ $duration: 30s;
 				border-bottom: 1px solid rgba(#fff, 0.4);
 				.what-happening {
 					position: absolute;
-					top: -3px;
-					height: 1.5rem;
+					height: 1.6rem;
 					white-space: nowrap;
 					color: #fff;
 					padding: 0 .5rem;
 					border-radius: 4px;
 					background: linear-gradient(180deg, #EE2D27 0%, #771714 100%);
-					@include prefix( box-shadow, 15px 0 8px 0 rgba(#000, 0.8), webkit moz o );
+					@include prefix( box-shadow, 8px 0 8px 1px rgba(#000, 0.9), webkit moz o );
 					z-index: 10;
 					.what-happening-text {
 						font-family: $font__Swis721BlkConi;
-						font-size: 1.2rem;
+						@include font-size(1.2);
 						font-weight: 200;
 						line-height: 1.4;
 						text-transform: uppercase;
@@ -411,24 +400,26 @@ $duration: 30s;
 				}
 				.ticker-info {
 					position: absolute;
+					display: flex;
 					width: 100%;
 					height: 1.5rem;
 					color: #fff;
 					text-align: center;
+					align-items: center;
 					overflow: hidden;
 					.ticker-list {
 						overflow: hidden;
+						margin: 0;
+						padding: 0 0 0 100%;
 						position: absolute;
-						padding-left: 100%;
 						white-space: nowrap;
-						line-height: 1.2;
 						@include prefix( animation-iteration-count, infinite, webkit moz o );
 						@include prefix( animation-timing-function, linear, webkit moz o );
 						@include prefix( animation-name, ticker, webkit moz o );
 						@include prefix( animation-duration, $duration, webkit moz o );
 						li {
 							white-space: nowrap;
-							font-size: 1rem;
+							@include font-size(1);
 							padding: 0 8px;
 							display: inline-block;
 							.numbered {
@@ -459,12 +450,8 @@ $duration: 30s;
 						}
 					}
 					.content-area-1 {
-						.content-module {
-						}
-						h3 {
-						}
 						p {
-							font-size: 1rem;
+							@include font-size(1.3);
 						}
 					}
 				}
@@ -487,15 +474,13 @@ $duration: 30s;
 					}
 				}
 				.row-for-ticker {
-					margin: 25px -15px;
-					height: 1.4rem;
-					bottom: 1.5rem;
+					height: 2rem;
 					.what-happening {
 						top: -3px;
-						height: 1.5rem;
+						height: 2.2rem;
 						padding: 0 .5rem;
 						.what-happening-text {
-							font-size: 1.2rem;
+							@include font-size(1.2);
 						}
 					}
 					.ticker-info {
@@ -503,7 +488,7 @@ $duration: 30s;
 						height: 1.5rem;
 						.ticker-list {
 							li {
-								font-size: 1rem;
+								@include font-size(1);
 								padding: 0 8px;
 							}
 						}
