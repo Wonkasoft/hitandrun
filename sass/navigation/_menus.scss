@@ -75,7 +75,7 @@
 			outline: 0;
 		}
 	}
-	ul {
+	> div > ul {
 		display: block;
 		list-style: none;
 		margin-left: 15px;
@@ -213,7 +213,7 @@
 	}
 	@include media-breakpoint-up( md ) {
 		width: 100%;
-		ul {
+		> div > ul {
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
@@ -321,7 +321,7 @@
 				padding: 0 10px;
 				height: 2rem;
 				background: rgba( #fff, 0.6);
-				border-radius: 0;
+				border-radius: 25px 0 0 25px;
 				border: 1px solid rgba(#000, 0.3);
 				opacity: 0;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o);

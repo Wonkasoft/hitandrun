@@ -116,7 +116,7 @@ gulp.task('js', function () {
 
 gulp.task('imgPress', function() {
 
-	return gulp.src('./images/*.{png,jpg,jpeg,gif}')
+	return gulp.src('./images/*.{png,jpg,jpeg,gif,PNG,JPG,GIF,JPEG}')
 
 	.pipe(plumber(plumberErrorHandler))
 
