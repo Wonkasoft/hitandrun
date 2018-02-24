@@ -6,7 +6,7 @@
 		#site-navigation {
 		}
 	}
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up( md ) {
 		margin-top: 3px;
 		height: 2rem;
 		.menu-bar {
@@ -21,8 +21,11 @@
 			}
 		}
 	}
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up( lg ) {
 		height: 2.2rem;
+	}
+	@include media-breakpoint-up( xl ) {
+		height: 2.8rem;
 	}
 }
 
@@ -210,18 +213,18 @@
 	}
 	@include media-breakpoint-up( md ) {
 		width: 100%;
-		button {
-	    top: -2.2rem;
-		}
 		ul {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			width: 100%;
 			height: inherit;
 			background: none;
 		}
 
 		li {
+			&:first-child {
+				margin-left: 1.5rem;
+			}
 			&:nth-child(2n) {
 				background: transparent;
 			}
@@ -233,23 +236,30 @@
 		a {
 			font-family: $font__main;
 			@include font-size(.9);
+			font-style: italic;
 			padding: .3rem 0;
 		}
 	}
 	@include media-breakpoint-up( lg ) {
 		width: 100%;
-		button {
-	    top: -2.2rem;
-		}
 		ul {
-			display: flex;
-			justify-content: space-evenly;
-			width: 100%;
-			height: inherit;
-			background: none;
+		}
+		li {
+			&:first-child {
+				margin-left: 2rem;
+			}
 		}
 		a {
 			@include font-size(1.2);
+			padding: .24rem 0;
+		}
+	}
+	@include media-breakpoint-up( xl ) {
+
+		ul {
+		}
+		a {
+			@include font-size(1.5);
 			padding: .24rem 0;
 		}
 	}
@@ -354,8 +364,10 @@
 		.search-form {
 			width: 100%;
 			label {
+				display: flex;
+				align-items: center;
 				i {
-					top: .15rem;
+					top: initial;
 					right: 2.5rem;
 				}
 			}
@@ -372,15 +384,11 @@
 		}
 	}
 	@include media-breakpoint-up( xl ) {
-		height: 2.2rem;
+		height: 2.8rem;
 		.search-form {
 			label {
 				.search-field {
-					height: 2.2rem;
-				}
-				i {
-					top: .15rem;
-					right: 2.5rem;
+					height: 2.8rem;
 				}
 			}
 		}
