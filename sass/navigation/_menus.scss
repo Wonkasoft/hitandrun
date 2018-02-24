@@ -229,8 +229,8 @@
 
 		a {
 			font-family: $font__main;
-			@include font-size(.9);
-			padding: .3rem 0;
+			@include font-size(1.2);
+			padding: .15rem 0;
 		}
 	}
 }
