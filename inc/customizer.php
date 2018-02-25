@@ -55,8 +55,9 @@ function hitandrun_customize_register( $wp_customize ) {
 	for ($i=1; $i < 6; $i++) { 
 	// Ticker Setting
 	$wp_customize->add_setting( 'ticker_'.$i , array(
-		'default'   => '',
-		'transport' => 'refresh',
+		'default'   				=> '',
+		'sanitize_callback' => 'hitandrun_sanitize_html',
+		'transport' 				=> 'refresh',
 	) );
 	// Ticker Setting Control
 	$wp_customize->add_control( new WP_Customize_Control( 
@@ -69,6 +70,14 @@ function hitandrun_customize_register( $wp_customize ) {
 		'type'				=> 'textarea',
 		'description'	=> 'Add message for ticker '.$i,
 	) ) );
+	}
+	/**
+	 * [hitandrun_sanitize_html description]
+	 * @param  [string] $input [input from textarea]
+	 * @return [string]        [sanitize all input no tags]
+	 */
+	function hitandrun_sanitize_html( $input ) {
+		return wp_strip_all_tags( $input );
 	}
 }
 add_action( 'customize_register', 'hitandrun_customize_register' );
