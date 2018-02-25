@@ -290,6 +290,10 @@ $duration: 30s;
 	margin: 3em 0 0;
 }
 
+.content-area {
+	min-height: 540px;
+}
+
 #primary {
 	position: relative;
 	#main {
@@ -300,9 +304,6 @@ $duration: 30s;
 			bottom: 0;
 			padding-top: 149px;
 			padding-bottom: 149px;
-			background: url('./assets/img/slide-4.jpg');
-			background-position: center;
-			background-size: cover;
 			.row-for-content {
 				color: #fff;
 				margin: 25px 0;
@@ -310,7 +311,6 @@ $duration: 30s;
 				justify-content: center;
 				.content-area {
 					display: none;
-					min-height: 450px;
 					align-items: center;
 					justify-content: center;
 					&.active {
@@ -330,8 +330,11 @@ $duration: 30s;
 						font-family: $font__main;
 						font-weight: 600;
 						font-style: italic;
+						text-align: left;
+						align-self: flex-start;
 					}
 					p {
+						text-align: left;
 						@include font-size(1);
 						font-weight: 300;
 						&:last-of-type {

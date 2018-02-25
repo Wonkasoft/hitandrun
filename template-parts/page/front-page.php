@@ -10,7 +10,7 @@
 
 ?>
 <div class="row row-for-content">
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1 active">
 		<div class="content-module">
 			<h3 class="mission-title">Our Mission</h3>
 			<p>
@@ -32,7 +32,7 @@
 	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
-				<img src="https://staging.hitandrunbattingcages.com/wp-content/uploads/2018/02/HitTrax-Logo-TM_large.png" />
+				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large.png" />
 			</a>
 			<a href="#" class="hit-trax-booking-btn">
 				<button class="wonka-btn">
@@ -74,7 +74,7 @@
 				</div> <!-- .row-1 -->
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
-		<div class="col-sm col-md-10 col-xl-8 content-area content-area-4 active">
+		<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
 			<div class="content-module">
 				<h2 class="train-title bold">We Train Winners.</h2>
 				<p>
