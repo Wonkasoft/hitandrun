@@ -13,7 +13,7 @@
 		next_slide,
 		slide_timer;
 
-		slide_timer = setInterval( function() { home_pages(); }, 8000);
+		slide_timer = setInterval( function() { home_pages(); }, 6000);
 
 	}
 
@@ -40,10 +40,6 @@ function home_pages() {
 
 			next_indicator.classList.add('active');
 			next_slide.classList.add('active');
-			console.log( current_indicator );
-			console.log( next_indicator );
-			console.log( slide_number );
-			console.log( next_slide );
 			break;
 		}
 	}
