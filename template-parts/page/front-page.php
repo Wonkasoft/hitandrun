@@ -95,15 +95,24 @@ during peak hours 5-8pm.Be alet that hours may vary on seasons with</p>
 		</ol> <!-- .indicator-list -->
 	</div> <!-- .col -->
 </div> <!-- .row-for-indicators -->
-
 <div class="row row-for-ticker">
 	<div class="what-happening">
 		<span class="what-happening-text">What's Happening</span>
 	</div> <!-- .what-happening -->
 	<div class="ticker-info">
 		<ol class="ticker-list">
-		<li class="ticker-item"><span class="numbered">1</span>. Come see the new site.</li>
-		<li class="ticker-item"><span class="numbered">2</span>. This new site.</li>
+		<?php
+			for ($i=1; $i < 6; $i++) { 
+				$ticker = ( !get_theme_mod( 'ticker_'.$i ) ) ? '' : get_theme_mod( 'ticker_'.$i );
+				if ( $ticker == '' ) {
+				
+				} else {
+				?>	
+				<li class="ticker-item"><span class="numbered"><?php echo $i; ?></span>. <?php echo $ticker; ?></li>
+				<?php
+				}
+			}
+			?>
 	</ol> <!-- .ticker-list -->
 	</div> <!-- .ticker-info -->
 
