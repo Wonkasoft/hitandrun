@@ -39,7 +39,18 @@
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
-			button.addEventListener( 'blur', menu_close );
+			menu.addEventListener( 'mouseleave', function() {
+				var closer = setTimeout( function() {
+					var timer_set = true;
+					if (timer_set) {
+						menu_close();
+					}
+				}, 3000); 
+			menu.addEventListener( 'mouseover', function() {
+				clearTimeout(closer);
+				timer_set = false;
+			});
+			} );
 		}
 	};
 

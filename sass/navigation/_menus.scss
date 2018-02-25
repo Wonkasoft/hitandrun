@@ -8,7 +8,6 @@
 	}
 	@include media-breakpoint-up( md ) {
 		margin-top: 3px;
-		height: 2rem;
 		.menu-bar {
 			display: flex;
 			margin-left: -15px;
@@ -20,12 +19,6 @@
 				@include prefix(transform, skew(25deg), webkit moz o );
 			}
 		}
-	}
-	@include media-breakpoint-up( lg ) {
-		height: 2.2rem;
-	}
-	@include media-breakpoint-up( xl ) {
-		height: 2.8rem;
 	}
 }
 
@@ -78,31 +71,35 @@
 	> div > ul {
 		display: block;
 		list-style: none;
-		margin-left: 15px;
+		margin: 0;
 		padding: 0;
 		height: 0;
 		top: 0;
 		overflow: hidden;
 		background: #f8f856;
-		@include clear-webkits(0, margin-start margin-end margin-before margin-after padding-start);
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
+			list-style: none;
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
+			background: #B2B20F;
+			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 
 			ul {
 				left: -999em;
 				top: 0;
+				list-style: none;
+				@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			}
 
 			li {
 				&:hover > ul,
 				&.focus > ul {
-					left: 100%;
+					left: auto;
 				}
 			}
 
@@ -124,6 +121,10 @@
 				}
 			}
 
+			li {
+				padding: 0 1rem;
+			}
+
 			a:hover,
 			a.focus {
 				text-decoration: none;
@@ -143,33 +144,37 @@
 		li.focus > ul {
 			left: auto;
 		}
-	}
-
-	li {
-		position: relative;
-		bottom: 0;
-		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
-		&:nth-child(2n) {
-			background: #f6f60d;
-		}
-		&:hover > a,
-		&.focus > a {
-			text-decoration: none;
-			&:after {
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				height: 3px;
-				width: 100%;
-				background: #000;
+		
+		>li {
+			position: relative;
+			bottom: 0;
+			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+			&:nth-child(2n) {
+				background: #f6f60d;
+			}
+			&:hover > a,
+			&.focus > a {
+				text-decoration: none;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 3px;
+					width: 100%;
+					background: #000;
+				}
+			}
+			>a {
+				margin-left: 15px;
 			}
 		}
+
 	}
+
 
 	a {
 		position: relative;
-		display: block;
 		text-decoration: none;
 		color: #000;
 		font-family: $font__Arvo;
@@ -177,7 +182,6 @@
 		@include font-size(1);
 		text-transform: uppercase;
 		text-decoration: none;
-		margin-left: 15px;
 		box-sizing: border-box;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		&:after {
@@ -215,43 +219,42 @@
 		width: 100%;
 		> div > ul {
 			display: flex;
+			align-items: center;
 			justify-content: space-between;
 			width: 100%;
 			height: inherit;
+			overflow: visible;
 			background: none;
+			> li {
+				&:nth-child(2n) {
+					background: transparent;
+				}
+				&:hover > a,
+				&.focus > a {
+				}
+				li {
+					padding: 0 1rem;
+				}
+			}
 		}
 
-		li {
-			&:first-child {
-				margin-left: 1.5rem;
-			}
-			&:nth-child(2n) {
-				background: transparent;
-			}
-			&:hover > a,
-			&.focus > a {
-			}
-		}
 
 		a {
 			font-family: $font__main;
 			@include font-size(.9);
 			font-style: italic;
-			padding: .3rem 0;
+			padding: .1rem 0;
 		}
 	}
 	@include media-breakpoint-up( lg ) {
 		width: 100%;
-		ul {
-		}
-		li {
-			&:first-child {
-				margin-left: 2rem;
+		> div > ul {
+			>li {
 			}
 		}
 		a {
 			@include font-size(1.2);
-			padding: .24rem 0;
+			padding: 0.04rem 0;
 		}
 	}
 	@include media-breakpoint-up( xl ) {
@@ -260,7 +263,7 @@
 		}
 		a {
 			@include font-size(1.5);
-			padding: .24rem 0;
+			padding: .1rem 0;
 		}
 	}
 }
@@ -268,7 +271,8 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	height: 156px;
+	height: initial;
+	overflow: visible;
 }
 
 @include media-breakpoint-up( md ) {
@@ -300,7 +304,6 @@
 
 .search-col {
 	position: absolute;
-	height: 2rem;
 	display: flex;
 	justify-content: flex-end;
 	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
@@ -319,7 +322,6 @@
 			.search-field {
 				width: 0%;
 				padding: 0 10px;
-				height: 2rem;
 				background: rgba( #fff, 0.6);
 				border-radius: 25px 0 0 25px;
 				border: 1px solid rgba(#000, 0.3);
@@ -341,7 +343,7 @@
 				top: -3.3rem;
 				float: right;
 				color: #fff;
-				@include font-size(1.5);
+				@include font-size(1.2);
 				font-weight: 200;
 				line-height: 1;
 				@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
@@ -374,21 +376,17 @@
 		}
 	}
 	@include media-breakpoint-up( lg ) {
-		height: 2.2rem;
 		.search-form {
 			label {
 				.search-field {
-					height: 2.2rem;
 				}
 			}
 		}
 	}
 	@include media-breakpoint-up( xl ) {
-		height: 2.8rem;
 		.search-form {
 			label {
 				.search-field {
-					height: 2.8rem;
 				}
 			}
 		}
