@@ -39,6 +39,39 @@ function hitandrun_customize_register( $wp_customize ) {
 	) );
 	/**
 	 * 
+	 * Slider settings Section
+	 * @since  1.0.0
+	 * 
+	 */
+	// Adding customizer section for Slider settings section
+	$wp_customize->add_section( 'slider_section' , array(
+		'capability'     	=> 'edit_theme_options',
+		'theme_supports' 	=> '',
+		'priority'				=> 10,
+		'title'						=> __( 'Slider Section', 'hitandrun' ),
+		'description'			=> __( 'Slider Options version 1.0.0', 'hitandrun' ),
+		'panel'  					=> 'ft_theme_options',
+	) );
+	for ($i=1; $i < 6; $i++) { 
+	// Slider Setting
+	$wp_customize->add_setting( 'slider_'.$i , array(
+		'default'   				=> '',
+		'transport' 				=> 'refresh',
+	) );
+	// Slider Setting Control
+	$wp_customize->add_control( new WP_Customize_Image_Control( 
+		$wp_customize, 
+		'slider_'.$i, 
+		array(
+		'label'      	=> __( 'Slider message '.$i, 'hitandrun' ),
+		'section'    	=> 'slider_section',
+		'setting'   	=> 'slider_'.$i,
+		'type'				=> 'image',
+		'description'	=> 'Add image for slider '.$i,
+	) ) );
+	}
+	/**
+	 * 
 	 * Ticker settings Section
 	 * @since  1.0.0
 	 * 
