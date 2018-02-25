@@ -14,10 +14,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="primary-content-area">
 		<main id="main" class="container-fluid site-main">
 			<div class="row row-for-main">
-				<div class="col above-fold-image">
+				<div id="backdrop-image" class="col above-fold-image" style="background: url('/wp-content/uploads/2018/02/slide-1.jpg');background-size: cover; background-position: center center">
 			<?php if ( is_front_page() && is_home() ) : ?>
 				<?php
 			while ( have_posts() ) : the_post();

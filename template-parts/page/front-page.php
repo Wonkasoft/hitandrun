@@ -9,7 +9,7 @@
 
 ?>
 <div class="row row-for-content">
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1 active">
 		<div class="content-module">
 		<h3 class="mission-title">Our Mission</h3>
 		<p>
@@ -71,7 +71,7 @@ for 60.6 feet and less.</p>
 		</div> <!-- .row-1 -->
 		</div> <!-- .content-module -->
 	</div> <!-- .col-offset-1 -->
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-4 active">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
 		<div class="content-module">
 		<h2 class="train-title bold">We Train Winners.</h2>
 		<p>Speed, Agility and Strength Training- Train with qualified trainers with
