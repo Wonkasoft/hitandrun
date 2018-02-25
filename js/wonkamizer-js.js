@@ -30,12 +30,12 @@ function home_pages() {
 				next_slide = content_areas[0];
 				next_number = 1;
 				next_indicator = document.querySelector('.indicator-1>.indicator-dot');
-				bg_container.setAttribute( 'style', "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center");
+				bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
 			} else {
 				next_slide = content_areas[i+1];
 				next_number = parseInt(slide_number)+1;
 				next_indicator = document.querySelector('.indicator-'+next_number+'>.indicator-dot');
-				bg_container.setAttribute( 'style', "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center");
+				bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
 			}
 
 			next_indicator.classList.add('active');
