@@ -9,7 +9,7 @@
 
 ?>
 <div class="row row-for-content">
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1 active">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1">
 		<div class="content-module">
 		<h3 class="mission-title">Our Mission</h3>
 		<p>
@@ -26,53 +26,63 @@ that pitches up to 70MPH. We also have a Tee Station cage, with 2 soft toss area
 for 60.6 feet and less.</p>
 	</div> <!-- .content-module -->
 	</div> <!-- .col-offset-md-2 -->
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-2">
+	<div class="col-sm col-md-10 content-area content-area-2">
+		<div class="content-module">
 		<a href="#" class="hit-trax-info">
-			<img src="" />
+			<img src="https://staging.hitandrunbattingcages.com/wp-content/uploads/2018/02/HitTrax-Logo-TM_large.png" />
 		</a>
+		<a href="#" class="hit-trax-booking-btn">
+		<button class="wonka-btn">
+			Book a Hitting Session with Our Advanced Batting Technology!
+		</button></a>
+		</div> <!-- .content-module -->
 	</div> <!-- .col-offset-1 -->
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-3">
+	<div class="col-sm col-md-11 content-area content-area-3">
+		<div class="content-module">
 		<div class="row row-1">
 			<div class="col">
-				<span>Sign up for 4</span>
+				<span>Sign up for <span class="bold">4</span></span>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 		<div class="row row-2">
 			<div class="col">
-				<span>Team Sessions</span>
+				<span class="bold">Team Sessions</span>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 		<div class="row row-3">
 			<div class="col">
-				<span>&amp; get the 5th</span>
+				<span>&amp; get the <span class="bold">5th</span></span>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 		<div class="row row-4">
 			<div class="col">
-				<span>Session</span>
+				<span class="bold">Session</span>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 		<div class="row row-5">
 			<div class="col">
-				<a href="#" class="link-free"><span>Free!</span></a>
+				<a href="#" class="link-free"><span class="bold">Free!</span></a>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
 		<div class="row row-6">
 			<div class="col">
-				<a href="#" class="link-free"><span class="learn-more">Learn More >></span></a>
+				<a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a>
 			</div> <!-- .col -->
 		</div> <!-- .row-1 -->
+		</div> <!-- .content-module -->
 	</div> <!-- .col-offset-1 -->
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
-		<h2 class="train-title">We Train Winners.</h2>
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-4 active">
+		<div class="content-module">
+		<h2 class="train-title bold">We Train Winners.</h2>
 		<p>Speed, Agility and Strength Training- Train with qualified trainers with
 Baseball/Softball backgrounds- We use ladders, hurdles, medicine balls,
 jump ropes. To enhance ones lateral movement, explosiveness, stamina
 and work ethic. Best place to come Hit then Run. Open to the public,
 reservations are not required but are strongly recommended. Especially
 during peak hours 5-8pm.Be alet that hours may vary on seasons with</p>
-	<a href="#" class="train-winners-link"><span class="learn-more">Learn More>></span></a>
-	</div> <!-- .col-offset-1 -->
+	<a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a>
+	</div> <!-- .content-module -->
+	</div> <!-- .content-area-4 -->
 </div> <!-- .row-for-content -->
 
 <div class="row row-for-indicators text-center">

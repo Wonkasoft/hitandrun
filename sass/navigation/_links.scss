@@ -1,6 +1,6 @@
 a {
 	color: $color__link;
-
+	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -8,6 +8,8 @@ a {
 	&:focus,
 	&:active {
 		color: $color__link-hover;
+		text-decoration: none;
+		@include prefix( text-shadow, 1px 1px 2px rgba(#000, 1), webkit moz o);
 	}
 	&:focus {
 		outline: thin dotted;
