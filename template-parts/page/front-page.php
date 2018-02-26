@@ -32,7 +32,7 @@
 	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
-				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" />
+				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-responsive" />
 			</a>
 			<a href="#" class="hit-trax-booking-btn">
 				<button class="wonka-btn">
