@@ -1,7 +1,7 @@
 ( function() {
 	"use strict";
 
-	/*if ( document.querySelector('.home') ) {
+	if ( document.querySelector('.home') ) {
 		var content_areas = document.querySelectorAll( '.content-area' ),
 		bg_container = document.getElementById( 'backdrop-image' ),
 		current_indicator,
@@ -15,7 +15,7 @@
 
 		slide_timer = setInterval( function() { home_pages(); }, 6000);
 
-	}*/
+	}
 
 function home_pages() {
 	for (var i = 0; i < content_areas.length; i++) {
