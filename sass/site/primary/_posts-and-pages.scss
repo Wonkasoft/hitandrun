@@ -704,8 +704,13 @@ $duration: 30s;
 }
 
 .entry-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	.content-area {
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		.content-module {
 			color: #fff;
 			padding: 30px 0;
