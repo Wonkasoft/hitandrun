@@ -34,9 +34,13 @@
 			<a href="#" class="hit-trax-info">
 				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" />
 			</a>
-			<a href="#" class="hit-trax-booking-btn">
+			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block">
 				<button class="wonka-btn">
 					Book a Hitting Session with Our Advanced Batting Technology!
+				</button></a>
+				<a href="#" class="hit-trax-booking-btn d-inline-block d-md-none">
+				<button class="wonka-btn">
+					Book with what the Pros Use!
 				</button></a>
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
