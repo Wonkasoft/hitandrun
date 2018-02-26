@@ -9,9 +9,10 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="primary-content-area">
 		<main id="main" class="site-main">
-
+			<div class="row row-for-main">
+				<div id="backdrop-image" class="col above-fold-image" style="background: url('/wp-content/uploads/2018/02/search.jpg');background-size: cover; background-position: center center">
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -42,7 +43,8 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+	</div>
+</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
