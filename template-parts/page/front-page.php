@@ -23,7 +23,7 @@
 			<h3 class="we-offer-title">What We Offer</h3>
 			<p>
 				Seven Cages, with 2 Iron Mike Automatic Baseball machines. Speeds from 35-80+ Miles per hour. Atec
-				self feeding baseball machine, 20-60 MPH. 5 Jug Softball Machines, 20-60 MHP and 1 super Jug Machine
+				self feeding baseball machine, 20-60 MPH. 5 Jug Softball Machines, 20-60 MPH and 1 super Jug Machine
 				that pitches up to 70MPH. We also have a Tee Station cage, with 2 soft toss areas as well as a Bullpen
 				for 60.6 feet and less.
 			</p>
@@ -32,7 +32,7 @@
 	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
-				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-responsive" />
+				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-fluid" />
 			</a>
 			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block">
 				<button class="wonka-btn">
