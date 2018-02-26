@@ -23,7 +23,7 @@
 			<h3 class="we-offer-title">What We Offer</h3>
 			<p>
 				Seven Cages, with 2 Iron Mike Automatic Baseball machines. Speeds from 35-80+ Miles per hour. Atec
-				self feeding baseball machine, 20-60 MPH. 5 Jug Softball Machines, 20-60 MHP and 1 super Jug Machine
+				self feeding baseball machine, 20-60 MPH. 5 Jug Softball Machines, 20-60 MPH and 1 super Jug Machine
 				that pitches up to 70MPH. We also have a Tee Station cage, with 2 soft toss areas as well as a Bullpen
 				for 60.6 feet and less.
 			</p>
