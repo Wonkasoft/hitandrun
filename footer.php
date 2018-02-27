@@ -26,11 +26,9 @@
 		<div class="row">
 		<div class="col-md-6 order-md-2 footer-socials">
 			<span class="keep-posted">We'll keep you posted:</span>
-			<a href="#" class="social-links"><i class="fa fa-snapchat-square"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-instagram"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-facebook-square"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-twitter-square"></i></a>
-			<a href="#" class="social-links"><i class="fa fa-yelp-square"></i></a>
+			<a href="https://www.instagram.com/hitandrunbattingcages/" class="social-links"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.facebook.com/HitandRunBattingCages/" class="social-links"><i class="fa fa-facebook-square"></i></a>
+			<a href="https://www.yelp.com/biz/hit-and-run-batting-cages-ontario" class="social-links"><i class="fa fa-yelp"></i></a>
 		</div><!-- .site-info -->
 		<div class="col-md-6 order-md-1 site-info">
 			<span><?php printf( esc_html__( '%1$s %2$s, All Rights Reserved.', 'hitandrun' ), '&copy; 2018', 'Hit & Run LLC' ); ?></span>
