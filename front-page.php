@@ -10,6 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package hitandrun
+ * @since  1.0.0 [<init>]
  */
 
 get_header(); ?>
