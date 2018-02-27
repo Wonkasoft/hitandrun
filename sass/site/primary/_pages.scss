@@ -72,6 +72,11 @@ body.error404 {
 			.content-module {
 				background: rgba(#000, 0.7);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+				.search-form {
+					i {
+						margin-left: 5px;
+					}
+				}
 			}
 		}
 		aside#secondary {
@@ -83,26 +88,31 @@ body.error404 {
 				padding: 15px;
 				background: rgba(#000, 0.7);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+				.search-form {
+					i {
+						margin-left: 5px;
+					}
+				}
 			}
 		}
 	}
 	@include media-breakpoint-up( sm ) {
-		section#primary {
+		div#primary {
 			padding: 149px 15px 174px;
 		}
 	}
 	@include media-breakpoint-up( md ) {
-		section#primary {
+		div#primary {
 			padding: 148px 15px 107px;
 		}
 	}
 	@include media-breakpoint-up( lg ) {
-		section#primary {
+		div#primary {
 			padding: 164px 15px 107px;
 		}
 	}
 	@include media-breakpoint-up( xl ) {
-		section#primary {
+		div#primary {
 			padding: 184px 15px 88px;
 		}
 	}

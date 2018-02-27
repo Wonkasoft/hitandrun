@@ -61,8 +61,8 @@ get_header(); ?>
 
 		</div> <!-- .content-module -->
 		</main><!-- #main -->
-	</div> <!-- .row -->
 	<?php get_sidebar(); ?>
+	</div> <!-- .row -->
 	</div><!-- #primary -->
 
 <?php
