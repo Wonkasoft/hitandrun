@@ -1,0 +1,109 @@
+body.search {
+	background: url('./assets/img/search.jpg');
+	background-size: cover;
+	background-position: center center;
+	section#primary {
+		position: relative;
+		width: 100%;
+		padding: 100px 15px 174px;
+		#main {
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+			.content-module {
+				background: rgba(#000, 0.7);
+				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+				.search-form {
+					i {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		aside#secondary {
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+			.sidebar-module {
+				background: rgba(#000, 0.7);
+				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+				.search-form {
+					i {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up( sm ) {
+		section#primary {
+			padding: 149px 15px 174px;
+		}
+	}
+	@include media-breakpoint-up( md ) {
+		section#primary {
+			padding: 148px 15px 107px;
+		}
+	}
+	@include media-breakpoint-up( lg ) {
+		section#primary {
+			padding: 164px 15px 107px;
+		}
+	}
+	@include media-breakpoint-up( xl ) {
+		section#primary {
+			padding: 184px 15px 88px;
+		}
+	}
+}
+
+body.error404 {
+	background: url('./assets/img/error404.jpg');
+	background-size: cover;
+	background-position: center center;
+	div#primary {
+		position: relative;
+		width: 100%;
+		padding: 100px 15px 149px;
+		#main {
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+			.content-module {
+				background: rgba(#000, 0.7);
+				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+			}
+		}
+		aside#secondary {
+			margin-top: 15px;
+			padding: 0 15px;
+			display: flex;
+			justify-content: center;
+			.sidebar-module {
+				padding: 15px;
+				background: rgba(#000, 0.7);
+				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+			}
+		}
+	}
+	@include media-breakpoint-up( sm ) {
+		section#primary {
+			padding: 149px 15px 174px;
+		}
+	}
+	@include media-breakpoint-up( md ) {
+		section#primary {
+			padding: 148px 15px 107px;
+		}
+	}
+	@include media-breakpoint-up( lg ) {
+		section#primary {
+			padding: 164px 15px 107px;
+		}
+	}
+	@include media-breakpoint-up( xl ) {
+		section#primary {
+			padding: 184px 15px 88px;
+		}
+	}
+}

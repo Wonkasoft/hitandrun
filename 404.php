@@ -9,10 +9,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div id="primary" class="primary-content-area">
+		<div class="row">
+		<main id="main" class="col-md-8 site-main">
+			<div class="content-module">
 
 			<section class="error-404 not-found">
+				<div class="row row-for-main">
+					<div class="col">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'hitandrun' ); ?></h1>
 				</header><!-- .page-header -->
@@ -51,9 +55,14 @@ get_header(); ?>
 					?>
 
 				</div><!-- .page-content -->
+			</div> <!-- .col -->
+		</div> <!-- .row -->
 			</section><!-- .error-404 -->
 
+		</div> <!-- .content-module -->
 		</main><!-- #main -->
+	</div> <!-- .row -->
+	<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 <?php

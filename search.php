@@ -10,9 +10,9 @@
 get_header(); ?>
 
 	<section id="primary" class="primary-content-area">
-		<main id="main" class="site-main">
-			<div class="row row-for-main">
-				<div id="backdrop-image" class="col above-fold-image" style="background: url('/wp-content/uploads/2018/02/search.jpg');background-size: cover; background-position: center center">
+		<div class="row">
+		<main id="main" class="col-md-8 site-main">
+			<div class="content-module">
 		<?php
 		if ( have_posts() ) : ?>
 
@@ -44,10 +44,10 @@ get_header(); ?>
 
 		endif; ?>
 	</div>
-</div>
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
+	</div> <!-- .row -->
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
