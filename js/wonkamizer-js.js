@@ -2,18 +2,7 @@
 	"use strict";
 
 	if ( document.querySelector('.home') ) {
-		var content_areas = document.querySelectorAll( '.content-area' ),
-		bg_container = document.getElementById( 'backdrop-image' ),
-		current_indicator,
-		next_indicator,
-		list_length,
-		slide_number,
-		next_number,
-		current_slide,
-		next_slide,
-		slide_timer;
-
-
+		var slide_timer;
 		timer_set();
 		set_indicator_listeners();
 
@@ -23,7 +12,6 @@ function set_indicator_listeners() {
 	var indicator_select = document.querySelectorAll( '.indicator-dot' );
 	for (var i = 0; i < indicator_select.length; i++) {
 		indicator_select[i].addEventListener( 'click', function() {
-			console.log(this);
 			var list = this.parentElement.classList.length;
 			var parent_class = this.parentElement.classList.item( list - 1);
 			var number = parent_class.charAt( parent_class.length - 1);
@@ -34,6 +22,9 @@ function set_indicator_listeners() {
 
 function slide_from_to( number ) {
 	clearTimeout(slide_timer);
+	var w = window.innerWidth,
+	content_areas = document.querySelectorAll( '.content-area' ),
+	bg_container = document.getElementById( 'backdrop-image' );
 	for (var b = 0; b < content_areas.length; b++) {
 		if ( content_areas[b].classList.contains( 'active' ) ) {
 			content_areas[b].classList.remove( 'active' );
@@ -49,11 +40,20 @@ function slide_from_to( number ) {
 			break;
 		}
 	}
-	bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover; background-position: center center";
+	if (w < 768) {
+		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover; background-position: center center";
+	} else {
+		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover; background-position: center center";
+	}
 	timer_set();
 }
 
 function home_pages() {
+	var w = window.innerWidth,
+	content_areas = document.querySelectorAll( '.content-area' ),
+	bg_container = document.getElementById( 'backdrop-image' ),
+	current_indicator,next_indicator,list_length,slide_number,next_number,
+	current_slide,next_slide;
 	for (var i = 0; i < content_areas.length; i++) {
 		if ( content_areas[i].classList.contains( 'active' ) ) {
 			list_length = content_areas[i].classList.length;
@@ -66,12 +66,20 @@ function home_pages() {
 				next_slide = content_areas[0];
 				next_number = 1;
 				next_indicator = document.querySelector('.indicator-1>.indicator-dot');
-				bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
+				if ( w < 768 ) {
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+				} else {
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
+				}
 			} else {
 				next_slide = content_areas[i+1];
 				next_number = parseInt(slide_number)+1;
 				next_indicator = document.querySelector('.indicator-'+next_number+'>.indicator-dot');
-				bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
+				if ( w < 768 ) {
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+				} else {
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
+				}
 			}
 
 			next_indicator.classList.add('active');
