@@ -321,6 +321,7 @@ $duration: 30s;
 			bottom: 0;
 			padding-top: 116px;
 			padding-bottom: 149px;
+			background-size: cover;
 			@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
 			.row-for-content {
 				color: #fff;
