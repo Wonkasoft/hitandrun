@@ -12,6 +12,7 @@ body.search {
 			justify-content: center;
 			.content-module {
 				background: rgba(#000, 0.7);
+				border: 1px solid rgba(#EE2D27, 0.5);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
 				.search-form {
 					i {
@@ -26,6 +27,7 @@ body.search {
 			justify-content: center;
 			.sidebar-module {
 				background: rgba(#000, 0.7);
+				border: 1px solid rgba(#EE2D27, 0.5);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
 				.search-form {
 					i {
