@@ -15,38 +15,42 @@
 		parent_class,
 		slide_timer;
 
+
 		timer_set();
+		set_indicator_listeners();
 
 	}
-	
-// function set_indicator_listeners() {
-// 	indicator_select.onclick= function(){
-// 		list_length = this.parentElement.classList.length;
-// 		parent_class = this.parentElement.classList.item( list_length - 1);
-// 		slide_number = parent_class.charAt( parent_class.length - 1);
-// 		slide_from_to( slide_number );
-// 	};
-// }
+		
+function set_indicator_listeners() {
+	for (var i = 0; i < indicator_select.length; i++) {
+		indicator_select[i].onclick= function(){
+			list_length = this.parentElement.classList.length;
+			parent_class = this.parentElement.classList.item( list_length - 1);
+			slide_number = parent_class.charAt( parent_class.length - 1);
+			slide_from_to( slide_number );
+		}
+	}
+}
 
-// function slide_from_to( number=null ) {
-// 	clearTimeout(slide_timer);
-// 	for (var b = 0; b < content_areas.length; b++) {
-// 		if ( content_areas[b].classList.contains( 'active' ) ) {
-// 			content_areas[b].classList.remove( 'active' );
-// 			content_areas[parseInt(number) - 1].classList.add( 'active' );
-// 			break;
-// 		}
-// 	}
-// 	for (var v = 0; v < indicator_select.length; v++) {
-// 		if ( indicator_select[v].classList.contains( 'active' ) ) {
-// 			indicator_select[v].classList.remove( 'active' );
-// 			indicator_select[parseInt(number) - 1].classList.add( 'active' );
-// 			break;
-// 		}
-// 	}
-// 	bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover; background-position: center center";
-// 	timer_set();
-// }
+function slide_from_to( number=null ) {
+	clearTimeout(slide_timer);
+	for (var b = 0; b < content_areas.length; b++) {
+		if ( content_areas[b].classList.contains( 'active' ) ) {
+			content_areas[b].classList.remove( 'active' );
+			content_areas[parseInt(number) - 1].classList.add( 'active' );
+			break;
+		}
+	}
+	for (var v = 0; v < indicator_select.length; v++) {
+		if ( indicator_select[v].classList.contains( 'active' ) ) {
+			indicator_select[v].classList.remove( 'active' );
+			indicator_select[parseInt(number) - 1].classList.add( 'active' );
+			break;
+		}
+	}
+	bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover; background-position: center center";
+	timer_set();
+}
 
 function home_pages() {
 	for (var i = 0; i < content_areas.length; i++) {
