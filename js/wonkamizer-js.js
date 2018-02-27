@@ -99,7 +99,7 @@ function home_pages() {
 					}
 				} else {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-position: -150px center;";
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-position: -350px center;";
 					} else {
 						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-position: center center;";
 					}
