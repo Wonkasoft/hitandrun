@@ -10,7 +10,7 @@
 
 ?>
 <div class="row row-for-content">
-	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1">
+	<div class="col-sm col-md-10 col-xl-8 content-area content-area-1 active">
 		<div class="content-module">
 			<h3 class="mission-title">Our Mission</h3>
 			<p>
@@ -29,7 +29,7 @@
 			</p>
 		</div> <!-- .content-module -->
 	</div> <!-- .col-offset-md-2 -->
-	<div class="col-sm col-md-10 content-area content-area-2 active">
+	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
 				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-fluid" />
