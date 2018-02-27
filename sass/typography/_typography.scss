@@ -1,10 +1,16 @@
 body,
 button,
-input,
-select,
-optgroup,
-textarea {
+input {
 	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+select,
+textarea,
+optgroup {
+	color: #d60117;
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;

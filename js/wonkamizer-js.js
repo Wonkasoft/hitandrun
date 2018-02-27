@@ -45,6 +45,7 @@ function home_pages() {
 	}
 }
 
-function
+function timer_setting() {
+}
 	
 })();
