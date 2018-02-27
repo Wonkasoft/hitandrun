@@ -4,7 +4,6 @@
 	if ( document.querySelector('.home') ) {
 		var content_areas = document.querySelectorAll( '.content-area' ),
 		bg_container = document.getElementById( 'backdrop-image' ),
-		indicator_select = document.querySelectorAll( '.indicator-dot' ),
 		current_indicator,
 		next_indicator,
 		list_length,
@@ -12,7 +11,6 @@
 		next_number,
 		current_slide,
 		next_slide,
-		parent_class,
 		slide_timer;
 
 
@@ -22,17 +20,19 @@
 	}
 		
 function set_indicator_listeners() {
+	var indicator_select = document.querySelectorAll( '.indicator-dot' );
 	for (var i = 0; i < indicator_select.length; i++) {
-		indicator_select[i].onclick= function(){
-			list_length = this.parentElement.classList.length;
-			parent_class = this.parentElement.classList.item( list_length - 1);
-			slide_number = parent_class.charAt( parent_class.length - 1);
-			slide_from_to( slide_number );
-		}
+		indicator_select[i].addEventListener( 'click', function() {
+			console.log(this);
+			var list = this.parentElement.classList.length;
+			var parent_class = this.parentElement.classList.item( list - 1);
+			var number = parent_class.charAt( parent_class.length - 1);
+			slide_from_to( number );
+		});
 	}
 }
 
-function slide_from_to( number=null ) {
+function slide_from_to( number ) {
 	clearTimeout(slide_timer);
 	for (var b = 0; b < content_areas.length; b++) {
 		if ( content_areas[b].classList.contains( 'active' ) ) {
@@ -41,6 +41,7 @@ function slide_from_to( number=null ) {
 			break;
 		}
 	}
+	var indicator_select = document.querySelectorAll( '.indicator-dot' );
 	for (var v = 0; v < indicator_select.length; v++) {
 		if ( indicator_select[v].classList.contains( 'active' ) ) {
 			indicator_select[v].classList.remove( 'active' );

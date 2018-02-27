@@ -55,27 +55,27 @@
 					<div class="col">
 						<span class="bold">Team Sessions</span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-2 -->
 				<div class="row row-3">
 					<div class="col">
 						<span>&amp; get the <span class="bold">5th</span></span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-3 -->
 				<div class="row row-4">
 					<div class="col">
 						<span class="bold">Session</span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-4 -->
 				<div class="row row-5">
 					<div class="col">
 						<a href="#" class="link-free"><span class="bold">Free!</span></a>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-5 -->
 				<div class="row row-6">
 					<div class="col">
-						<a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a>
+						<!-- <a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a> -->
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-6 -->
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
 		<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
@@ -89,7 +89,7 @@
 					reservations are not required but are strongly recommended. Especially
 					during peak hours 5-8pm.Be alet that hours may vary on seasons with
 				</p>
-				<a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a>
+				<!-- <a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a> -->
 			</div> <!-- .content-module -->
 		</div> <!-- .content-area-4 -->
 	</div> <!-- .row-for-content -->

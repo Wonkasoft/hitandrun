@@ -10,7 +10,6 @@
  */
 
 ?>
-
 	<footer id="colophon" class="site-footer">
 		<div class="container-fluid">
 		<div class="row row-hours d-flex d-md-none">

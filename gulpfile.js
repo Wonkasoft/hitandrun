@@ -104,7 +104,7 @@ gulp.task('js', function () {
 
 	.pipe(jshint())
 
-	.pipe(jshint.reporter('fail'))
+	.pipe(jshint.reporter('default'))
 
 	.pipe(jsmin())
 
