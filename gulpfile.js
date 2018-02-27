@@ -20,7 +20,9 @@ plumberErrorHandler = { errorHandler: notify.onError({
 
 	title: 'Gulp',
 
-	message: 'Error: <%= error.message %>'
+	message: 'Error: <%= error.message %>',
+
+	line: 'Line: <%= line %>'
 
 })
 
