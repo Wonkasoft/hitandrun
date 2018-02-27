@@ -41,7 +41,11 @@ function slide_from_to( number ) {
 		}
 	}
 	if (w < 768) {
-		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover; background-position: center center";
+		if (number == 3) {
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover; background-position: center -150px";
+		} else {
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover; background-position: center center";
+		}
 	} else {
 		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover; background-position: center center";
 	}
@@ -67,7 +71,11 @@ function home_pages() {
 				next_number = 1;
 				next_indicator = document.querySelector('.indicator-1>.indicator-dot');
 				if ( w < 768 ) {
-					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+					if (next_number == 3) {
+								bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center -150px";
+							} else {
+								bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+							}
 				} else {
 					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
 				}
@@ -76,7 +84,11 @@ function home_pages() {
 				next_number = parseInt(slide_number)+1;
 				next_indicator = document.querySelector('.indicator-'+next_number+'>.indicator-dot');
 				if ( w < 768 ) {
-					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+					if (next_number == 3) {
+								bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center -150px";
+							} else {
+								bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover; background-position: center center";
+							}
 				} else {
 					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover; background-position: center center";
 				}

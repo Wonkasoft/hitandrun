@@ -291,7 +291,19 @@ $duration: 30s;
 }
 
 .content-area {
-	min-height: 540px;
+	min-height: 550px;
+	@media only screen and ( min-width: 576px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+	(min-resolution: 192dpi) {
+		min-height: 500px;
+	}
+	@media only screen and ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+	(min-resolution: 192dpi) {
+		min-height: 600px;
+	}
+	@media only screen and ( min-width: 992px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+	(min-resolution: 192dpi) {
+		min-height: 900px;
+	}
 }
 
 .content-module,
@@ -307,7 +319,7 @@ $duration: 30s;
 			position: relative;
 			top: 0;
 			bottom: 0;
-			padding-top: 149px;
+			padding-top: 116px;
 			padding-bottom: 149px;
 			@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
 			.row-for-content {
