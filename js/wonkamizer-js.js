@@ -47,11 +47,7 @@ function slide_from_to( number ) {
 			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center center;";
 		}
 	} else {
-		if (number == 3) {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: -350px center;";
-		} else {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;";
-		}
+		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;";
 	}
 	timer_set();
 }
@@ -81,11 +77,7 @@ function home_pages() {
 						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;";
 					}
 				} else {
-					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: -350px center;";
-					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;";
-					}
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;";
 				}
 			} else {
 				next_slide = content_areas[i+1];
@@ -98,11 +90,7 @@ function home_pages() {
 						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;";
 					}
 				} else {
-					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: -350px center;";
-					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;";
-					}
+					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;";
 				}
 			}
 
