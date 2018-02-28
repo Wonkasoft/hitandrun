@@ -19,7 +19,7 @@
 		</div> <!-- .row -->
 		<div class="row row-number d-flex d-md-none">
 			<div class="col text-center">
-				<i class="fa fa-volume-control-phone"></i> <i class="fa fa-commenting-o"></i> <span class="hr-number">909-390-1300</span>
+				<i class="fa fa-volume-control-phone"></i> <i class="fa fa-commenting-o"></i> <span class="hr-number"><a href="tel:9093901300">909-390-1300</a></span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
 		<div class="row">
