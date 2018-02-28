@@ -49,6 +49,7 @@ function slide_from_to( number ) {
 	} else {
 		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;";
 	}
+	
 	timer_set();
 }
 
