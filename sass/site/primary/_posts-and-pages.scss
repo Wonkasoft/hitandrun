@@ -294,7 +294,7 @@ $duration: 30s;
 	min-height: 550px;
 	@media only screen and ( min-width: 576px ) and ( -webkit-min-device-pixel-ratio: 2 ),
 	(min-resolution: 192dpi) and ( min-width: 576px ) {
-		min-height: 500px;
+		min-height: 550px;
 	}
 	@media only screen and ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ),
 	(min-resolution: 192dpi) and ( min-width: 768px ) {
@@ -304,6 +304,7 @@ $duration: 30s;
 	(min-resolution: 192dpi) and ( min-width: 992px ) {
 		min-height: 900px;
 	}
+
 }
 
 .content-module,
