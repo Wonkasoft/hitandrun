@@ -22,9 +22,14 @@ function set_indicator_listeners() {
 
 function slide_from_to( number ) {
 	clearTimeout(slide_timer);
+
 	var w = window.innerWidth,
+	rightScore = document.querySelector('.score-right'),
 	content_areas = document.querySelectorAll( '.content-area' ),
 	bg_container = document.getElementsByTagName( 'body' )[0];
+
+	rightScore.style.top="-85px";
+	rightScore.style.opacity=0;
 	for (var b = 0; b < content_areas.length; b++) {
 		if ( content_areas[b].classList.contains( 'active' ) ) {
 			content_areas[b].classList.remove( 'active' );
@@ -47,18 +52,26 @@ function slide_from_to( number ) {
 			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 		}
 	} else {
-		bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+		if (number == 3) {
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+		} else {
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+		}
 	}
-	
+	setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},800);
 	timer_set();
 }
 
 function home_pages() {
 	var w = window.innerWidth,
+	rightScore = document.querySelector('.score-right'),
 	content_areas = document.querySelectorAll( '.content-area' ),
 	bg_container = document.getElementsByTagName( 'body' )[0],
 	current_indicator,next_indicator,list_length,slide_number,next_number,
 	current_slide,next_slide;
+
+	rightScore.style.top="-85px";
+	rightScore.style.opacity=0;
 	for (var i = 0; i < content_areas.length; i++) {
 		if ( content_areas[i].classList.contains( 'active' ) ) {
 			list_length = content_areas[i].classList.length;
@@ -78,7 +91,11 @@ function home_pages() {
 						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				} else {
-					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+					if (next_number == 3) {
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+					} else {
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+					}
 				}
 			} else {
 				next_slide = content_areas[i+1];
@@ -91,15 +108,22 @@ function home_pages() {
 						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				} else {
-					bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+					if (next_number == 3) {
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+					} else {
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+					}
 				}
 			}
 
 			next_indicator.classList.add('active');
 			next_slide.classList.add('active');
+
+			setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},800);
 			break;
 		}
 	}
+	
 }
 
 function timer_set() {
