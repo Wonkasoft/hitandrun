@@ -44,7 +44,7 @@
 				</button></a>
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
-		<div class="col-sm col-md-11 content-area content-area-3">
+		<div class="col-sm col-md-12 content-area content-area-3">
 			<div class="content-module">
 				<div class="row row-1">
 					<div class="col">
