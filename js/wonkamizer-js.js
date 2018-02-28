@@ -24,7 +24,7 @@ function slide_from_to( number ) {
 	clearTimeout(slide_timer);
 	var w = window.innerWidth,
 	content_areas = document.querySelectorAll( '.content-area' ),
-	bg_container = document.getElementByTagName( 'body' )[0];
+	bg_container = document.getElementsByTagName( 'body' )[0];
 	for (var b = 0; b < content_areas.length; b++) {
 		if ( content_areas[b].classList.contains( 'active' ) ) {
 			content_areas[b].classList.remove( 'active' );
@@ -56,7 +56,7 @@ function slide_from_to( number ) {
 function home_pages() {
 	var w = window.innerWidth,
 	content_areas = document.querySelectorAll( '.content-area' ),
-	bg_container = document.getElementByTagName( 'body' )[0],
+	bg_container = document.getElementsByTagName( 'body' )[0],
 	current_indicator,next_indicator,list_length,slide_number,next_number,
 	current_slide,next_slide;
 	for (var i = 0; i < content_areas.length; i++) {
