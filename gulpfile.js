@@ -148,6 +148,4 @@ gulp.task('watch', function() {
 
 	gulp.watch('./js/*.*', ['js']).on('change', browserSync.reload);
 
-	gulp.watch('./images/*.{png,jpg,gif,jpeg,PNG,JPG,GIF,JPEG}', ['imgPress']).on('change', browserSync.reload);
-
 });

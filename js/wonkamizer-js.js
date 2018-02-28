@@ -33,7 +33,7 @@ function slide_from_to( number ) {
 	rightScore.style.transform="rotate(145deg)";
 	rightScore.style.opacity=0;
 	leftScore.style.top="85px";
-	leftScore.style.transform="rotate(145deg)";
+	leftScore.style.transform="rotate(-145deg)";
 	leftScore.style.opacity=0;
 	for (var b = 0; b < content_areas.length; b++) {
 		if ( content_areas[b].classList.contains( 'active' ) ) {
@@ -81,7 +81,7 @@ function home_pages() {
 	rightScore.style.transform="rotate(145deg)";
 	rightScore.style.opacity=0;
 	leftScore.style.top="85px";
-	leftScore.style.transform="rotate(145deg)";
+	leftScore.style.transform="rotate(-145deg)";
 	leftScore.style.opacity=0;
 	for (var i = 0; i < content_areas.length; i++) {
 		if ( content_areas[i].classList.contains( 'active' ) ) {
