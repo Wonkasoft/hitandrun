@@ -79,12 +79,12 @@
 		background: #f8f856;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.7), webkit moz o );
 			float: left;
-			position: absolute;
+			position: relative;
 			list-style: none;
 			top: 100%;
-			left: -999em;
+			left: auto;
 			z-index: 99999;
 			background: #B2B20F;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
@@ -150,6 +150,7 @@
 		>li {
 			position: relative;
 			bottom: 0;
+			padding: 15px 0;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			&:nth-child(2n) {
 				background: #f6f60d;
@@ -234,11 +235,16 @@
 			overflow: visible;
 			background: none;
 			> li {
+				padding: 0;
 				&:nth-child(2n) {
 					background: transparent;
 				}
 				&:hover > a,
 				&.focus > a {
+				}
+				ul {
+					position: absolute;
+					left: -999em;
 				}
 				li {
 					padding: 0 1rem;
