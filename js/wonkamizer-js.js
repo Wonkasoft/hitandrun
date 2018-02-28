@@ -53,12 +53,12 @@ function slide_from_to( number ) {
 		}
 	} else {
 		if (number == 3) {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
 		} else {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 		}
 	}
-	setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},800);
+	setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},500);
 	timer_set();
 }
 
@@ -92,9 +92,9 @@ function home_pages() {
 					}
 				} else {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				}
 			} else {
@@ -109,9 +109,9 @@ function home_pages() {
 					}
 				} else {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: right center;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				}
 			}
@@ -119,11 +119,11 @@ function home_pages() {
 			next_indicator.classList.add('active');
 			next_slide.classList.add('active');
 
-			setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},800);
 			break;
 		}
 	}
 	
+	setTimeout( function(){rightScore.textContent=next_number;rightScore.style.opacity=1;rightScore.style.top=0;},500);
 }
 
 function timer_set() {
