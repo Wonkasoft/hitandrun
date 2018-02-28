@@ -41,7 +41,7 @@
 			endif; ?>
 			<div class="score-board d-none d-lg-flex">
 				<span class="score score-left">0</span>
-				<span class="score score-sep"> - </span>
+				<span class="score score-sep">-</span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
 			<div class="bottom-first d-none d-lg-flex">
