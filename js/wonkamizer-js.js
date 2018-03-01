@@ -27,7 +27,7 @@ function slide_from_to( number ) {
 	rightScore = document.querySelector('.score-right'),
 	leftScore = document.querySelector('.score-left'),
 	content_areas = document.querySelectorAll( '.content-area' ),
-	bg_container = document.getElementsByTagName( 'body' )[0];
+	bg_container = document.getElementById( 'page' );
 
 	rightScore.style.top="-85px";
 	rightScore.style.transform="rotate(145deg)";
@@ -73,7 +73,7 @@ function home_pages() {
 	rightScore = document.querySelector('.score-right'),
 	leftScore = document.querySelector('.score-left'),
 	content_areas = document.querySelectorAll( '.content-area' ),
-	bg_container = document.getElementsByTagName( 'body' )[0],
+	bg_container = document.getElementById( 'page' ),
 	current_indicator,next_indicator,list_length,slide_number,next_number,
 	current_slide,next_slide;
 
