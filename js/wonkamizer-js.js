@@ -9,15 +9,15 @@
 	}
 		
 function set_indicator_listeners() {
-	var indicator_select = document.querySelectorAll( '.indicator-dot' );
-	for (var i = 0; i < indicator_select.length; i++) {
-		indicator_select[i].addEventListener( 'click', function() {
-			var list = this.parentElement.classList.length;
-			var parent_class = this.parentElement.classList.item( list - 1);
+	var indicator_select = document.querySelector( '.indicator-list' );
+	indicator_select.addEventListener( 'click', function(e) {
+		if ( e.target.nodeName == "SPAN") {
+			var list = e.target.parentElement.classList.length;
+			var parent_class = e.target.parentElement.classList.item( list - 1);
 			var number = parent_class.charAt( parent_class.length - 1);
 			slide_from_to( number );
-		});
-	}
+		}
+	});
 }
 
 function slide_from_to( number ) {
