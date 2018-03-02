@@ -741,6 +741,7 @@ $duration: 30s;
 			color: #fff;
 			padding: 30px 15px;
 			background: rgba(#000, 0.7);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
 		}
 	}
 }

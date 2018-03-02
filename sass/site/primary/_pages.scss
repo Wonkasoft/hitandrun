@@ -2,6 +2,7 @@ body.search {
 	background: url('./assets/img/search.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 	section#primary {
 		position: relative;
 		width: 100%;
@@ -63,6 +64,7 @@ body.error404 {
 	background: url('./assets/img/error404.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 	div#primary {
 		position: relative;
 		width: 100%;
@@ -116,6 +118,39 @@ body.error404 {
 	@include media-breakpoint-up( xl ) {
 		div#primary {
 			padding: 184px 15px 88px;
+		}
+	}
+}
+
+body.pricing {
+	#primary {
+		#main {
+			.content-module {
+				background: none;
+				box-shadow: none;
+				table.table {
+					font-family: $font__Arvo;
+					text-align: center;
+					background: rgba(#000, 0.7);
+					@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+					h2 {
+						padding: 0;
+						margin: 0;
+					}
+					th, td {
+						vertical-align: middle;
+						border: 2px solid rgba(#fff, 0.8);
+					}
+					td {
+						font-family: $font__main;
+					}
+					tbody {
+						th, td {
+							width: 33.3%;
+						}
+					}
+				}
+			}
 		}
 	}
 }

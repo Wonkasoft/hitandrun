@@ -14,7 +14,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="row entry-content">
-		<div class="col-sm-8 content-area">
+		<div class="col-sm content-area">
 		<div class="content-module">
 		<?php
 			the_content(); ?>
