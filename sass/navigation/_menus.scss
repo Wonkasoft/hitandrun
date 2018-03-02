@@ -327,11 +327,13 @@
 .search-col {
 	position: absolute;
 	display: flex;
+	width:50%;
+	right: 0;
 	justify-content: flex-end;
 	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 	.search-form {
 		display: flex;
-		width: 60%;
+		width: 100%;
 		justify-content: flex-end;
 		@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 		label {
@@ -375,7 +377,7 @@
 	}
 	@include media-breakpoint-up( sm ) {
 		.search-form {
-			width: 80%;
+			width: 100%;
 			label {
 				i {
 					top: -3.5rem;
