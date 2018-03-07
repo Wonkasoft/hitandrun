@@ -84,4 +84,5 @@
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	</div> <!-- .row-w-nav -->
+</div> <!-- .container-fluid -->
 	</header><!-- #masthead -->
