@@ -33,6 +33,7 @@ $duration: 30s;
 #page {
 	position: relative;
 	min-height: 100%;
+	@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
 }
 
 #masthead {
