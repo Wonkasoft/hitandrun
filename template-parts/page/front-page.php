@@ -59,7 +59,7 @@
 				</div> <!-- .row-3 -->
 				<div class="row row-4">
 					<div class="col">
-						<span class="bold">Session</span>
+						<span class="bold">Cage</span>
 					</div> <!-- .col -->
 				</div> <!-- .row-4 -->
 				<div class="row row-5">
@@ -78,12 +78,12 @@
 			<div class="content-module">
 				<h2 class="train-title bold">We Train Winners.</h2>
 				<p>
-					Speed, Agility and Strength Training- Train with qualified trainers with
-					Baseball/Softball backgrounds- We use ladders, hurdles, medicine balls,
+					Speed, Agility and Strength Training - Train with qualified trainers with
+					Baseball/Softball backgrounds - We use ladders, hurdles, medicine balls,
 					jump ropes. To enhance ones lateral movement, explosiveness, stamina
 					and work ethic. Best place to come Hit then Run. Open to the public,
 					reservations are not required but are strongly recommended. Especially
-					during peak hours 5-8pm.Be alet that hours may vary on seasons with
+					during peak hours 5-8pm. Be alert that hours may vary during seasons
 				</p>
 				<!-- <a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a> -->
 			</div> <!-- .content-module -->
