@@ -79,12 +79,18 @@ if ( ! function_exists( 'hitandrun_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-		
-	/**
-	 * Add settings for labels on gravity forms
-	 * @since  1.0.0 
-	 */
-	add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+		/**
+		 * Add settings for labels on gravity forms
+		 * @since  1.0.0 
+		 */
+		add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+		// filter the Gravity Forms button type
+		add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+		function form_submit_button( $button, $form ) {
+		    return "<button class='button btn wonka-btn' id='gform_submit_button_{$form['id']}'><span>Send Message</span></button>";
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'hitandrun_setup' );
