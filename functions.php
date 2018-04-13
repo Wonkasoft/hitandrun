@@ -79,6 +79,12 @@ if ( ! function_exists( 'hitandrun_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		
+	/**
+	 * Add settings for labels on gravity forms
+	 * @since  1.0.0 
+	 */
+	add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 	}
 endif;
 add_action( 'after_setup_theme', 'hitandrun_setup' );
