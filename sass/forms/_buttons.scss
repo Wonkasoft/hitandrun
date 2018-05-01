@@ -28,7 +28,6 @@ input[type="submit"] {
 	font-style: italic;
 	font-weight: 700;
 	color: #fff;
-	white-space: nowrap;
 	padding: 4px 1rem;
 	border: 1px solid #fff;
 	background: linear-gradient(180deg, #EE2D27 20%, #771714 70%);
@@ -44,6 +43,6 @@ input[type="submit"] {
 		@include font-size(1.2);
 	}
 	@include media-breakpoint-up( md ) {
-		@include font-size(1.5);
+		@include font-size(1.4);
 	}
 }

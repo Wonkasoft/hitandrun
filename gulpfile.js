@@ -103,7 +103,7 @@ gulp.task('js', function () {
 
 	.pipe(jshint())
 
-	.pipe(jshint.reporter('fail'))
+	.pipe(jshint.reporter('default'))
 
 	.pipe(jsmin())
 
@@ -142,9 +142,9 @@ gulp.task('watch', function() {
 	gulp.watch('./sass/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
 	gulp.watch('./sass/*/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
+	
+	gulp.watch('./sass/*/*/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
 	gulp.watch('./js/*.*', ['js']).on('change', browserSync.reload);
-
-	gulp.watch('./images/*.{png,jpg,gif,jpeg,PNG,JPG,GIF,JPEG}', ['imgPress']).on('change', browserSync.reload);
 
 });
