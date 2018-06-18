@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="container-fluid site-main">
+		<section id="main" class="container-fluid site-main">
 			<div class="row row-for-main">
 				<div class="col above-fold-image">
 
@@ -33,7 +33,7 @@ get_header(); ?>
 					?>
 				</div> <!-- .above-fold-image -->
 			</div> <!-- .row-for-main -->
-		</main><!-- #main -->
+		</section><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
