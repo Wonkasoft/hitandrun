@@ -3,7 +3,6 @@
 	margin-top: 0;
 	.menu-bar {
 		margin-left: -15px;
-		width: 60%;
 		#site-navigation {
 		}
 	}
@@ -27,10 +26,12 @@
 .main-navigation {
 	clear: both;
 	display: inline-block;
+	width: 100%;
+	@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.7), webkit moz o );
 	button {
 		position: absolute;
 		top: -1.2rem;
-    margin-top: -2.2rem;
+    	margin-top: -2.2rem;
 		height: 2.2rem;
 		background: transparent;
 		border: none;
@@ -80,7 +81,6 @@
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		ul {
 			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.7), webkit moz o );
-			float: left;
 			position: relative;
 			list-style: none;
 			top: 100%;
@@ -97,6 +97,7 @@
 			}
 
 			li {
+				margin: 8px 0;
 				&:hover > ul,
 				&.focus > ul {
 					left: auto;
@@ -150,7 +151,7 @@
 		>li {
 			position: relative;
 			bottom: 0;
-			padding: 15px 0;
+			padding: 15px;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			&:nth-child(2n) {
 				background: #f6f60d;
@@ -186,7 +187,6 @@
 		@include font-size(1);
 		padding: 0.2rem 0;
 		text-transform: uppercase;
-		text-decoration: none;
 		box-sizing: border-box;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		&:after {
@@ -206,9 +206,7 @@
 	}
 
 	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
+	.current-menu-item > a {
 		&:after {
 			content: "";
 			position: absolute;

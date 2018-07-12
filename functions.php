@@ -79,6 +79,18 @@ if ( ! function_exists( 'hitandrun_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		/**
+		 * Add settings for labels on gravity forms
+		 * @since  1.0.0 
+		 */
+		add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+		// filter the Gravity Forms button type
+		add_filter( 'gform_submit_button_1', 'form_submit_button', 10, 2 );
+		function form_submit_button( $button, $form ) {
+		    return "<button class='button btn wonka-btn' id='gform_submit_button_{$form['id']}'><span>Send Message</span></button>";
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'hitandrun_setup' );
@@ -125,7 +137,7 @@ function hitandrun_scripts() {
 
 	wp_enqueue_script( 'popperjs', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', array(), 'all', true );
 
-	wp_enqueue_script( 'bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array( 'jQuery' ), 'all', true );
+	wp_enqueue_script( 'bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', array( 'jquery' ), 'all', true );
 
 	wp_enqueue_script( 'hitandrun-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
