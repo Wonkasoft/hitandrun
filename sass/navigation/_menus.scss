@@ -224,6 +224,7 @@
 	}
 	@include media-breakpoint-up( md ) {
 		width: 100%;
+		box-shadow: none;
 		> div > ul {
 			display: flex;
 			align-items: center;
