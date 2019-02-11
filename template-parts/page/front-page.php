@@ -44,32 +44,26 @@
 			<div class="content-module">
 				<div class="row row-1">
 					<div class="col">
-						<span>Sign up for <span class="bold">4</span></span>
 					</div> <!-- .col -->
 				</div> <!-- .row-1 -->
 				<div class="row row-2">
 					<div class="col">
-						<span class="bold">Team Sessions</span>
 					</div> <!-- .col -->
 				</div> <!-- .row-2 -->
 				<div class="row row-3">
 					<div class="col">
-						<span>&amp; get the <span class="bold">5th</span></span>
 					</div> <!-- .col -->
 				</div> <!-- .row-3 -->
 				<div class="row row-4">
 					<div class="col">
-						<span class="bold">Cage</span>
 					</div> <!-- .col -->
 				</div> <!-- .row-4 -->
 				<div class="row row-5">
 					<div class="col">
-						<a href="#" class="link-free"><span class="bold">Free!</span></a>
 					</div> <!-- .col -->
 				</div> <!-- .row-5 -->
 				<div class="row row-6">
 					<div class="col">
-						<!-- <a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a> -->
 					</div> <!-- .col -->
 				</div> <!-- .row-6 -->
 			</div> <!-- .content-module -->
