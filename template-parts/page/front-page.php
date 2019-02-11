@@ -96,7 +96,7 @@
 	</div> <!-- .row-for-indicators -->
 	<div class="row row-for-ticker">
 		<div class="what-happening">
-			<span class="what-happening-text">What's Happening</span>
+			<span class="what-happening-text">What's On Deck</span>
 		</div> <!-- .what-happening -->
 		<div class="ticker-info">
 			<ol class="ticker-list">
