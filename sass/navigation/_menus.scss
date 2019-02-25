@@ -3,6 +3,7 @@
 	margin-top: 0;
 	.menu-bar {
 		margin-left: -15px;
+		width: 60%;
 		#site-navigation {
 		}
 	}
@@ -26,7 +27,6 @@
 .main-navigation {
 	clear: both;
 	display: inline-block;
-	width: 50%;
 	button {
 		position: absolute;
 		top: -1.2rem;
@@ -79,12 +79,12 @@
 		background: #f8f856;
 		@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.7), webkit moz o );
 			float: left;
-			position: absolute;
+			position: relative;
 			list-style: none;
 			top: 100%;
-			left: -999em;
+			left: auto;
 			z-index: 99999;
 			background: #B2B20F;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
@@ -122,7 +122,8 @@
 			}
 
 			li {
-				padding: 0 1rem;
+				padding: 1rem 1rem;
+				@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			}
 
 			a:hover,
@@ -143,11 +144,13 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
+			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 		}
 		
 		>li {
 			position: relative;
 			bottom: 0;
+			padding: 15px 0;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			&:nth-child(2n) {
 				background: #f6f60d;
@@ -167,6 +170,7 @@
 			}
 			>a {
 				margin-left: 15px;
+				@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
 			}
 		}
 
@@ -180,6 +184,7 @@
 		font-family: $font__Arvo;
 		font-weight: 800;
 		@include font-size(1);
+		padding: 0.2rem 0;
 		text-transform: uppercase;
 		text-decoration: none;
 		box-sizing: border-box;
@@ -193,6 +198,10 @@
 			width: 100%;
 			background: #000;
 			@include prefix( transition, all 0.2s ease-in-out, webkit moz o);
+		}
+		@media only screen and ( min-width: 576px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+		(min-resolution: 192dpi) and ( min-width: 576px ) {
+			padding: 0.2rem 0;
 		}
 	}
 
@@ -226,11 +235,16 @@
 			overflow: visible;
 			background: none;
 			> li {
+				padding: 0;
 				&:nth-child(2n) {
 					background: transparent;
 				}
 				&:hover > a,
 				&.focus > a {
+				}
+				ul {
+					position: absolute;
+					left: -999em;
 				}
 				li {
 					padding: 0 1rem;
@@ -243,7 +257,11 @@
 			font-family: $font__main;
 			@include font-size(.9);
 			font-style: italic;
-			padding: .1rem 0;
+			padding: 0.5rem 0;
+			@media only screen and ( min-width: 768px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+			(min-resolution: 192dpi) and ( min-width: 768px ) {
+				padding: 0.5rem 0;
+			}
 		}
 	}
 	@include media-breakpoint-up( lg ) {
@@ -254,7 +272,11 @@
 		}
 		a {
 			@include font-size(1.2);
-			padding: 0.04rem 0;
+			padding: 0.3rem 0;
+			@media only screen and ( min-width: 992px ) and ( -webkit-min-device-pixel-ratio: 2 ),
+			(min-resolution: 192dpi) and ( min-width: 992px ) {
+				padding: 0.3rem 0;
+			}
 		}
 	}
 	@include media-breakpoint-up( xl ) {
@@ -305,11 +327,13 @@
 .search-col {
 	position: absolute;
 	display: flex;
+	width:50%;
+	right: 0;
 	justify-content: flex-end;
 	@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 	.search-form {
 		display: flex;
-		width: 60%;
+		width: 100%;
 		justify-content: flex-end;
 		@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
 		label {
@@ -353,7 +377,7 @@
 	}
 	@include media-breakpoint-up( sm ) {
 		.search-form {
-			width: 80%;
+			width: 100%;
 			label {
 				i {
 					top: -3.5rem;

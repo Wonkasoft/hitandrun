@@ -34,17 +34,13 @@
 			<a href="#" class="hit-trax-info">
 				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-fluid" />
 			</a>
-			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block">
-				<button class="wonka-btn">
-					Book a Hitting Session with Our Advanced Batting Technology!
-				</button></a>
-				<a href="#" class="hit-trax-booking-btn d-inline-block d-md-none">
-				<button class="wonka-btn">
-					Book with what the Pros Use!
-				</button></a>
+			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block wonka-btn">
+					Book a Hitting Session with Our Advanced Batting Technology!</a>
+				<a href="#" class="hit-trax-booking-btn d-inline-block d-md-none wonka-btn">
+					Book with what the Pros Use!</a>
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
-		<div class="col-sm col-md-11 content-area content-area-3">
+		<div class="col-sm col-md-12 content-area content-area-3">
 			<div class="content-module">
 				<div class="row row-1">
 					<div class="col">
@@ -55,41 +51,41 @@
 					<div class="col">
 						<span class="bold">Team Sessions</span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-2 -->
 				<div class="row row-3">
 					<div class="col">
 						<span>&amp; get the <span class="bold">5th</span></span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-3 -->
 				<div class="row row-4">
 					<div class="col">
-						<span class="bold">Session</span>
+						<span class="bold">Cage</span>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-4 -->
 				<div class="row row-5">
 					<div class="col">
 						<a href="#" class="link-free"><span class="bold">Free!</span></a>
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-5 -->
 				<div class="row row-6">
 					<div class="col">
-						<a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a>
+						<!-- <a href="#" class="link-free link-free-learn"><span class="bold learn-more">Learn More >></span></a> -->
 					</div> <!-- .col -->
-				</div> <!-- .row-1 -->
+				</div> <!-- .row-6 -->
 			</div> <!-- .content-module -->
 		</div> <!-- .col-offset-1 -->
 		<div class="col-sm col-md-10 col-xl-8 content-area content-area-4">
 			<div class="content-module">
 				<h2 class="train-title bold">We Train Winners.</h2>
 				<p>
-					Speed, Agility and Strength Training- Train with qualified trainers with
-					Baseball/Softball backgrounds- We use ladders, hurdles, medicine balls,
+					Speed, Agility and Strength Training - Train with qualified trainers with
+					Baseball/Softball backgrounds - We use ladders, hurdles, medicine balls,
 					jump ropes. To enhance ones lateral movement, explosiveness, stamina
 					and work ethic. Best place to come Hit then Run. Open to the public,
 					reservations are not required but are strongly recommended. Especially
-					during peak hours 5-8pm.Be alet that hours may vary on seasons with
+					during peak hours 5-8pm. Be alert that hours may vary during seasons
 				</p>
-				<a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a>
+				<!-- <a href="#" class="train-winners-link"><span class="learn-more bold">Learn More>></span></a> -->
 			</div> <!-- .content-module -->
 		</div> <!-- .content-area-4 -->
 	</div> <!-- .row-for-content -->

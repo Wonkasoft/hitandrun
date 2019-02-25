@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="site" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;background-position: center center;background-repeat: no-repeat;">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hitandrun' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -41,7 +41,7 @@
 			endif; ?>
 			<div class="score-board d-none d-lg-flex">
 				<span class="score score-left">0</span>
-				<span class="score score-sep"> - </span>
+				<span class="score score-sep">-</span>
 				<span class="score score-right">0</span>
 			</div> <!-- .score-board -->
 			<div class="bottom-first d-none d-lg-flex">
@@ -58,7 +58,7 @@
 		</div> <!-- .row -->
 		<div class="row row-number">
 			<div class="col">
-				<i class="fa fa-volume-control-phone"></i> <i class="fa fa-commenting-o"></i> <span class="hr-number">909-390-1300</span>
+				<a href="tel:9093901300"><i class="fa fa-volume-control-phone"></i></a> <a href="/contact"><i class="fa fa-commenting-o"></i></a> <span class="hr-number"><a href="tel:9093901300">909-390-1300</a></span>
 			</div> <!-- .col -->
 		</div> <!-- .row -->
 	</div> <!-- .col-4 -->
@@ -84,4 +84,5 @@
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	</div> <!-- .row-w-nav -->
+</div> <!-- .container-fluid -->
 	</header><!-- #masthead -->

@@ -2,6 +2,7 @@ body.search {
 	background: url('./assets/img/search.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 	section#primary {
 		position: relative;
 		width: 100%;
@@ -12,6 +13,7 @@ body.search {
 			justify-content: center;
 			.content-module {
 				background: rgba(#000, 0.7);
+				border: 1px solid rgba(#EE2D27, 0.5);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
 				.search-form {
 					i {
@@ -26,6 +28,7 @@ body.search {
 			justify-content: center;
 			.sidebar-module {
 				background: rgba(#000, 0.7);
+				border: 1px solid rgba(#EE2D27, 0.5);
 				@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
 				.search-form {
 					i {
@@ -61,6 +64,7 @@ body.error404 {
 	background: url('./assets/img/error404.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 	div#primary {
 		position: relative;
 		width: 100%;
@@ -114,6 +118,68 @@ body.error404 {
 	@include media-breakpoint-up( xl ) {
 		div#primary {
 			padding: 184px 15px 88px;
+		}
+	}
+}
+
+body.pricing {
+	#primary {
+		#main {
+			.content-module {
+				background: none;
+				box-shadow: none;
+				table.table {
+					font-family: $font__Arvo;
+					text-align: center;
+					background: rgba(#000, 0.7);
+					@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.9), webkit moz o );
+					h2 {
+						padding: 0;
+						margin: 0;
+					}
+					th, td {
+						vertical-align: middle;
+						border: 2px solid rgba(#fff, 0.8);
+					}
+					td {
+						font-family: $font__main;
+					}
+					tbody {
+						th, td {
+							width: 33.3%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+body.contact {
+	form#wpforms-form-118 {
+		button.wonka-btn {
+			font-family: $font__main;
+			@include font-size(1);
+			font-style: italic;
+			font-weight: 700;
+			color: #fff;
+			padding: 4px 1rem;
+			border: 1px solid #fff;
+			background: linear-gradient(180deg, #EE2D27 20%, #771714 70%);
+			@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.8), webkit moz o);
+			@include prefix( text-shadow, 0 0 0 rgba(#000, 0), webkit moz o);
+			&:hover {
+				border-color: #f2ff99;
+				color: #f2ff44;
+				@include prefix( text-shadow, 1px 1px 2px rgba(#000, 1), webkit moz o);
+			}
+			@include media-breakpoint-up( sm ) {
+				@include font-size(1.2);
+			}
+			@include media-breakpoint-up( md ) {
+				@include font-size(1.4);
+			}
 		}
 	}
 }

@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="container-fluid site-main">
 			<div class="row row-for-main">
-				<div class="col above-fold-image" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;">
+				<div class="col above-fold-image">
 
 					<?php
 					while ( have_posts() ) : the_post();

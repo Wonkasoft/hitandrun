@@ -20,7 +20,9 @@ plumberErrorHandler = { errorHandler: notify.onError({
 
 	title: 'Gulp',
 
-	message: 'Error: <%= error.message %>'
+	message: 'Error: <%= error.message %>',
+
+	line: 'Line: <%= line %>'
 
 })
 
@@ -46,7 +48,6 @@ gulp.task('init', function() {
 gulp.task('browser-sync', function() {
 	browserSync.init({
 		proxy: 'localhost/' + siteName,
-		port: 80
 	});
 });
 
@@ -102,7 +103,7 @@ gulp.task('js', function () {
 
 	.pipe(jshint())
 
-	.pipe(jshint.reporter('fail'))
+	.pipe(jshint.reporter('default'))
 
 	.pipe(jsmin())
 
@@ -141,9 +142,9 @@ gulp.task('watch', function() {
 	gulp.watch('./sass/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
 	gulp.watch('./sass/*/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
+	
+	gulp.watch('./sass/*/*/*/*.scss', ['sass', 'sass2']).on('change', browserSync.reload);
 
 	gulp.watch('./js/*.*', ['js']).on('change', browserSync.reload);
-
-	gulp.watch('./images/*.{png,jpg,gif,jpeg,PNG,JPG,GIF,JPEG}', ['imgPress']).on('change', browserSync.reload);
 
 });

@@ -16,6 +16,10 @@ function hitandrun_body_classes( $classes ) {
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
 	}
+	// adds title to body classes
+	if ( is_singular() ) {
+		$classes[] = strtolower(get_the_title());
+	}
 
 	return $classes;
 }
