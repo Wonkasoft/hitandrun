@@ -1,5 +1,6 @@
-.phpintel
 package-lock.json
+package.json
+gulpfile.js
 .sass-cache
 node_modules
 npm-debug.log

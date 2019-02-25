@@ -1,0 +1,1167 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"canvas",
+				"canvas_data"
+			],
+			[
+				"user_",
+				"user_name"
+			],
+			[
+				"get_cla",
+				"get_class_methods"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"fill",
+				"fillable"
+			],
+			[
+				"White",
+				"WhiteboardRoom"
+			],
+			[
+				"room",
+				"room_id"
+			],
+			[
+				"whiteboard",
+				"whiteboardrooms"
+			],
+			[
+				"line",
+				"line_data\t(DrawingPosted.php)"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"lin",
+				"line_data\t(DrawingPosted.php)"
+			],
+			[
+				"draw",
+				"drawingcor"
+			],
+			[
+				"Draw",
+				"DrawingPosted"
+			],
+			[
+				"axios",
+				"axios.post('/whiteboard-rooms"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"drop",
+				"dropdown-item\t(main-nav.blade.php)"
+			],
+			[
+				"app",
+				"app\t(header.blade.php)"
+			],
+			[
+				"container",
+				"container-fluid\t(app.blade.php)"
+			],
+			[
+				"ob",
+				"object\t(RoomCreated.php)"
+			],
+			[
+				"peop",
+				"peopleInRoom"
+			],
+			[
+				"pe",
+				"penSize"
+			],
+			[
+				"laser",
+				"laserOn"
+			],
+			[
+				"comm",
+				"comm\tComment - Single-line block comment"
+			],
+			[
+				"com",
+				"comm\tComment - Single-line block comment"
+			],
+			[
+				"white",
+				"whiteboardrooms"
+			],
+			[
+				"roo",
+				"room_id"
+			],
+			[
+				"socket",
+				"socket_id\t(WhiteBoard.vue)"
+			],
+			[
+				"im",
+				"implements\t(UsersRooms.php)"
+			],
+			[
+				"pages",
+				"pages.whiteboard\t(PagesController.php)"
+			],
+			[
+				"reque",
+				"request"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"JSON",
+				"JSON.stringify"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"request",
+				"request()=>get"
+			],
+			[
+				"getM",
+				"getUserMedia"
+			],
+			[
+				"range",
+				"range-slider-container\t(ToolSet.vue)"
+			],
+			[
+				"pen",
+				"pen-size"
+			],
+			[
+				"border",
+				"border-box\tbox-sizing"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"cons",
+				"console\t(bootstrap.js)"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"div",
+				"div\t(WhiteBoard.vue)"
+			],
+			[
+				"tem",
+				"template\t(WhiteBoard.vue)"
+			],
+			[
+				"attr",
+				"attributes\t(User.php)"
+			],
+			[
+				"authen",
+				"authenticated\t(channels.php)"
+			],
+			[
+				"broa",
+				"broadcastWith\t(RoomCreated.php)"
+			],
+			[
+				"Ev",
+				"Events\t(RoomCreated.php)"
+			],
+			[
+				"pu",
+				"public\t(RoomCreated.php)"
+			],
+			[
+				"func",
+				"func_get_arg"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"Whi",
+				"WhiteBoard.vue\t(app.js)"
+			],
+			[
+				"impo",
+				"import\t(bootstrap.js)"
+			],
+			[
+				"Room",
+				"RoomCreated\t(bootstrap.js)"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"unset",
+				"unset_key"
+			],
+			[
+				"members",
+				"members_template"
+			],
+			[
+				"leader",
+				"leader_id\t(bp-follow-templatetags.php)"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"bp_di",
+				"bp_displayed_user_id"
+			],
+			[
+				"just",
+				"justify-content"
+			],
+			[
+				"repla",
+				"str_replace"
+			],
+			[
+				"curren",
+				"current_user"
+			],
+			[
+				"user_meta",
+				"user_meta_fields"
+			],
+			[
+				"id",
+				"id_list"
+			],
+			[
+				"enco",
+				"encodedUri"
+			],
+			[
+				"da",
+				"dataDirectory"
+			],
+			[
+				"res",
+				"resolveLocalFileSystemURL"
+			],
+			[
+				"sto",
+				"storageLocation"
+			],
+			[
+				"admin_",
+				"admin_btn_link"
+			],
+			[
+				"prevent",
+				"preventDefault"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"error",
+				"errorCallback"
+			],
+			[
+				"table",
+				"table_content"
+			],
+			[
+				"string",
+				"stringify"
+			],
+			[
+				"data",
+				"data_appended"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"consol",
+				"console.log"
+			],
+			[
+				"crea",
+				"createWriter"
+			],
+			[
+				"create",
+				"createDirectory"
+			],
+			[
+				"fileEntry",
+				"fileEntry.fullPath"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"ap",
+				"alphabetical\t(class-bp-user-query.php)"
+			],
+			[
+				"memb",
+				"members_args"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mem",
+				"members_q"
+			],
+			[
+				"cusor",
+				"cursor"
+			],
+			[
+				"apply",
+				"apply_filters"
+			],
+			[
+				"ac",
+				"activity"
+			],
+			[
+				"note",
+				"note_data"
+			],
+			[
+				"order",
+				"order_data"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"or",
+				"order_data"
+			],
+			[
+				"cat",
+				"cat"
+			],
+			[
+				"my",
+				"my_query"
+			],
+			[
+				"post",
+				"postids"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"WPAlchemy_Met",
+				"WPAlchemy_MetaBox_loop"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"AUTO_BFS",
+				"AUTO_BFS_BASEURI\t(settings.php)"
+			],
+			[
+				"au",
+				"authenticate.php"
+			],
+			[
+				"AUTO",
+				"AUTO_BFS_BASEDIR\t(settings.php)"
+			],
+			[
+				"AUT",
+				"AUTO_BFS_BASEURI"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"profile",
+				"profile_link"
+			],
+			[
+				"member",
+				"member_search"
+			],
+			[
+				"bp_displ",
+				"bp_displayed_user_id\t(bp-activity-template.php)"
+			],
+			[
+				"pr",
+				"profile_menu"
+			],
+			[
+				"defa",
+				"defaultValue"
+			],
+			[
+				"size",
+				"size_class"
+			],
+			[
+				"gravity",
+				"gravityforms"
+			],
+			[
+				"field",
+				"field_filters"
+			],
+			[
+				"rem",
+				"remove_obj"
+			],
+			[
+				"remove",
+				"remove_obj"
+			],
+			[
+				"remo",
+				"remove_key"
+			],
+			[
+				"cha",
+				"charitize\t(style.css)"
+			],
+			[
+				"get_stylesheet",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"comm-",
+				"comm-block\tComment - Block style comment"
+			],
+			[
+				"jsu",
+				"justify-content"
+			],
+			[
+				"entr",
+				"entry-wrap"
+			],
+			[
+				"inl",
+				"inline-flex"
+			],
+			[
+				"box",
+				"box-shadow"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"file": "/C/Program Files/Git/hitandrunbattingcages.com",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"vue",
+				"Snippet: Vue component"
+			],
+			[
+				"Snippet: wra",
+				"Snippet: Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"Snippet: print",
+				"Snippet: Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"Snippet: echo",
+				"Snippet: echo \"…\""
+			],
+			[
+				"Snippet: ",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bea",
+				"SassBeautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Snippet: if",
+				"Snippet: if …"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"com",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 178.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/footer 2.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/footer 3.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 3.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-config 2.php",
+		"/C/xampp/htdocs/keepcalmhomebuyers.com/wp-content/themes/keepcalm-homebuyers/keepcalmhomebuyers.com",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/footer.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 2.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/header.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 4.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/content-page.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/functions 2.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/archive-product.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/js_composer.css",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/js_composer_backend_editor.css",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 21.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 23.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/web.config",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 22.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 16.php",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/footer.php",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/plugins/ultimate-social-deux/ultimate-social-deux.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 18.php",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/plugins/ultimate-social-deux/config.codekit",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/plugins/ultimate-social-deux/index.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/fue.log",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 6.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/page.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/my-account-returns.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/1header.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/C/xampp/htdocs/rockstarconnect.com/wp-config.php",
+		"/C/xampp/htdocs/rockstarconnect.com/wp-content/themes/x-child/functions.php",
+		"/C/xampp/htdocs/rockstarconnect.com/wp-content/themes/x-child/inc/class-bp-custom-members-widget.php",
+		"/C/xampp/htdocs/rockstarconnect.com/wp-content/themes/x-child/sass/style.scss",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/admin-header.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/admin-footer.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/admin-post.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 10.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/php-errors.log",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/top-cart.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/1top-cart.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 20.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 7.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 12.php",
+		"/C/xampp/htdocs/rockstarconnect.com/wp-content/themes/x-child/gulpfile.js",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 13.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 14.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 8.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/xmlrpc.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 5.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 9.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.user.ini",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index - Copy.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/add-woocommerce-features.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/add-engraving-notes.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/add-assembly-products.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-settings.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 11.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-blog-header.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/auth.php",
+		"/C/xampp/htdocs/bestfriendservices.com/scwoo/install/index.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-load.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/getjob.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 15.php",
+		"/C/xampp/htdocs/blackownedus.com/wp-settings.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/joblog.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/class-mc-widget-recent-posts.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/0-worker.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 19.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-comments-post.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wordfence-waf.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/index 17.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-links-opml.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/cron.php",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/functions.php",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/sass/woocommerce.scss",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/cart.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/dtoken.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/addon-start.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/class-wc-product-addons-cart.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/admin.js",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/sass/style.scss",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/gulpfile.js",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/package.json",
+		"/C/xampp/htdocs/hitandrunbattingcages.com/wp-content/themes/hitandrun/gulpfile.js",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 23",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/themes/bestfriend/woocommerce/checkout/review-order.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/custom.js",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/block.js",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/image-regenerate-select-crop.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/debug.log",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/OAuth1Client.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/class-ultimate-social-deux-buttons.php",
+		"/C/xampp/htdocs/bestfriendservices.com/scwoo/index.php",
+		"/C/xampp/htdocs/bestfriendservices.com/scwoo/import/index.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/error_log 2",
+		"/C/xampp/htdocs/bestfriendservices.com/wp-content/plugins/hyperdb/db.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/readme.txt",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 22",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 21",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 20",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 19",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 18",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 17",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 16",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 15",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 14",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 5",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 9",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 2",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 13",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 12",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 11",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 10",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 8",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 7",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/db.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/wp-cron.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 3",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 4",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/readme 2.txt",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/db-config 2.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/db-config.php",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/.htaccess 6",
+		"/C/Users/Rudy/AppData/Local/Temp/fz3temp-2/worker.json"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 125.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Program Files/Git/hitandrunbattingcages.com",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 75,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "server.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"page",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"web",
+				"routes\\web.php"
+			],
+			[
+				"RoomCr",
+				"app\\Events\\RoomCreated.php"
+			],
+			[
+				"room",
+				"app\\Http\\Controllers\\RoomsController.php"
+			],
+			[
+				"main-na",
+				"resources\\views\\layouts\\main-nav.blade.php"
+			],
+			[
+				"Room",
+				"app\\Http\\Controllers\\RoomsController.php"
+			],
+			[
+				"dashboa",
+				"resources\\views\\pages\\dashboard.blade.php"
+			],
+			[
+				"pages",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"File.php",
+				"vendor\\phpunit\\phpunit\\src\\Framework\\Constraint\\FileExists.php"
+			],
+			[
+				"Redis",
+				"node_modules\\redis-server\\RedisServer.js"
+			],
+			[
+				"interacts",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\InteractsWithSockets.php"
+			],
+			[
+				"channe",
+				"routes\\channels.php"
+			],
+			[
+				"app",
+				"resources\\assets\\js\\app.js"
+			],
+			[
+				"chann",
+				"routes\\channels.php"
+			],
+			[
+				"RoomCrea",
+				"app\\Events\\RoomCreated.php"
+			],
+			[
+				"scripts",
+				"resources\\views\\scripts\\scripts.blade.php"
+			],
+			[
+				"boot",
+				"resources\\assets\\js\\bootstrap.js"
+			],
+			[
+				"Factor",
+				"vendor\\phpunit\\php-file-iterator\\src\\Factory.php"
+			],
+			[
+				"Auth.php",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Auth.php"
+			],
+			[
+				"Request",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Request.php"
+			],
+			[
+				"home",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"whiteboardS",
+				"resources\\assets\\js\\components\\WhiteboardSelection.vue"
+			],
+			[
+				"laravel-mix",
+				"node_modules\\laravel-mix\\readme.md"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"boostra",
+				"resources\\assets\\js\\bootstrap.js"
+			],
+			[
+				"app.js",
+				"resources\\assets\\js\\app.js"
+			],
+			[
+				"Pages",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
+			[
+				"find",
+				"htdocs\\neoboard\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Testing\\Constraints\\HasInDatabase.php"
+			],
+			[
+				"Notifiable",
+				"htdocs\\neoboard\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Notifiable.php"
+			],
+			[
+				"User.php",
+				"htdocs\\neoboard\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\User.php"
+			],
+			[
+				"Web.php",
+				"htdocs\\neoboard\\routes\\web.php"
+			],
+			[
+				"rout",
+				"htdocs\\laravel\\app\\Http\\routes.php"
+			],
+			[
+				"web.php",
+				"htdocs\\neoboard\\routes\\web.php"
+			],
+			[
+				"privateCh",
+				"htdocs\\neoboard\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PrivateChannel.php"
+			],
+			[
+				"privatechan",
+				"htdocs\\neoboard\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\PrivateChannel.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$(DESTDIR)$(PREFIX)/include/%.h:"
+			]
+		],
+		"width": 508.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 327.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
