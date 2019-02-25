@@ -30,10 +30,8 @@ $duration: 30s;
 	display: block;
 }
 
-#page {
-	position: relative;
-	min-height: 100%;
-	@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+body {
+	background: #343333;
 }
 
 #masthead {
@@ -753,6 +751,11 @@ $duration: 30s;
 }
 
 #page {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	@include prefix( transition, all 0.3s ease-in-out, webkit moz o );
+
 	> footer {
 		position: absolute;
 		display: flex;
