@@ -13,6 +13,7 @@ table.shop_table_responsive {
 	}
 
 	tr {
+		padding: 8px;
 		td {
 			display: block;
 			text-align: right;
@@ -50,7 +51,8 @@ table.shop_table_responsive {
 			&.product-quantity {
 
 				.quantity {
-					width: 75px;
+					margin: auto;
+					width: 50px;
 				}
 			}
 		}
