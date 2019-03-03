@@ -244,20 +244,34 @@ p.no-comments {
 		margin-top: 199px;
 		padding: 15px;
 		width: 100%;
-	}
 
-	#secondary {
-		width: 100%;
-	}
+		#main {
+			width: 100%;
 
-	@include media-breakpoint-up( md ) {
-		#primary {
-			width: 70%;
+			.columns-3 {
+				margin-top: 15px;
+			}
 		}
 
 		#secondary {
-			width: 29%;
+			width: 100%;
 		}
+	}
+
+
+	@include media-breakpoint-up( md ) {
+		#primary {
+			width: 100%;
+			
+			#main {
+
+			}
+
+			#secondary {
+				width: 29%;
+			}
+		}
+
 	}
 }
 
