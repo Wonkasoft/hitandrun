@@ -355,6 +355,51 @@ button, a {
 			}
 		}
 	}
+
+	#primary {
+		margin-top: 199px;
+		padding: 15px 15px 65px;
+		width: 100%;
+
+		#main {
+			width: 100%;
+
+			.columns-3 {
+				margin-top: 25px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				flex: .5 .5 50%;
+
+				.page-numbers {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+
+		#secondary {
+			width: 100%;
+		}
+	}
+
+
+	@include media-breakpoint-up( md ) {
+		#primary {
+			width: 100%;
+			
+			#main {
+
+			}
+
+			#secondary {
+				width: 29%;
+			}
+		}
+
+	}
 }
 
 @media screen and (min-width: 48em) {
