@@ -92,10 +92,16 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'hitandrun_woocommerce_thu
 
 /**
  * Function to return new placeholder image URL.
+ * Get the logo from the customizer
+ * 
+ * @since 1.0.1
  */
 function growdev_custom_woocommerce_placeholder( $image_url ) {
+	// Get the custom logo id
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
+  	// Get the custom logo url
   	$image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );  // change this to the URL to your custom placeholder
+  	// Return the logo's url for the placeholder
   	return $image_url;
 }
 add_filter( 'woocommerce_placeholder_img_src', 'growdev_custom_woocommerce_placeholder', 10 );
