@@ -48,7 +48,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			    <label class="form-check-label" for="rememberme"><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></label>
 			  </div>
 			  <?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-			  <button type="submit" class="btn btn-primary" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+			  <button type="submit" class="btn btn-primary" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 			  <div class="form-check">
 			  	<a class="form-check-input" href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
 			  </div>
