@@ -282,7 +282,14 @@ button, a {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				flex-wrap: wrap;
 				flex: .5 .5 50%;
+
+				.page-numbers {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
 			}
 		}
 
@@ -339,6 +346,13 @@ button, a {
 
 		.cart_item {
 			padding: 8px;
+		}
+
+		.woocommerce-billing-fields__field-wrapper {
+
+			label {
+				width: 100%;
+			}
 		}
 	}
 }
