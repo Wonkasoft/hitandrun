@@ -754,10 +754,25 @@ body {
 	
 	.woocommerce {
 		background: rgba( 0, 0, 0, .7);
-		min-width: 50%;
+		min-width: 70%;
 		padding: 30px;
 		border-radius: 8px;
 		border: 1px solid rgba( 255, 255, 255, .4);
+	}
+}
+
+.archive {
+
+	#primary {
+		margin-top: 199px;
+	}
+}
+
+.woocommerce {
+
+	.wp-post-image {
+		max-width: 125px;
+		padding: 0 15px;
 	}
 }
 
