@@ -369,10 +369,8 @@ p.no-comments {
 					}
 				}
 
-				.page-numbers {
-					display: flex;
-					align-items: center;
-					justify-content: center;
+				.page-link:visited {
+					color: #007bff;
 				}
 			}
 		}

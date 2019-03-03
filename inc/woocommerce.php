@@ -326,3 +326,61 @@ function get_company_info() {
 }
 
 add_action( 'woocommerce_before_checkout_form', 'the_company_information', 5 );
+
+// define the woocommerce_pagination_args callback 
+function filter_woocommerce_pagination_args( ) { 
+	global $wp_query;
+
+	$array = apply_filters( 'woocommerce_pagination_args', array( 
+          'base' => esc_url_raw( str_replace( 999999999, '%#%', remove_query_arg( 'add-to-cart', get_pagenum_link( 999999999, false ) ) ) ),  
+          'format' => '',  
+          'add_args' => false,  
+          'current' => max( 1, get_query_var( 'paged' ) ),  
+          'total' => $wp_query->max_num_pages,  
+          'prev_text' => '←',  
+          'next_text' => '→',  
+          'type' => 'list',  
+          'end_size' => 3,  
+          'mid_size' => 3,  
+ 	) );
+	$link = '';
+	$output = '';
+	$output .=	'<nav aria-label="Page navigation example">';
+	$output .=	'<ul class="pagination justify-content-center">';
+	if ( $array['current'] === 1 ) :
+		$output .=	'<li class="page-item disabled">';
+		$output .=	'<a class="page-link" href="#" tabindex="-1">Previous</a>';
+		$output .=	'</li>';
+	else:
+		$link = esc_url_raw( str_replace( '%#%', $array['current']-1, $array['base'] ) );
+		$output .=	'<li class="page-item">';
+		$output .=	'<a class="page-link" href="' . $link . '" tabindex="-1">Previous</a>';
+		$output .=	'</li>';
+	endif;
+	for ($i=1; $i <= $array['total']; $i++) { 
+		$link = esc_url_raw( str_replace( '%#%', $i, $array['base'] ) );
+		if ( $i === $array['current'] ) :
+			$output .=	'<li class="page-item active"><a class="page-link" href="' . $link . '">' . $i . '</a></li>';
+		else:
+			$output .=	'<li class="page-item"><a class="page-link" href="' . $link . '">' . $i . '</a></li>';
+		endif;
+	}
+	if ( $array['current'] === $array['total'] ) :
+		$output .=	'<li class="page-item disabled">';
+		$output .=	'<a class="page-link" href="#">Next</a>';
+		$output .=	'</li>';
+	else:
+		$link = esc_url_raw( str_replace( '%#%', $array['current']+1, $array['base'] ) );
+		$output .=	'<li class="page-item">';
+		$output .=	'<a class="page-link" href="' . $link . '">Next</a>';
+		$output .=	'</li>';
+	endif;
+	$output .=	'</ul>';
+	$output .=	'</nav>';
+
+    echo $output; 
+}; 
+// add the filter 
+add_filter( 'woocommerce_after_shop_loop', 'filter_woocommerce_pagination_args', 5 ); 
+// remove the filter 
+remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );     
