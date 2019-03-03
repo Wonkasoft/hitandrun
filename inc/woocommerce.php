@@ -91,6 +91,22 @@ function hitandrun_woocommerce_thumbnail_columns() {
 add_filter( 'woocommerce_product_thumbnails_columns', 'hitandrun_woocommerce_thumbnail_columns' );
 
 /**
+ * Function to return new placeholder image URL.
+ * Get the logo from the customizer
+ * 
+ * @since 1.0.1
+ */
+function growdev_custom_woocommerce_placeholder( $image_url ) {
+	// Get the custom logo id
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
+  	// Get the custom logo url
+  	$image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );  // change this to the URL to your custom placeholder
+  	// Return the logo's url for the placeholder
+  	return $image_url;
+}
+add_filter( 'woocommerce_placeholder_img_src', 'growdev_custom_woocommerce_placeholder', 10 );
+
+/**
  * Default loop columns on product archives.
  *
  * @return integer products per row.
@@ -262,3 +278,51 @@ if ( ! function_exists( 'hitandrun_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+/**
+ * Echo out the company information on the checkout page
+ * 
+ * @since 1.0.1
+ * @return void
+ */
+function the_company_information() {
+	echo get_company_info();
+}
+
+/**
+ * Gets the company information.
+ *
+ * @since 1.0.1
+ * @return     string  The company information.
+ */
+function get_company_info() {
+	// The store name
+	$store_name = get_bloginfo();
+	// The main address pieces:
+	$store_address     = get_option( 'woocommerce_store_address' );
+	$store_address_2   = get_option( 'woocommerce_store_address_2' );
+	$store_city        = get_option( 'woocommerce_store_city' );
+	$store_postcode    = get_option( 'woocommerce_store_postcode' );
+
+	// The country/state
+	$store_raw_country = get_option( 'woocommerce_default_country' );
+
+	// Split the country/state
+	$split_country = explode( ":", $store_raw_country );
+
+	// Country and state separated:
+	$store_country = $split_country[0];
+	$store_state   = $split_country[1];
+
+	// Loading up the output variable to return on the screen with html elements
+	$output = '<h3 class="store-name">' . $store_name . '</h3>';
+	$output .= '<ul class="company-information">';
+	$output .= '<li class="store-address">' . $store_address . '</li>';
+	$output .= ( $store_address_2 ) ? '<li class="store-address-2">' . $store_address_2 . '</li>' : '';
+	$output .= '<li class="city-state-postcode">' . $store_city . ', ' . $store_state . ' ' . $store_postcode . '</li>';
+	$output .= '<li class="country">' . $store_country . '</li>';
+	$output .= '</ul>';
+	return $output;
+}
+
+add_action( 'woocommerce_before_checkout_form', 'the_company_information', 5 );
