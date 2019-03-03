@@ -369,8 +369,23 @@ p.no-comments {
 					}
 				}
 
-				.page-link:visited {
-					color: #007bff;
+				.page-item {
+
+					.page-link {
+
+						&:visited {
+							color: #007bff;
+						}
+					}
+
+					&.active {
+						.page-link {
+
+							&:visited {
+								color: #ffffff;
+							}
+						}						
+					}
 				}
 			}
 		}
