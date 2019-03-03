@@ -347,7 +347,7 @@ function filter_woocommerce_pagination_args( ) {
 	$output = '';
 	$output .=	'<nav aria-label="Page navigation example">';
 	$output .=	'<ul class="pagination justify-content-center">';
-	if ( $array['current'] === 1 ) :
+	if ( $array['current'] == 1 ) :
 		$output .=	'<li class="page-item disabled">';
 		$output .=	'<a class="page-link" href="#" tabindex="-1">Previous</a>';
 		$output .=	'</li>';
@@ -365,7 +365,7 @@ function filter_woocommerce_pagination_args( ) {
 			$output .=	'<li class="page-item"><a class="page-link" href="' . $link . '">' . $i . '</a></li>';
 		endif;
 	}
-	if ( $array['current'] === $array['total'] ) :
+	if ( $array['current'] == $array['total'] ) :
 		$output .=	'<li class="page-item disabled">';
 		$output .=	'<a class="page-link" href="#">Next</a>';
 		$output .=	'</li>';
