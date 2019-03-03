@@ -332,6 +332,7 @@ p.no-comments {
 		    color: #fff;
 		    background-color: #007bff;
 		    border-color: #007bff;
+		    @include prefix( box-shadow, 0 1px 6px 0 rgba( 0, 0, 0, .4 ), o moz webkit );
 		    @include prefix( transition, all .3s ease-in-out, o moz webkit );
 
 		    &:hover {
@@ -365,12 +366,23 @@ p.no-comments {
 			width: 100%;
 
 			.columns-3 {
-				margin-top: 25px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex-wrap: wrap;
-				flex: .5 .5 50%;
+
+				&.products {
+					margin-top: 25px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: wrap;
+					flex: .5 .5 50%;
+
+					.product {
+						padding: 15px;
+
+						img {
+							margin-bottom: 15px;
+						}
+					}
+				}
 
 				.page-numbers {
 					display: flex;
