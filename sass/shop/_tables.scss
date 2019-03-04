@@ -14,10 +14,6 @@ table.shop_table_responsive {
 
 	tr {
 		td {
-			display: block;
-			text-align: right;
-			padding: 8px;
-			clear: both;
 
 			&:before {
 				content: attr(data-title) ': ';
@@ -25,8 +21,7 @@ table.shop_table_responsive {
 			}
 
 			&.product-remove {
-				width: 55px;
-				
+
 				a {
 					text-align: left;
 				}
