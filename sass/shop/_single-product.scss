@@ -77,18 +77,26 @@
 			@include prefix( transition, all .3s ease-in-out, o moz webkit );
 		}
 
+		.woocommerce-tabs {
+			position: relative;
+			width: 100%;
+		}
+
 		@include media-breakpoint-up( md ) {
 
 			.woocommerce-product-gallery {
-				position: relative;
 				width: 69%;
 				float: left;
 			}
 
 			.entry-summary {
-				position: relative;
 				width: 29%;
 				float: right;
+			}
+
+			.woocommerce-tabs {
+				width: 69%;
+				float: left;
 			}
 		}
 	}
@@ -111,6 +119,6 @@
 .input-text {
 	
 	&.qty {
-		width: 25px;
+		width: 50px;
 	}
 }
