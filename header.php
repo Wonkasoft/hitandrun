@@ -84,7 +84,12 @@
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	<div class="col-sm cart-col">
-		<a href="<?php echo get_permalink( woocommerce_get_page_id( 'cart' ) ); ?>"><i class="fa fa-shopping-cart"><span class="badge badge-light"><?php echo WC()->cart->get_cart_contents_count(); ?></span></i></a>
+		<?php
+		// Load global to get car url
+		global $woocommerce;
+		$cart_url = $woocommerce->cart->get_cart_url();
+		?>
+		<a href="<?php echo $cart_url; ?>"><i class="fa fa-shopping-cart"><span class="badge badge-light"><?php echo WC()->cart->get_cart_contents_count(); ?></span></i></a>
 	</div> <!-- .cart-col -->
 	</div> <!-- .row-w-nav -->
 </div> <!-- .container-fluid -->
