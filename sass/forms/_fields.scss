@@ -25,7 +25,14 @@ textarea {
 }
 
 select {
+	color: $color__text-input;
+	border-radius: 3px;
+	padding: 3px;
 	border: 1px solid $color__border-input;
+
+	option {
+		color: $color__text-input;
+	}
 }
 
 textarea {
