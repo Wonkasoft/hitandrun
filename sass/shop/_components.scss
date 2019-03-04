@@ -413,6 +413,22 @@ p.no-comments {
 	}
 }
 
+.cart-collaterals {
+	width: 100%;
+	float: none;
+    @include prefix( transition, all .3s ease-in-out, o moz webkit );
+
+	.checkout-button {
+		width: 100%;
+    	@include prefix( transition, all .3s ease-in-out, o moz webkit );
+	}
+
+	@include media-breakpoint-up( md ) {
+		width: 33%;
+		float: right;
+	}
+}
+
 @media screen and (min-width: 48em) {
 	/**
 	 * Header cart
@@ -425,7 +441,7 @@ p.no-comments {
 			z-index: 999999;
 			left: -999em;
 			display: block;
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			@include prefix( box-shadow, 0 1px 6px 0 rgba( 0, 0, 0, .4 ), o moz webkit );
 		}
 
 		&:hover,
