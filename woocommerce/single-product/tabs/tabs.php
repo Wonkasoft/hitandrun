@@ -44,5 +44,6 @@ if ( ! empty( $tabs ) ) : ?>
 			</div>
 		<?php endforeach; ?>
 	</div>
+	<hr />
 
 <?php endif; ?>
