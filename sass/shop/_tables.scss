@@ -54,7 +54,7 @@ table.shop_table_responsive {
 
 					.input-text {
 
-						.qty {
+						&.qty {
 							margin: auto;
 							width: 50px;
 							
@@ -66,13 +66,16 @@ table.shop_table_responsive {
 	}
 
 	tr.cart-coupon-update {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+
+		td {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
 
 		.coupon {
 
-			.input {
+			input {
 				line-height: 1.9;
 			}
 		}
