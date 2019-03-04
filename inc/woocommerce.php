@@ -383,4 +383,10 @@ function filter_woocommerce_pagination_args( ) {
 // add the filter 
 add_filter( 'woocommerce_after_shop_loop', 'filter_woocommerce_pagination_args', 5 ); 
 // remove the filter 
-remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );     
+remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
+
+function custom_checkout_billing( $fields ) {
+	var_dump( $fields );
+}
+
+add_filter( 'woocommerce_after_checkout_billing_form', 'custom_checkout_billing', 10 );
