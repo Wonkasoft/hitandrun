@@ -142,7 +142,7 @@ if ( ! function_exists( 'hitandrun_woocommerce_product_columns_wrapper' ) ) {
 	 */
 	function hitandrun_woocommerce_product_columns_wrapper() {
 		$columns = hitandrun_woocommerce_loop_columns();
-		echo '<div class="columns-' . absint( $columns ) . '">';
+		echo '<div class="col col-' . absint( $columns ) . '">';
 	}
 }
 add_action( 'woocommerce_before_shop_loop', 'hitandrun_woocommerce_product_columns_wrapper', 40 );
