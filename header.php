@@ -84,7 +84,7 @@
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
 	<div class="col-sm cart-col">
-		<a href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><i class="fa fa-shopping-cart"><span class="badge badge-light"><?php echo WC()->cart->get_cart_contents_count(); ?></span></i></a>
+		<a href="<?php echo get_permalink( woocommerce_get_page_id( 'cart' ) ); ?>"><i class="fa fa-shopping-cart"><span class="badge badge-light"><?php echo WC()->cart->get_cart_contents_count(); ?></span></i></a>
 	</div> <!-- .cart-col -->
 	</div> <!-- .row-w-nav -->
 </div> <!-- .container-fluid -->
