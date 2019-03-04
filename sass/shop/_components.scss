@@ -413,6 +413,19 @@ p.no-comments {
 	}
 }
 
+/*=================================
+=            Cart page            =
+=================================*/
+.woocommerce {
+
+	.woocommerce-cart-form__contents {
+
+		.wp-post-image {
+			padding: 15px;
+		}
+	}
+}
+
 .cart-collaterals {
 	width: 100%;
 	float: none;
@@ -428,6 +441,9 @@ p.no-comments {
 		float: right;
 	}
 }
+/*=====  End of Cart page  ======*/
+
+
 
 @media screen and (min-width: 48em) {
 	/**
