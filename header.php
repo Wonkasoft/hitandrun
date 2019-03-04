@@ -83,7 +83,7 @@
 	<div class="col-sm search-col">
 		<?php get_search_form(); ?>
 	</div> <!-- .search-col -->
-	<div class="col-sm cart-col">
+	<div class="col-sm-1 cart-col">
 		<?php
 		// Load global to get car url
 		global $woocommerce;

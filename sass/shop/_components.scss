@@ -1,24 +1,10 @@
 /**
  * Header cart
  */
-.site-header-cart {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	@include clearfix;
-
-	.cart-contents {
-		text-decoration: none;
-	}
-
-	.widget_shopping_cart {
-		display: none;
-	}
-
-	.product_list_widget {
-		margin: 0;
-		padding: 0;
-	}
+.cart-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /**
