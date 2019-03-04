@@ -128,7 +128,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 			<tr class="cart-coupon-update">
 				<td colspan="6" class="actions">
-
+					<div class="action-btns">
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<div class="coupon">
 							<label for="coupon_code" class="sr-only"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> 
@@ -142,6 +142,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 
 					<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+				</div> <!-- .action-btns -->
 				</td>
 			</tr>
 

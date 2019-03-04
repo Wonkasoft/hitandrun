@@ -60,18 +60,27 @@ table.shop_table_responsive {
 				}
 			}
 
-			.coupon {
-				display: flex;
-				align-items: center;
-				justify-content: center;
+			.actions {
 
-				input {
-					line-height: 1.9;
-					border-radius: .25rem 0 0 .25rem;
-				}
+				.action-btns {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
 
-				button {
-					margin-left: -2px;
+					.coupon {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						input {
+							line-height: 1.9;
+							border-radius: .25rem 0 0 .25rem;
+						}
+
+						button {
+							margin-left: -2px;
+						}
+					}
 				}
 			}
 		}
