@@ -80,6 +80,11 @@
 		.woocommerce-tabs {
 			position: relative;
 			width: 100%;
+
+			.woocommerce-Tabs-panel {
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 
 		@include media-breakpoint-up( md ) {
