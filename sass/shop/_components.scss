@@ -309,7 +309,6 @@ p.no-comments {
 
 		span {
 			width: 100%;
-			padding: 15px;
 		}
 	}
 
@@ -354,6 +353,10 @@ p.no-comments {
 		.woocommerce-billing-fields__field-wrapper {
 
 			label {
+				width: 100%;
+			}
+
+			span {
 				width: 100%;
 			}
 		}
