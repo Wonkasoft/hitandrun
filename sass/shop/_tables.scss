@@ -59,19 +59,7 @@ table.shop_table_responsive {
 					} 
 				}
 			}
-		}
-	}
 
-	tr.cart-coupon-update {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		td {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			
 			.coupon {
 				display: flex;
 				align-items: center;
@@ -87,7 +75,6 @@ table.shop_table_responsive {
 				}
 			}
 		}
-
 	}
 }
 
