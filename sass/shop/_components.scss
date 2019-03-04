@@ -296,13 +296,11 @@ p.no-comments {
 	}
 }
 
-/*=====================================
-=            Checkout page            =
-=====================================*/
 .woocommerce-page {
 
-	#order_comments_field {
-		
+	form {
+
+			
 		label {
 			width: 100%;
 		}
@@ -315,7 +313,6 @@ p.no-comments {
 	button, a {
 
 		&.button {
-			margin-top: 15px;
 			display: inline-block;
 		    font-weight: 400;
 		    text-align: center;
@@ -418,6 +415,18 @@ p.no-comments {
 			}
 		}
 
+	}
+}
+/*=====================================
+=            Checkout page            =
+=====================================*/
+.woocommerce-page {
+
+	#payment {
+
+		button {
+			margin-top: 15px;
+		}
 	}
 }
 /*=====  End of Checkout page  ======*/

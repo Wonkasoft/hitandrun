@@ -385,8 +385,49 @@ add_filter( 'woocommerce_after_shop_loop', 'filter_woocommerce_pagination_args',
 // remove the filter 
 remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
 
+/**
+ * For setting up the parsing of the billing fields
+ * $defaults = array(
+ *	    'type'              => 'text',
+ *	    'label'             => '',
+ *	    'description'       => '',
+ *	    'placeholder'       => '',
+ *	    'maxlength'         => false,
+ *	    'required'          => false,
+ *	    'autocomplete'      => false,
+ *	    'id'                => $key,
+ *	    'class'             => array(),
+ *	    'label_class'       => array(),
+ *	    'input_class'       => array(),
+ *	    'return'            => false,
+ *	    'options'           => array(),
+ *	    'custom_attributes' => array(),
+ *	    'validate'          => array(),
+ *	    'default'           => '',
+ *	    'autofocus'         => '',
+ *	    'priority'          => '',
+ *	);
+ *	
+ * @param  array $fields Fields to set
+ * @return array         Fields to parse
+ */
 function custom_checkout_billing( $fields ) {
-	var_dump( $fields );
+	$settings_args = array(
+		'class'				=> array(
+			'form-group'
+		),
+		'label_class'       => array(
+			'form-labels'
+		),
+		'input_class'		=> array(
+			'form-control'
+		),
+	);
+	foreach ($fields as $field => $settings ) :
+		$fields[$field] = array_merge( $settings, $settings_args );
+	endforeach;
+		
+	return $fields;
 }
 
-add_filter( 'woocommerce_after_checkout_billing_form', 'custom_checkout_billing', 10 );
+add_filter( 'woocommerce_billing_fields', 'custom_checkout_billing', 10 );
