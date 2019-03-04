@@ -63,6 +63,9 @@ table.shop_table_responsive {
 	}
 
 	tr.cart-coupon-update {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		td {
 			display: flex;
@@ -72,10 +75,15 @@ table.shop_table_responsive {
 			.coupon {
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
+				justify-content: center;
 
 				input {
 					line-height: 1.9;
+					border-radius: .25rem 0 0 .25rem;
+				}
+
+				button {
+					margin-left: -2px;
 				}
 			}
 		}
