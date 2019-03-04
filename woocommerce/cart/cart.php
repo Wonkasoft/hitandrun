@@ -22,13 +22,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
-	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents table" cellspacing="0">
 		<thead>
-			<tr>
-				<th class="product-name" colspan="3"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
-				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
+			<tr scope="row">
+				<th  scope="col" class="product-name" colspan="3"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
+				<th  scope="col" class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
+				<th  scope="col" class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
+				<th  scope="col" class="product-subtotal"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,7 +44,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					?>
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-						<td class="product-remove">
+						<td scope="row" class="product-remove">
 							<?php
 								// @codingStandardsIgnoreLine
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
