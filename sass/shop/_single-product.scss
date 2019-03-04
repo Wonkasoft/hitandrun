@@ -126,7 +126,30 @@
 				flex-direction: column;
 				align-items: flex-start;
 
-
+				button {
+					font-family: $font__main;
+					@include font-size(1);
+					font-style: italic;
+					font-weight: 700;
+					color: #fff;
+					padding: 4px 1rem;
+					border: 1px solid #fff;
+					background: linear-gradient(180deg, #EE2D27 20%, #771714 70%);
+					@include prefix( transition, all 0.3s ease-in-out, webkit moz o);
+					@include prefix( box-shadow, 0 1px 6px 0 rgba(#000, 0.8), webkit moz o);
+					@include prefix( text-shadow, 0 0 0 rgba(#000, 0), webkit moz o);
+					&:hover {
+						border-color: #f2ff99;
+						color: #f2ff44;
+						@include prefix( text-shadow, 1px 1px 2px rgba(#000, 1), webkit moz o);
+					}
+					@include media-breakpoint-up( sm ) {
+						@include font-size(1.2);
+					}
+					@include media-breakpoint-up( md ) {
+						@include font-size(1.4);
+					}
+				}
 			}
 		}
 
