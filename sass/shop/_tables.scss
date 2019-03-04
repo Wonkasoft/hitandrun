@@ -25,6 +25,8 @@ table.shop_table_responsive {
 			}
 
 			&.product-remove {
+				width: 55px;
+				
 				a {
 					text-align: left;
 				}
@@ -76,7 +78,7 @@ table.shop_table_responsive {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				
+
 				input {
 					line-height: 1.9;
 				}
