@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_checkout_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					?>
 					<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-						<td  scope="row" class="product-name">
+						<td class="product-name">
 							<?php echo apply_filters( 'woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key ) . '&nbsp;'; ?>
 							<?php echo apply_filters( 'woocommerce_checkout_cart_item_quantity', ' <strong class="product-quantity">' . sprintf( '&times; %s', $cart_item['quantity'] ) . '</strong>', $cart_item, $cart_item_key ); ?>
 							<?php echo wc_get_formatted_cart_item_data( $cart_item ); ?>
@@ -53,9 +53,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_review_order_after_cart_contents' );
 		?>
 	</tbody>
-	<tfoot>
+	<tfoot scope="row">
 
-		<tr scope="row" class="cart-subtotal">
+		<tr class="cart-subtotal">
 			<th><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : ?>
 					<tr class="tax-rate tax-rate-<?php echo sanitize_title( $code ); ?>">
-						<th  scope="row"><?php echo esc_html( $tax->label ); ?></th>
+						<th><?php echo esc_html( $tax->label ); ?></th>
 						<td><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
 				<?php endforeach; ?>
