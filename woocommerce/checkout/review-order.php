@@ -55,14 +55,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</tbody>
 	<tfoot>
 
-		<tr class="cart-subtotal">
-			<th  scope="row"><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
+		<tr scope="row" class="cart-subtotal">
+			<th><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
 		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
 			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th  scope="row"><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
+				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
 				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
 			</tr>
 		<?php endforeach; ?>
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee">
-				<th  scope="row"><?php echo esc_html( $fee->name ); ?></th>
+				<th><?php echo esc_html( $fee->name ); ?></th>
 				<td><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php endforeach; ?>
 			<?php else : ?>
 				<tr class="tax-total">
-					<th  scope="row"><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
+					<th><?php echo esc_html( WC()->countries->tax_or_vat() ); ?></th>
 					<td><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 			<?php endif; ?>
@@ -103,7 +103,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<tr class="order-total">
-			<th  scope="row"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<th><?php _e( 'Total', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
 
