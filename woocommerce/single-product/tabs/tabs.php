@@ -43,7 +43,7 @@ if ( ! empty( $tabs ) ) : ?>
 				<?php if ( isset( $tab['callback'] ) ) { call_user_func( $tab['callback'], $key, $tab ); } ?>
 			</div>
 		<?php endforeach; ?>
+		<hr />
 	</div>
-	<hr />
 
 <?php endif; ?>
