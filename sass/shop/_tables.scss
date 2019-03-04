@@ -71,14 +71,18 @@ table.shop_table_responsive {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-		}
-
-		.coupon {
-
-			input {
-				line-height: 1.9;
+			
+			.coupon {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				
+				input {
+					line-height: 1.9;
+				}
 			}
 		}
+
 	}
 }
 
