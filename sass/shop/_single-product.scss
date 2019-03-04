@@ -105,9 +105,18 @@
 
 				.nav-item {
 					background: linear-gradient(180deg, #FCFC0D 20%, #B2B20F 70%);
+					border-radius: .25rem .25rem 0 0;
+					margin-right: 2px;
+					font-weight: 300;
+					@include prefix( transition, all .3s ease-in-out, o moz webkit );
 
 					.nav-link {
 						padding: 15px;
+						color: #333333;
+					}
+
+					&.active {
+						font-weight: 700;
 					}
 				}
 			}
