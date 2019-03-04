@@ -126,7 +126,7 @@
 				flex-direction: column;
 				align-items: flex-start;
 
-				button {
+				input[name=submit] {
 					font-family: $font__main;
 					@include font-size(1);
 					font-style: italic;
