@@ -430,4 +430,4 @@ function custom_checkout_billing( $fields ) {
 	return $fields;
 }
 
-add_filter( 'woocommerce_billing_fields', 'custom_checkout_billing', 10 );
+add_filter( 'woocommerce_checkout_fields', 'custom_checkout_billing', 10 );
