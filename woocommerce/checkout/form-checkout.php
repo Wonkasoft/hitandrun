@@ -38,7 +38,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<div class="col col-12" id="customer_details">
 			<div class="row">
-			<div class="col col-<?php ( $woocommerce->shipping->enabled ) ? 6: 12; ?>">
+			<div class="col col-<?php $form_size = ( $woocommerce->shipping->enabled ) ? 6: 12; echo $form_size; ?>">
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 			</div>
 			<?php if ( $woocommerce->shipping->enabled ) : ?>
