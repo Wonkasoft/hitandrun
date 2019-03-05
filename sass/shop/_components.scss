@@ -428,7 +428,11 @@ p.no-comments {
 /*=====================================
 =            Checkout page            =
 =====================================*/
-.woocommerce-page {
+.woocommerce-checkout {
+
+	.content-module {
+		width: 65%;
+	}
 
 	#payment {
 
