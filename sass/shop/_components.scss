@@ -466,6 +466,15 @@ p.no-comments {
 		}
 	}
 
+	.form-check {
+
+		label {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
 	#payment {
 
 		button {
