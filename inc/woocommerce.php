@@ -411,7 +411,7 @@ remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
  * @param  array $fields Fields to set
  * @return array         Fields to parse
  */
-function custom_checkout_billing( $fields ) {
+function custom_checkout_fields( $fields ) {
 
 	$settings_args = array(
 		'class'				=> array(
@@ -489,4 +489,4 @@ function custom_checkout_billing( $fields ) {
 	return $fields;
 }
 
-add_filter( 'woocommerce_checkout_fields', 'custom_checkout_billing', 10 );
+add_filter( 'woocommerce_checkout_fields', 'custom_checkout_fields', 10 );
