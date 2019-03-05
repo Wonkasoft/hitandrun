@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 do_action( 'woocommerce_before_checkout_form', $checkout );
+global $woocommerce;
 
 // If checkout registration is disabled and not logged in, the user cannot checkout.
 if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
@@ -36,14 +37,17 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 		<div class="col col-12" id="customer_details">
-			<div class="col col-6">
+			<div class="row">
+			<div class="col col-<?php ( $woocommerce->shipping->enabled ) ? 6: 12; ?>">
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 			</div>
-
-			<div class="col col-6">
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-			</div>
-		</div>
+			<?php if ( $woocommerce->shipping->enabled ) : ?>
+				<div class="col col-6">
+					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+				</div>
+			<?php endif; ?>
+			</div> <!-- .row -->
+		</div> <!-- #customer_details -->
 
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
