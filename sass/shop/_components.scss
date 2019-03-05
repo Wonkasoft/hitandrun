@@ -468,6 +468,7 @@ p.no-comments {
 
 	.form-check {
 		width: 100%;
+		padding-left: 1.65rem;
 
 		input {
 			margin-right: 15px;
@@ -482,6 +483,10 @@ p.no-comments {
 	}
 
 	#payment {
+
+		.woocommerce-terms-and-conditions-wrapper {
+			width: 100%;
+		}
 
 		button {
 			margin-top: 15px;
