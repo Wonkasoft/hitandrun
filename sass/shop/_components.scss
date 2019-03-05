@@ -441,24 +441,27 @@ p.no-comments {
 
 		.span-this {
 			justify-content: space-between;
-			flex-wrap: nowrap;
+			display: inline-flex;
 			margin-right: 15px;
 		}
 
 		.span-this-2 {
-			width: 16.4%;
+			width: 15.4%;
 		}
 
 		.span-this-4 {
-			width: 33.2%;
+			width: 32.2%;
 		}
 
 		.span-this-8 {
-			width: 66.3%;
+			width: 65.3%;
 		}
 
-		.select2-selection--single {
-			height: 32px;
+		.select2-container--default {
+			
+			.select2-selection--single {
+				height: 32px;
+			}
 		}
 	}
 
