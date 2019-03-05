@@ -437,6 +437,25 @@ p.no-comments {
 		}
 	}
 
+	form {
+
+		.span-this {
+			float: left;
+		}
+
+		.span-this-2 {
+			width: 16.6%;
+		}
+
+		.span-this-4 {
+			width: 33.3%;
+		}
+
+		.span-this-8 {
+			width: 66.6%;
+		}
+	}
+
 	#payment {
 
 		button {
