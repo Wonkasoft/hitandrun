@@ -451,11 +451,11 @@ p.no-comments {
 		}
 
 		.span-this-4 {
-			width: 33.2%;
+			width: 32.5%;
 		}
 
 		.span-this-8 {
-			width: 65.8%;
+			width: 65.5%;
 		}
 
 		.select2-container--default {
@@ -471,10 +471,13 @@ p.no-comments {
 		label {
 			display: flex;
 			align-items: center;
-			justify-content: flex-start;
+
+			input {
+				margin-right: 15px;
+			}
 
 			span {
-				margin-left: 15px;
+				width: unset;
 			}
 		}
 	}
