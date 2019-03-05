@@ -412,9 +412,6 @@ remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
  * @return array         Fields to parse
  */
 function custom_checkout_billing( $fields ) {
-	echo "<pre>\n";
-	print_r( $fields['billing'] );
-	echo "</pre>\n";
 	$settings_args = array(
 		'class'				=> array(
 			'form-group'
@@ -475,7 +472,9 @@ function custom_checkout_billing( $fields ) {
 			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-4' );
 		endif;
 	endforeach;
-		
+		echo "<pre>\n";
+	print_r( $fields['billing'] );
+	echo "</pre>\n";
 	return $fields;
 }
 
