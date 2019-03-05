@@ -447,15 +447,15 @@ p.no-comments {
 		}
 
 		.span-this-2 {
-			width: 15.8%;
+			width: 15.3%;
 		}
 
 		.span-this-4 {
-			width: 32.5%;
+			width: 32.3%;
 		}
 
 		.span-this-8 {
-			width: 65.5%;
+			width: 65.3%;
 		}
 
 		.select2-container--default {
@@ -468,14 +468,11 @@ p.no-comments {
 
 	.form-check {
 
+		input {
+			margin-right: 15px;
+		}
+
 		label {
-			
- rewrite maps/woocommerce.css.map (78%)
-
-
-			input {
-				margin-right: 15px;
-			}
 
 			span {
 				width: unset;
