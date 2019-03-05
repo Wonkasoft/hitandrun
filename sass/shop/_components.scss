@@ -441,6 +441,7 @@ p.no-comments {
 
 		.span-this {
 			justify-content: space-between;
+			flex-wrap: nowrap;
 			margin-right: 15px;
 		}
 
@@ -456,7 +457,7 @@ p.no-comments {
 			width: 66.3%;
 		}
 
-		.select2-container--default {
+		.select2-selection--single {
 			height: 32px;
 		}
 	}
