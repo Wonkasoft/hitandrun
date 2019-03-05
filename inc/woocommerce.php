@@ -412,6 +412,7 @@ remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
  * @return array         Fields to parse
  */
 function custom_checkout_billing( $fields ) {
+
 	$settings_args = array(
 		'class'				=> array(
 			'form-group'
@@ -425,56 +426,66 @@ function custom_checkout_billing( $fields ) {
 	);
 	foreach ($fields['billing'] as $field => $settings ) :
 		$fields['billing'][$field] = array_merge( $settings, $settings_args );
-		if ( $fields['billing'][$field] === 'billing_email' ) :
+		if ( $field === 'billing_email' ) :
 			$fields['billing'][$field]['priority'] = 22;
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-8' );
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-8';
 		endif;
-		if ( $fields['billing'][$field] === 'billing_phone' ) :
+		if ( $field === 'billing_phone' ) :
 			$fields['billing'][$field]['priority'] = 24;
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-4' );
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
 		endif;
-		if ( $fields['billing'][$field] === 'billing_city' ) :
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-4' );
+		if ( $field === 'billing_city' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
 		endif;
-		if ( $fields['billing'][$field] === 'billing_state' ) :
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-2' );
+		if ( $field === 'billing_state' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-2';
 		endif;
-		if ( $fields['billing'][$field] === 'billing_postcode' ) :
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-2' );
+		if ( $field === 'billing_postcode' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-2';
 		endif;
-		if ( $fields['billing'][$field] === 'billing_country' ) :
+		if ( $field === 'billing_country' ) :
 			$fields['billing'][$field]['priority'] = 92;
-			$fields['billing'][$field]['class'] = array_push( $fields['billing'][$field]['class'], 'span-this', 'span-this-4' );
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
 		endif;
 	endforeach;
 
 	foreach ($fields['shipping'] as $field => $settings ) :
 		$fields['shipping'][$field] = array_merge( $settings, $settings_args );
-		if ( $fields['shipping'][$field] === 'billing_email' ) :
+		if ( $field === 'billing_email' ) :
 			$fields['shipping'][$field]['priority'] = 22;
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-8' );
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-8';
 		endif;
-		if ( $fields['shipping'][$field] === 'billing_phone' ) :
+		if ( $field === 'billing_phone' ) :
 			$fields['shipping'][$field]['priority'] = 24;
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-4' );
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
 		endif;
-		if ( $fields['shipping'][$field] === 'billing_city' ) :
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-4' );
+		if ( $field === 'billing_city' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
 		endif;
-		if ( $fields['shipping'][$field] === 'billing_state' ) :
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-2' );
+		if ( $field === 'billing_state' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-2';
 		endif;
-		if ( $fields['shipping'][$field] === 'billing_postcode' ) :
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-2' );
+		if ( $field === 'billing_postcode' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-2';
 		endif;
-		if ( $fields['shipping'][$field] === 'billing_country' ) :
+		if ( $field === 'billing_country' ) :
 			$fields['shipping'][$field]['priority'] = 92;
-			$fields['shipping'][$field]['class'] = array_push( $fields['shipping'][$field]['class'], 'span-this', 'span-this-4' );
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
 		endif;
 	endforeach;
-		echo "<pre>\n";
-	print_r( $fields['billing'] );
-	echo "</pre>\n";
+		
 	return $fields;
 }
 

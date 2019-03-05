@@ -440,19 +440,23 @@ p.no-comments {
 	form {
 
 		.span-this {
-			float: left;
+			justify-content: space-between;
 		}
 
 		.span-this-2 {
-			width: 16.6%;
+			width: 16.5%;
 		}
 
 		.span-this-4 {
-			width: 33.3%;
+			width: 33.2%;
 		}
 
 		.span-this-8 {
-			width: 66.6%;
+			width: 66.5%;
+		}
+
+		.select2-container--default {
+			height: 32px;
 		}
 	}
 
