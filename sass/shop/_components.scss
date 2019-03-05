@@ -431,7 +431,10 @@ p.no-comments {
 .woocommerce-checkout {
 
 	.content-module {
-		width: 65%;
+
+		@include media-breakpoint-up( md ) {
+			width: 50%;
+		}
 	}
 
 	#payment {
