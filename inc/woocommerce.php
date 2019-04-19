@@ -320,3 +320,167 @@ function get_company_info() {
 }
 
 add_action( 'woocommerce_before_checkout_form', 'the_company_information', 5 );
+
+// define the woocommerce_pagination_args callback 
+function filter_woocommerce_pagination_args( ) { 
+	global $wp_query;
+
+	$array = apply_filters( 'woocommerce_pagination_args', array( 
+          'base' => esc_url_raw( str_replace( 999999999, '%#%', remove_query_arg( 'add-to-cart', get_pagenum_link( 999999999, false ) ) ) ),  
+          'format' => '',  
+          'add_args' => false,  
+          'current' => max( 1, get_query_var( 'paged' ) ),  
+          'total' => $wp_query->max_num_pages,  
+          'prev_text' => '←',  
+          'next_text' => '→',  
+          'type' => 'list',  
+          'end_size' => 3,  
+          'mid_size' => 3,  
+ 	) );
+	$link = '';
+	$output = '';
+	$output .=	'<nav aria-label="Page navigation example">';
+	$output .=	'<ul class="pagination justify-content-center">';
+	if ( $array['current'] == 1 ) :
+		$output .=	'<li class="page-item disabled">';
+		$output .=	'<a class="page-link" href="#" tabindex="-1">Previous</a>';
+		$output .=	'</li>';
+	else:
+		$link = esc_url_raw( str_replace( '%#%', $array['current']-1, $array['base'] ) );
+		$output .=	'<li class="page-item">';
+		$output .=	'<a class="page-link" href="' . $link . '" tabindex="-1">Previous</a>';
+		$output .=	'</li>';
+	endif;
+	for ($i=1; $i <= $array['total']; $i++) { 
+		$link = esc_url_raw( str_replace( '%#%', $i, $array['base'] ) );
+		if ( $i === $array['current'] ) :
+			$output .=	'<li class="page-item active"><a class="page-link" href="' . $link . '">' . $i . '</a></li>';
+		else:
+			$output .=	'<li class="page-item"><a class="page-link" href="' . $link . '">' . $i . '</a></li>';
+		endif;
+	}
+	if ( $array['current'] == $array['total'] ) :
+		$output .=	'<li class="page-item disabled">';
+		$output .=	'<a class="page-link" href="#">Next</a>';
+		$output .=	'</li>';
+	else:
+		$link = esc_url_raw( str_replace( '%#%', $array['current']+1, $array['base'] ) );
+		$output .=	'<li class="page-item">';
+		$output .=	'<a class="page-link" href="' . $link . '">Next</a>';
+		$output .=	'</li>';
+	endif;
+	$output .=	'</ul>';
+	$output .=	'</nav>';
+
+    echo $output; 
+}; 
+// add the filter 
+add_filter( 'woocommerce_after_shop_loop', 'filter_woocommerce_pagination_args', 5 ); 
+// remove the filter 
+remove_filter( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10, 1 );
+
+/**
+ * For setting up the parsing of the checkout fields
+ * $defaults = array(
+ *	    'type'              => 'text',
+ *	    'label'             => '',
+ *	    'description'       => '',
+ *	    'placeholder'       => '',
+ *	    'maxlength'         => false,
+ *	    'required'          => false,
+ *	    'autocomplete'      => false,
+ *	    'id'                => $key,
+ *	    'class'             => array(),
+ *	    'label_class'       => array(),
+ *	    'input_class'       => array(),
+ *	    'return'            => false,
+ *	    'options'           => array(),
+ *	    'custom_attributes' => array(),
+ *	    'validate'          => array(),
+ *	    'default'           => '',
+ *	    'autofocus'         => '',
+ *	    'priority'          => '',
+ *	);
+ *	
+ * @param  array $fields Fields to set
+ * @return array         Fields to parse
+ */
+function custom_checkout_fields( $fields ) {
+
+	$settings_args = array(
+		'class'				=> array(
+			'form-group'
+		),
+		'label_class'       => array(
+			'form-labels'
+		),
+		'input_class'		=> array(
+			'form-control'
+		),
+	);
+	foreach ($fields['billing'] as $field => $settings ) :
+		$fields['billing'][$field] = array_merge( $settings, $settings_args );
+		if ( $field === 'billing_email' ) :
+			$fields['billing'][$field]['priority'] = 22;
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-8';
+		endif;
+		if ( $field === 'billing_phone' ) :
+			$fields['billing'][$field]['priority'] = 24;
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
+		endif;
+		if ( $field === 'billing_city' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
+		endif;
+		if ( $field === 'billing_state' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-2';
+		endif;
+		if ( $field === 'billing_postcode' ) :
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-2';
+		endif;
+		if ( $field === 'billing_country' ) :
+			$fields['billing'][$field]['priority'] = 92;
+			$fields['billing'][$field]['class'][] = 'span-this';
+			$fields['billing'][$field]['class'][] = 'span-this-4';
+		endif;
+	endforeach;
+
+	foreach ($fields['shipping'] as $field => $settings ) :
+		$fields['shipping'][$field] = array_merge( $settings, $settings_args );
+		if ( $field === 'billing_email' ) :
+			$fields['shipping'][$field]['priority'] = 22;
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-8';
+		endif;
+		if ( $field === 'billing_phone' ) :
+			$fields['shipping'][$field]['priority'] = 24;
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
+		endif;
+		if ( $field === 'billing_city' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
+		endif;
+		if ( $field === 'billing_state' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-2';
+		endif;
+		if ( $field === 'billing_postcode' ) :
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-2';
+		endif;
+		if ( $field === 'billing_country' ) :
+			$fields['shipping'][$field]['priority'] = 92;
+			$fields['shipping'][$field]['class'][] = 'span-this';
+			$fields['shipping'][$field]['class'][] = 'span-this-4';
+		endif;
+	endforeach;
+		
+	return $fields;
+}
+
+add_filter( 'woocommerce_checkout_fields', 'custom_checkout_fields', 10 );

@@ -14,9 +14,6 @@ table.shop_table_responsive {
 
 	tr {
 		td {
-			display: block;
-			text-align: right;
-			clear: both;
 
 			&:before {
 				content: attr(data-title) ': ';
@@ -24,6 +21,7 @@ table.shop_table_responsive {
 			}
 
 			&.product-remove {
+
 				a {
 					text-align: left;
 				}
@@ -44,6 +42,45 @@ table.shop_table_responsive {
 				.button {
 					display: block;
 					text-align: center;
+				}
+			}
+
+			&.product-quantity {
+
+				.quantity {
+
+					.input-text {
+
+						&.qty {
+							margin: auto;
+							width: 50px;
+							
+						}
+					} 
+				}
+			}
+
+			&.actions {
+
+				.action-btns {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					.coupon {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						input {
+							line-height: 1.9;
+							border-radius: .25rem 0 0 .25rem;
+						}
+
+						button {
+							margin-left: -2px;
+						}
+					}
 				}
 			}
 		}
