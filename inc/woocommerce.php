@@ -98,7 +98,7 @@ function hitandrun_custom_woocommerce_placeholder( $image_url ) {
   $image_url = wp_get_attachment_image_src( $custom_logo_id , 'full' ); // change this to the URL to your custom placeholder
   return $image_url;
 }
-add_filter( 'woocommerce_placeholder_img_src', 'hitandrun_custom_woocommerce_placeholder', 10 );
+add_filter( 'wc_placeholder_img_src', 'hitandrun_custom_woocommerce_placeholder', 10 );
 
 /**
  * Default loop columns on product archives.
