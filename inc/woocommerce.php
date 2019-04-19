@@ -97,6 +97,7 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'hitandrun_woocommerce_thu
 function hitandrun_custom_woocommerce_placeholder( $image_url ) {
 	// Get the custom logo id
 	$custom_logo_id = get_theme_mod( 'custom_logo' );
+	var_dump($custom_logo_id);
   // Get the custom logo url
   $image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' ); // change this to the URL to your custom placeholder
   // Return the logo's url for the placeholder
