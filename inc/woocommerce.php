@@ -104,7 +104,7 @@ function hitandrun_custom_woocommerce_placeholder( $image_url ) {
   return $image_url;
 }
 
-add_filter( 'wc_placeholder_img_src', 'hitandrun_custom_woocommerce_placeholder', 10 );
+add_filter( 'wc_placeholder_img', 'hitandrun_custom_woocommerce_placeholder', 10 );
 
 /**
  * Default loop columns on product archives.
