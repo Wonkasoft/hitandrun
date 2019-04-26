@@ -90,22 +90,6 @@ function hitandrun_woocommerce_thumbnail_columns() {
 }
 add_filter( 'woocommerce_product_thumbnails_columns', 'hitandrun_woocommerce_thumbnail_columns' );
 
-// Add filter
-/**
- * Function to return new placeholder image URL.
- */
-function hitandrun_custom_woocommerce_placeholder( $image_url ) {
-	// Get the custom logo id
-	$custom_logo_id = get_theme_mod( 'custom_logo' );
-	var_dump($custom_logo_id);
-  // Get the custom logo url
-  $image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' ); // change this to the URL to your custom placeholder
-  // Return the logo's url for the placeholder
-  return $image_url;
-}
-
-add_filter( 'wc_placeholder_img', 'hitandrun_custom_woocommerce_placeholder', 10 );
-
 /**
  * Default loop columns on product archives.
  *
