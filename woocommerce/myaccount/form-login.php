@@ -12,12 +12,10 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.6.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly.
 
 do_action( 'woocommerce_before_customer_login_form' ); ?>
 
@@ -32,25 +30,25 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 
 			  <div class="form-group">
-			    <label for="username" class=""><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-			    <input type="text" class="form-control" id="username" name="username" aria-describedby="loginHelp" placeholder="Username or email address" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
-			    <small id="loginHelp" class="form-text text-muted">You can use your Username or email to login.</small>
+				<label for="username" class=""><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+				<input type="text" class="form-control" id="username" name="username" aria-describedby="loginHelp" placeholder="Username or email address" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
+				<small id="loginHelp" class="form-text text-muted">You can use your Username or email to login.</small>
 			  </div>
 			  <div class="form-group">
-			    <label for="password" class=""><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-			    <input class="form-control" type="password" name="password" id="password" autocomplete="current-password" />
+				<label for="password" class=""><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+				<input class="form-control" type="password" name="password" id="password" autocomplete="current-password" />
 			  </div>
 
-			  <?php do_action( 'woocommerce_login_form' ); ?>
+				<?php do_action( 'woocommerce_login_form' ); ?>
 
 			  <div class="form-group form-check">
-			  	<input class="form-check-input" name="rememberme" type="checkbox" id="rememberme" value="forever" />
-			    <label class="form-check-label" for="rememberme"><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></label>
+				  <input class="form-check-input" name="rememberme" type="checkbox" id="rememberme" value="forever" />
+				<label class="form-check-label" for="rememberme"><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></label>
 			  </div>
-			  <?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
+				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 			  <button type="submit" class="btn btn-primary" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 			  <div class="form-check">
-			  	<a class="form-check-input" href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
+				  <a class="form-check-input" href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
 			  </div>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -58,11 +56,11 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 		</form>
 
 	</div>
-<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) !== 'yes' ) : ?>
+<?php if ( 'yes' !== get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 	</div> <!-- row -->
 </div> <!-- container -->
 <?php endif; ?>
-<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
+<?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 
 
 	<div class="col col-md-6">
@@ -91,9 +89,13 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 				<div class="form-group">
 					<label for="reg_password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password" />
+					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" autocomplete="new-password" />
 				</div>
 
+			<?php else : ?>
+
+				<div><?php esc_html_e( 'A password will be sent to your email address.', 'woocommerce' ); ?></div>
+				
 			<?php endif; ?>
 
 			<?php do_action( 'woocommerce_register_form' ); ?>
