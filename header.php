@@ -33,12 +33,14 @@
 			<?php the_custom_logo(); ?>
 			</div> <!-- .logo-div -->
 			<?php
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page() && is_home() ) :
+				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Hit &amp; Run <br />Batting Cages</a></div>
-			<?php
-			endif; ?>
+				<?php
+			endif;
+			?>
 			<div class="score-board d-none d-lg-flex">
 				<span class="score score-left">0</span>
 				<span class="score score-sep">-</span>
@@ -73,11 +75,13 @@
 					<span class="hang-a-bur hang-a-bur-bottom"></span>
 				</button>
 			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
 		</nav><!-- #site-navigation -->
 	</div> <!-- .col-9 -->
 	<div class="col-sm search-col">
@@ -85,9 +89,7 @@
 	</div> <!-- .search-col -->
 	<div class="col-sm-1 cart-col">
 		<?php
-		// Load global to get car url
-		global $woocommerce;
-		$cart_url = $woocommerce->cart->get_cart_url();
+		$cart_url = wc_get_cart_url();
 		?>
 		<a href="<?php echo $cart_url; ?>"><i class="fa fa-shopping-cart"><span class="badge badge-light"><?php echo WC()->cart->get_cart_contents_count(); ?></span></i></a>
 	</div> <!-- .cart-col -->
