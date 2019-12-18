@@ -5,8 +5,23 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package hitandrun
- * @since  1.0.0 [<init>]
+ * @since  1.0.0
  */
+
+$args = array(
+	'post_type'   => array( 'attachment' ),
+	'post_status' => array( 'inherit' ),
+);
+
+$attachments        = new WP_Query( $args );
+$hit_tracks_logo_id = null;
+
+foreach ( $attachments->posts as $img_post ) {
+
+	if ( strpos( $img_post->guid, 'HitTrax-Logo-TM_large-1.png' ) ) {
+		$hit_tracks_logo_id = $img_post->ID;
+	}
+}
 
 ?>
 <div class="row row-for-content">
@@ -32,7 +47,7 @@
 	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
-				<img src="/wp-content/uploads/2018/02/HitTrax-Logo-TM_large-1.png" alt="hittrax logo" class="img-fluid" />
+				<img src="<?php echo esc_url( wp_get_attachment_image_src( $hit_tracks_logo_id, 'medium', false ) ); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( $hit_tracks_logo_id, 'medium', null ) ); ?>" alt="hittrax logo" class="img-fluid" />
 			</a>
 			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block wonka-btn">
 					Book a Hitting Session with Our Advanced Batting Technology!</a>
@@ -101,12 +116,13 @@
 		<div class="ticker-info">
 			<ol class="ticker-list">
 				<?php
-				for ($i=1; $i < 6; $i++) { 
-					$ticker = ( !get_theme_mod( 'ticker_'.$i ) ) ? '' : get_theme_mod( 'ticker_'.$i );
+				for ( $i = 1; $i < 6; $i++ ) {
+					$ticker = ( ! get_theme_mod( 'ticker_' . $i ) ) ? '' : get_theme_mod( 'ticker_' . $i );
 					if ( $ticker == '' ) {
 
 					} else {
-						?>	
+						?>
+							
 						<li class="ticker-item"><span class="numbered"><?php echo $i; ?></span>. <?php echo $ticker; ?></li>
 						<?php
 					}

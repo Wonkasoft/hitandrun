@@ -1,4 +1,4 @@
-let gulp = require('gulp'),
+var gulp = require('gulp'),
 sass = require('gulp-sass'),
 sourcemaps = require('gulp-sourcemaps'),
 concat = require('gulp-concat'),
@@ -86,7 +86,7 @@ gulp.task('woo-sass', function () {
 
 gulp.task('js', function () {
 
-	return gulp.src('./js/navigation.js', './js/skip-link-focus-fix.js', './js/wonkamizer-js.js')
+	return gulp.src(['./js/navigation.js', './js/skip-link-focus-fix.js', './js/wonkamizer-js.js'])
 
 	.pipe(concat(themeName + '.min.js'))
 
@@ -113,9 +113,9 @@ gulp.task('js', function () {
 
 gulp.task('watch', function() {
 
-	gulp.watch('**/*.scss', gulp.series(gulp.parallel('sass', 'woo-sass'))).on('change', browserSync.reload);
+	gulp.watch('sass/**/*.scss', gulp.series(gulp.parallel('sass', 'woo-sass'))).on('change', browserSync.reload);
 	gulp.watch('**/*.php').on('change', browserSync.reload);
-	gulp.watch('**/*.js', gulp.series(gulp.parallel('js'))).on('change', browserSync.reload);
+	gulp.watch('js/*.js', gulp.series(gulp.parallel('js'))).on('change', browserSync.reload);
 
 });
 

@@ -52,15 +52,15 @@ function slide_from_to( number ) {
 	}
 	if (w < 768) {
 		if (number == 3) {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
+			bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
 		} else {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+			bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 		}
 	} else {
 		if (number == 3) {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+			bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 		} else {
-			bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+			bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 		}
 	}
 	setTimeout( function(){rightScore.textContent=number;rightScore.style.opacity=1;rightScore.style.transform="rotate(0deg)";rightScore.style.top=0;},300);
@@ -97,15 +97,15 @@ function home_pages() {
 				next_indicator = document.querySelector('.indicator-1>.indicator-dot');
 				if ( w < 768 ) {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				} else {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				}
 			} else {
@@ -114,15 +114,15 @@ function home_pages() {
 				next_indicator = document.querySelector('.indicator-'+next_number+'>.indicator-dot');
 				if ( w < 768 ) {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center -150px;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-m-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				} else {
 					if (next_number == 3) {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					} else {
-						bg_container.style = "background: url('/wp-content/uploads/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
+						bg_container.style = "background: url('" + WONKASOFT_HELPER.img_dir.baseurl + "/2018/02/slide-"+next_number+".jpg');background-size: cover;background-position: center center;background-repeat: no-repeat;";
 					}
 				}
 			}

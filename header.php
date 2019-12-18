@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;background-position: center center;background-repeat: no-repeat;">
+<div id="page" class="site" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover;background-position: center center;background-repeat: no-repeat;">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hitandrun' ); ?></a>
 
 	<header id="masthead" class="site-header">
