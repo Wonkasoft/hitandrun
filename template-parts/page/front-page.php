@@ -47,7 +47,7 @@ foreach ( $attachments->posts as $img_post ) {
 	<div class="col-sm col-md-10 content-area content-area-2">
 		<div class="content-module">
 			<a href="#" class="hit-trax-info">
-				<img src="<?php echo esc_url( wp_get_attachment_image_src( $hit_tracks_logo_id, 'medium', false ) ); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( $hit_tracks_logo_id, 'medium', null ) ); ?>" alt="hittrax logo" class="img-fluid" />
+				<img src="<?php echo esc_url( wp_get_attachment_image_src( $hit_tracks_logo_id, 'medium', false )[0] ); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( $hit_tracks_logo_id, 'medium', null ) ); ?>" alt="hittrax logo" class="img-fluid" />
 			</a>
 			<a href="#" class="hit-trax-booking-btn d-none d-md-inline-block wonka-btn">
 					Book a Hitting Session with Our Advanced Batting Technology!</a>

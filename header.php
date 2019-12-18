@@ -21,7 +21,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>'); background-size: cover;background-position: center center;background-repeat: no-repeat;">
+
+<?php
+	$page_bg = ( 'blog' === get_post()->post_name ) ? 'background: url("https://hitandrunbattingcages.com/wp-content/uploads/2017/12/HitandRunBG.jpg"); background-size: cover;background-position: center center;background-repeat: no-repeat;' : 'background: url("' . get_the_post_thumbnail_url() . '"); background-size: cover;background-position: center center;background-repeat: no-repeat;';
+?>
+	
+<div id="page" class="site" style="<?php echo esc_attr( $page_bg ); ?>">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hitandrun' ); ?></a>
 
 	<header id="masthead" class="site-header">
